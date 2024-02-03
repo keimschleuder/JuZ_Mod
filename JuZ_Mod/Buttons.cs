@@ -19,6 +19,7 @@ namespace TheOtherRoles
         private static bool initialized = false;
 
         private static CustomButton almanTowelButton;
+        private static CustomButton amerikanerDesinfektionsmittelButton;
 
         private static CustomButton engineerRepairButton;
         private static CustomButton janitorCleanButton;
@@ -300,6 +301,20 @@ namespace TheOtherRoles
         public static void createButtonsPostfix(HudManager __instance) {
             // get map id, or raise error to wait...
             var mapId = GameOptionsManager.Instance.currentNormalGameOptions.MapId;
+
+            // Amerikaner Desinfektionsmittel
+            amerikanerDesinfektionsmittelButton = new CustomButton(
+                () => {
+                    CachedPlayer.LocalPlayer.Data.IsDead = true;
+                },
+                () => { return Amerikaner.amerikaner != null && CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
+                () => { return !CachedPlayer.LocalPlayer.Data.IsDead;  },
+                () => { },
+                Amerikaner.getDesinfektionsmittelSprite(),
+                CustomButton.ButtonPositions.upperRowFarLeft,
+                __instance,
+                KeyCode.F
+            );
 
             // Alman Towel
             almanTowelButton = new CustomButton(
