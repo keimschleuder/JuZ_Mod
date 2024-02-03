@@ -87,13 +87,25 @@ namespace TheOtherRoles.Modules {
                     }
                 }
 
-                if (text.ToLower().StartsWith("/role")) {
-                    RoleInfo localRole = RoleInfo.getRoleInfoForPlayer(CachedPlayer.LocalPlayer.PlayerControl, false).FirstOrDefault();
-                    if (localRole != RoleInfo.impostor && localRole != RoleInfo.crewmate) {
-                        string info = RoleInfo.GetRoleDescription(localRole);
-                        __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, info);
-                        handled = true;
-                    }
+                if (text.ToLower().StartsWith("/respekt"))
+                {
+                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem Jugendmoderator gegenüber!");
+                    handled = true;
+                }
+
+                if (text.ToLower().StartsWith("/adhs"))
+                {
+                    __instance.AddChat("Nicolas im Anmarsch!");
+                    handled = true;
+                }
+
+//                if (text.ToLower().StartsWith("/role")) {
+//                    RoleInfo localRole = RoleInfo.getRoleInfoForPlayer(CachedPlayer.LocalPlayer.PlayerControl, false).FirstOrDefault();
+//                    if (localRole != RoleInfo.impostor && localRole != RoleInfo.crewmate) {
+//                        string info = RoleInfo.GetRoleDescription(localRole);
+//                        __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, info);
+//                        handled = true;
+//                    }
                 }
 
                 if (handled) {

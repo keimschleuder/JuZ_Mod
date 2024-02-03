@@ -8,6 +8,7 @@ using TheOtherRoles.Utilities;
 using TheOtherRoles.CustomGameModes;
 using System.Threading.Tasks;
 using System.Net.Http;
+using BepInEx.Core.Logging.Interpolation;
 
 namespace TheOtherRoles
 {
@@ -33,7 +34,7 @@ namespace TheOtherRoles
         public static RoleInfo alman = new RoleInfo("Eyub", Alman.color, "Place Towels in front of tasks to prevent them from being used", "Locks Tasks with his Towels", RoleId.Alman);                       // Button functionality missing
         public static RoleInfo deutscher = new RoleInfo("Jens", Deutscher.color, "Pace Towels to block other players", "Blocks paths with his towels", RoleId.Deutscher, true);
         public static RoleInfo crewmatratze = new RoleInfo("Gina", Crewmatratze.color, "Stay with another one to not get voted out", "Stays with someone to not get voted out", RoleId.Crewmatratze);
-        public static RoleInfo influencer = new RoleInfo("David", Influencer.color, "Make selfies with the dead", "HAs to make a selfie before reporting", RoleId.Influencer);
+        public static RoleInfo influencer = new RoleInfo("David", Influencer.color, "Make selfies with the dead", "Has to make a selfie before reporting", RoleId.Influencer);
 
         public static RoleInfo jester = new RoleInfo("Emo", Jester.color, "Get voted out", "Get voted out", RoleId.Jester, true);
         public static RoleInfo mayor = new RoleInfo("Cheffi", Mayor.color, "Your vote counts twice", "Your vote counts twice", RoleId.Mayor);                                                                    // Done
@@ -48,7 +49,7 @@ namespace TheOtherRoles
         public static RoleInfo morphling = new RoleInfo("Desinee", Morphling.color, "Change your look to not get caught", "Change your look", RoleId.Morphling);
         public static RoleInfo camouflager = new RoleInfo("Günter Guillaume", Camouflager.color, "Camouflage and kill the Crewmates", "Hide among others", RoleId.Camouflager);                                      // Done
         public static RoleInfo vampire = new RoleInfo("Dracula", Vampire.color, "Kill the Crewmates with your bites", "Bite your enemies", RoleId.Vampire);
-        public static RoleInfo eraser = new RoleInfo("Eraser", Eraser.color, "Kill the Crewmates and erase their roles", "Erase the roles of your enemies", RoleId.Eraser);
+        public static RoleInfo eraser = new RoleInfo("Radiergummi", Eraser.color, "Kill the Crewmates and erase their roles", "Erase the roles of your enemies", RoleId.Eraser);
         public static RoleInfo trickster = new RoleInfo("MrBeast", Trickster.color, "Use your jack-in-the-boxes to surprise others", "Surprise your enemies", RoleId.Trickster);
         public static RoleInfo cleaner = new RoleInfo("Rainer", Cleaner.color, "Kill everyone and leave no traces", "Clean up dead bodies", RoleId.Cleaner);                                                   // Done
         public static RoleInfo warlock = new RoleInfo("Nils", Warlock.color, "Curse other players and kill everyone", "Curse and kill everyone", RoleId.Warlock);
@@ -60,7 +61,7 @@ namespace TheOtherRoles
         public static RoleInfo seer = new RoleInfo("MrWissen2go", Seer.color, "You will see players die", "You will see players die", RoleId.Seer);
         public static RoleInfo hacker = new RoleInfo("Niklas", Hacker.color, "Hack systems to find the <color=#FF1919FF>Impostors</color>", "Hack to find the Impostors", RoleId.Hacker);
         public static RoleInfo tracker = new RoleInfo("Helikoptermutter", Tracker.color, "Track the <color=#FF1919FF>Impostors</color> down", "Track the Impostors down", RoleId.Tracker);
-        public static RoleInfo snitch = new RoleInfo("Marcel", Snitch.color, "Finish your tasks to find the <color=#FF1919FF>Impostors</color>", "Finish your tasks", RoleId.Snitch);
+        public static RoleInfo snitch = new RoleInfo("Marcel", Snitch.color, "Das ist Respektlos einem <color=#E67E22>Jugendmoderator</color> gegenüber", "Finish your tasks", RoleId.Snitch);
         public static RoleInfo jackal = new RoleInfo("9/11, baby!", Jackal.color, "Kill all Crewmates and <color=#FF1919FF>Impostors</color> to win", "Kill everyone", RoleId.Jackal, true);
         public static RoleInfo sidekick = new RoleInfo("Michael Collins", Sidekick.color, "Help your Jackal to kill everyone", "Help your Jackal to kill everyone", RoleId.Sidekick, true);
         public static RoleInfo spy = new RoleInfo("Lovebot", Spy.color, "Confuse the <color=#FF1919FF>Impostors</color>", "Confuse the Impostors", RoleId.Spy);
@@ -189,6 +190,9 @@ namespace TheOtherRoles
 
             // Special roles
             if (p == Alman.alman) infos.Add(alman);
+            if (p == Deutscher.deutscher) infos.Add(deutscher);
+            if (p == Influencer.influencer) infos.Add(influencer);
+            if (p == Crewmatratze.crewmatratze) infos.Add(crewmatratze);
 
             if (p == Jester.jester) infos.Add(jester);
             if (p == Mayor.mayor) infos.Add(mayor);
