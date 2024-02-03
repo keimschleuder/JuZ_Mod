@@ -19,7 +19,7 @@ using Assets.CoreScripts;
 
 namespace TheOtherRoles
 {
-    public enum RoleId {
+    public enum RoleId{
         Jester,
         Mayor,
         Portalmaker,
@@ -77,11 +77,11 @@ namespace TheOtherRoles
         Invert,
         Chameleon,
         Shifter,
-        // Mine ---
+        // Custom ---
         Deutscher,
-        Alman,
         Crewmatratze,
         Influencer,
+        Almann,
     }
 
     enum CustomRPC
@@ -243,7 +243,7 @@ namespace TheOtherRoles
         public static void setRole(byte roleId, byte playerId) {
             foreach (PlayerControl player in CachedPlayer.AllPlayers)
                 if (player.PlayerId == playerId) {
-                    switch((RoleId)roleId) {    
+                    switch((RoleId)roleId) {
                         case RoleId.Jester:
                             Jester.jester = player;
                             break;
@@ -377,11 +377,11 @@ namespace TheOtherRoles
                         case RoleId.Bomber:
                             Bomber.bomber = player;
                             break;
-                        case RoleId.Alman:
-                            Alman.alman = player;
-                            break;
                         case RoleId.Deutscher:
                             Deutscher.deutscher = player;
+                            break;
+                        case RoleId.Almann:
+                            Alman.alman = player;
                             break;
                         case RoleId.Crewmatratze:
                             Crewmatratze.crewmatratze = player;
@@ -390,7 +390,6 @@ namespace TheOtherRoles
                             Influencer.influencer = player;
                             break;
                     }
-                    
                 }
         }
 
