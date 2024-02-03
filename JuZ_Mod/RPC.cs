@@ -82,6 +82,7 @@ namespace TheOtherRoles
         Alman,
         Crewmatratze,
         Influencer,
+        Amerikaner,
     }
 
     enum CustomRPC
@@ -388,6 +389,9 @@ namespace TheOtherRoles
                             break;
                         case RoleId.Influencer:
                             Influencer.influencer = player;
+                            break;
+                        case RoleId.Amerikaner:
+                            Amerikaner.amerikaner = player;
                             break;
                     }
                     

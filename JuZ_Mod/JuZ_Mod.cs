@@ -23,6 +23,7 @@ namespace TheOtherRoles
             Deutscher.clearAndReload();
             Crewmatratze.clearAndReload();
             Influencer.clearAndReload();
+            Amerikaner.clearAndReload();
             
             Jester.clearAndReload();
             Mayor.clearAndReload();
@@ -83,6 +84,29 @@ namespace TheOtherRoles
             HideNSeek.clearAndReload();
             PropHunt.clearAndReload();
 
+        }
+
+        public static class Amerikaner
+        {
+            public static PlayerControl amerikaner;
+            public static Color color = Palette.ImpostorRed;
+
+            public static float rangeBuff;
+
+            public static Sprite trinkDesinfektionsmittel;
+
+            public static void clearAndReload()
+            {
+                amerikaner = null;
+                rangeBuff = CustomOptionHolder.amerikanerRangeBuff.getFloat();
+            }
+            
+            public static Sprite getDesinfektionsmittelSprite()
+            {
+                if (trinkDesinfektionsmittel) return trinkDesinfektionsmittel;
+                trinkDesinfektionsmittel = Helpers.loadSpriteFromResources("JuZ_Mod.Ressources.Desinfect.png", 115f);
+                return trinkDesinfektionsmittel;
+            }
         }
 
         public static class Alman

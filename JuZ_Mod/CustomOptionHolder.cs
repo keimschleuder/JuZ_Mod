@@ -12,6 +12,9 @@ namespace TheOtherRoles {
         public static CustomOption influencerSpawnRate;
         public static CustomOption influencerSelfieDuration;
 
+        public static CustomOption amerikanerRangeBuff;
+        public static CustomOption amerikanerNaturalSpawnRate;
+
         public static CustomOption almanTowelCooldown;
         public static CustomOption almanTowelDuration;
         public static CustomOption almanSpawnRate;
@@ -422,7 +425,10 @@ namespace TheOtherRoles {
             influencerSpawnRate = CustomOption.Create(1000101, Types.JuZ, cs(Influencer.color, "Influencer Spawn Rate"), rates, null, true);
             influencerSelfieDuration = CustomOption.Create(1000102, Types.JuZ, cs(Influencer.color, "Time the selfie takes"), 5f, 0f, 10f, 1f);
 
-            crewmatratzeSpawnRate = CustomOption.Create(1000201, Types.JuZ, cs(Crewmatratze.color, "Crewmatratze Spawn Rate"), rates, null, true)
+            amerikanerNaturalSpawnRate = CustomOption.Create(1000301, Types.JuZ, cs(Amerikaner.color, "Amerikaner natürliche Spawn Rate, ohne einfluss eines Waffenhändlers"), rates, null, true);
+            amerikanerRangeBuff = CustomOption.Create(1000302, Types.JuZ, cs(Amerikaner.color, "Amerikaner Range Buff"), 5f, 1f, 10f, 1f);
+
+            crewmatratzeSpawnRate = CustomOption.Create(1000201, Types.JuZ, cs(Crewmatratze.color, "Crewmatratze Spawn Rate"), rates, null, true);
 
             almanSpawnRate = CustomOption.Create(1000003, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Alman & Deutscher Spawn Rate"), rates, null, true);
             almanTowelCooldown = CustomOption.Create(1000000, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Set Cooldown for Alman & Deutscher to place Towels"), 20f, 0f, 30f, 1f);
