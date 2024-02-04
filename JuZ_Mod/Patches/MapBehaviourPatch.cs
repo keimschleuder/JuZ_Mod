@@ -15,7 +15,7 @@ namespace TheOtherRoles.Patches {
 	static class MapBehaviourPatch {
 		public static Dictionary<PlayerControl, SpriteRenderer> herePoints = new();
 
-		public static Sprite Vent = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.Vent.png", 150f);
+		public static Sprite Vent = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Vent.png", 150f);
 
 		public static List<List<Vent>> VentNetworks = new();
 

@@ -95,7 +95,7 @@ namespace TheOtherRoles.Modules {
 
                 if (text.ToLower().StartsWith("/adhs"))
                 {
-                    __instance.AddChat("Nicolas im Anmarsch!");
+                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Nicolas im Anmarsch!");
                     handled = true;
                 }
 
@@ -106,7 +106,7 @@ namespace TheOtherRoles.Modules {
 //                        __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, info);
 //                        handled = true;
 //                    }
-                }
+//                }
 
                 if (handled) {
                     __instance.freeChatField.Clear();

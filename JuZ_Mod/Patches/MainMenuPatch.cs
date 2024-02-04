@@ -97,7 +97,7 @@ Thanks to all our discord helpers!
 Thanks to miniduikboot & GD for hosting modded servers (and so much more)
 
 <b>JuZ Modifikation:</b>
-Niklas ´(Keimschleuder) [https://www.github.com/keimschleuder]GitHub[]
+Niklas (Keimschleuder) [https://www.github.com/keimschleuder]GitHub[]
 
 ";
                 creditsString += $@"<size=60%> <b>Other Credits & Resources:</b>

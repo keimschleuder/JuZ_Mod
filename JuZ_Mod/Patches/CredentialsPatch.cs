@@ -18,14 +18,16 @@ $@"<size=130%><color=#ff351f>TheOtherRoles</color></size> v{TheOtherRolesPlugin.
 public static string fullCredentials =
 $@"<size=60%>Modded by <color=#FCCE03FF>Eisbison</color>, <color=#FCCE03FF>EndOfFile</color>
 <color=#FCCE03FF>Thunderstorm584</color>, <color=#FCCE03FF>Mallöris</color> & <color=#FCCE03FF>Gendelo</color>
-Design by <color=#FCCE03FF>Bavari</color></size>";
+Design by <color=#FCCE03FF>Bavari</color>
+Changed by <color=#FCCE03FF>Niklas</color></size>";
 
     public static string mainMenuCredentials = 
 $@"Modded by <color=#FCCE03FF>Eisbison</color>, <color=#FCCE03FF>Thunderstorm584</color>, <color=#FCCE03FF>EndOfFile</color>, <color=#FCCE03FF>Mallöris</color> & <color=#FCCE03FF>Gendelo</color>
-Design by <color=#FCCE03FF>Bavari</color>";
+Design by <color=#FCCE03FF>Bavari</color>
+Changed by <color=#FCCE03FF>Niklas</color>";
 
         public static string contributorsCredentials =
-$@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy</color></size>";
+$@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy and Nicolas</color></size>";
 
         [HarmonyPatch(typeof(PingTracker), nameof(PingTracker.Update))]
         internal static class PingTrackerPatch
@@ -90,7 +92,7 @@ $@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy</color></size>";
 
                 renderer = torLogo.AddComponent<SpriteRenderer>();
                 loadSprites();
-                renderer.sprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.Banner.png", 300f);
+                renderer.sprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Banner.png", 300f);
 
                 instance = __instance;
                 loadSprites();
@@ -123,9 +125,9 @@ $@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy</color></size>";
             }
 
             public static void loadSprites() {
-                if (bannerSprite == null) bannerSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.Banner.png", 300f);
-                if (banner2Sprite == null) banner2Sprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.Banner2.png", 300f);
-                if (horseBannerSprite == null) horseBannerSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.bannerTheHorseRoles.png", 300f);
+                if (bannerSprite == null) bannerSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Banner.png", 300f);
+                if (banner2Sprite == null) banner2Sprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Banner2.png", 300f);
+                if (horseBannerSprite == null) horseBannerSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.bannerTheHorseRoles.png", 300f);
             }
 
             public static void updateSprite() {

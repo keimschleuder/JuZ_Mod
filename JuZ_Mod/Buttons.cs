@@ -101,6 +101,7 @@ namespace TheOtherRoles
                 }
             }
             almanTowelButton.MaxTimer = Alman.towelCooldown;
+            amerikanerDesinfektionsmittelButton.MaxTimer = 0f;
 
             engineerRepairButton.MaxTimer = 0f;
             janitorCleanButton.MaxTimer = Janitor.cooldown;
@@ -1939,7 +1940,7 @@ namespace TheOtherRoles
                 },
                 () => { return true; },
                 () => { return; },
-                Helpers.loadSpriteFromResources("TheOtherRoles.Resources.MinusButton.png", 150f),  // Invisible button!
+                Helpers.loadSpriteFromResources("JuZ_Mod.Resources.MinusButton.png", 150f),  // Invisible button!
                 new Vector3(0.4f, 2.8f, 0),
                 __instance,
                 KeyCode.KeypadPlus

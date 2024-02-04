@@ -119,11 +119,11 @@ namespace TheOtherRoles.CustomGameModes {
         }
 
         public static Sprite getIntroSprite(int index) {
-            return Helpers.loadSpriteFromResources($"TheOtherRoles.Resources.IntroAnimation.intro_{index + 1000}.png", 150f, cache: false);
+            return Helpers.loadSpriteFromResources($"JuZ_Mod.Resources.IntroAnimation.intro_{index + 1000}.png", 150f, cache: false);
         }
 
         public static void updateWhitelistedObjects() {
-            string allNames = Helpers.readTextFromResources("TheOtherRoles.Resources.Txt.Props.txt");
+            string allNames = Helpers.readTextFromResources("JuZ_Mod.Resources.Txt.Props.txt");
             bool debug = false;
             if (debug) {
                 allNames = Helpers.readTextFromFile(System.IO.Directory.GetCurrentDirectory() + "\\Props.txt");
@@ -172,7 +172,7 @@ namespace TheOtherRoles.CustomGameModes {
             if (poolablesBackground == null) {
                 poolablesBackground = new GameObject("poolablesBackground");
                 poolablesBackground.AddComponent<SpriteRenderer>();
-                if (poolablesBackgroundSprite == null) poolablesBackgroundSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.poolablesBackground.jpg", 200f);
+                if (poolablesBackgroundSprite == null) poolablesBackgroundSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.poolablesBackground.jpg", 200f);
             }
             poolablesBackground.transform.SetParent(HudManager.Instance.transform);
             poolablesBackground.transform.localPosition = IntroCutsceneOnDestroyPatch.bottomLeft + new Vector3(-1.45f, -0.05f, 0) + Vector3.right * PlayerControl.AllPlayerControls.Count * 0.2f;
@@ -319,35 +319,35 @@ namespace TheOtherRoles.CustomGameModes {
 
         public static Sprite getDisguiseButtonSprite() {
             if (disguiseButtonSprite) return disguiseButtonSprite;
-            disguiseButtonSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.DisguiseButton.png", 115f);
+            disguiseButtonSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.DisguiseButton.png", 115f);
             return disguiseButtonSprite;
         }
 
         public static Sprite getUnstuckButtonSprite() {
             if (unstuckButtonSprite) return unstuckButtonSprite;
-            unstuckButtonSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.UnStuck.png", 115f);
+            unstuckButtonSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.UnStuck.png", 115f);
             return unstuckButtonSprite;
         }
         public static Sprite getRevealButtonSprite() {
             if (revealButtonSprite) return revealButtonSprite;
-            revealButtonSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.Reveal.png", 115f);
+            revealButtonSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Reveal.png", 115f);
             return revealButtonSprite;
         }
 
         public static Sprite getInvisButtonSprite() {
             if (invisButtonSprite) return invisButtonSprite;
-            invisButtonSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.InvisButton.png", 115f);
+            invisButtonSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.InvisButton.png", 115f);
             return invisButtonSprite;
         }
 
         public static Sprite getFindButtonSprite() {
             if (findButtonSprite) return findButtonSprite;
-            findButtonSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.FindButton.png", 115f);
+            findButtonSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.FindButton.png", 115f);
             return findButtonSprite;
         }
         public static Sprite getSpeedboostButtonSprite() {
             if (speedboostButtonSprite) return speedboostButtonSprite;
-            speedboostButtonSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.SpeedboostButton.png", 115f);
+            speedboostButtonSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.SpeedboostButton.png", 115f);
             return speedboostButtonSprite;
         }
 

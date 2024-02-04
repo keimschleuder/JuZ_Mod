@@ -22,7 +22,7 @@ namespace TheOtherRoles
             string[] resourceNames = assembly.GetManifestResourceNames();
             foreach (string resourceName in resourceNames)
             {
-                if (resourceName.Contains("TheOtherRoles.Resources.SoundEffects.") && resourceName.Contains(".raw"))
+                if (resourceName.Contains("JuZ_Mod.Resources.SoundEffects.") && resourceName.Contains(".raw"))
                 {
                     soundEffects.Add(resourceName, Helpers.loadAudioClipFromResources(resourceName));
                 }
@@ -32,7 +32,7 @@ namespace TheOtherRoles
         public static AudioClip get(string path)
         {
             // Convenience: As as SoundEffects are stored in the same folder, allow using just the name as well
-            if (!path.Contains(".")) path = "TheOtherRoles.Resources.SoundEffects." + path + ".raw";
+            if (!path.Contains(".")) path = "JuZ_Mod.Resources.SoundEffects." + path + ".raw";
             AudioClip returnValue;
             return soundEffects.TryGetValue(path, out returnValue) ? returnValue : null;
         }

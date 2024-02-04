@@ -284,7 +284,7 @@ namespace TheOtherRoles {
             copyButton.transform.localPosition += Vector3.down * 0.8f;
             var copyButtonPassive = copyButton.GetComponent<PassiveButton>();
             var copyButtonRenderer = copyButton.GetComponent<SpriteRenderer>();
-            copyButtonRenderer.sprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.CopyButton.png", 175f);
+            copyButtonRenderer.sprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.CopyButton.png", 175f);
             copyButtonPassive.OnClick.RemoveAllListeners();
             copyButtonPassive.OnClick = new UnityEngine.UI.Button.ButtonClickedEvent();
             copyButtonPassive.OnClick.AddListener((System.Action)(() => {
@@ -299,7 +299,7 @@ namespace TheOtherRoles {
             pasteButton.transform.localPosition += Vector3.down * 1.6f;
             var pasteButtonPassive = pasteButton.GetComponent<PassiveButton>();
             var pasteButtonRenderer = pasteButton.GetComponent<SpriteRenderer>();
-            pasteButtonRenderer.sprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.PasteButton.png", 175f);
+            pasteButtonRenderer.sprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.PasteButton.png", 175f);
             pasteButtonPassive.OnClick.RemoveAllListeners();
             pasteButtonPassive.OnClick = new UnityEngine.UI.Button.ButtonClickedEvent();
             pasteButtonPassive.OnClick.AddListener((System.Action)(() => {
@@ -321,7 +321,8 @@ namespace TheOtherRoles {
                     ["ImpostorSettings"] = "Impostor Roles Settings",
                     ["NeutralSettings"] = "Neutral Roles Settings",
                     ["CrewmateSettings"] = "Crewmate Roles Settings",
-                    ["ModifierSettings"] = "Modifier Settings"
+                    ["ModifierSettings"] = "Modifier Settings",
+                    ["JuZSettings"] = "JuZ Special Settings"
                 });
 
             if (isReturn) return;
@@ -347,23 +348,29 @@ namespace TheOtherRoles {
             var modifierSettings = UnityEngine.Object.Instantiate(gameSettings, gameSettings.transform.parent);
             var modifierMenu = getMenu(modifierSettings, "ModifierSettings");
 
+            var juzSettings = UnityEngine.Object.Instantiate(gameSettings, gameSettings.transform.parent);
+            var juzMenu = getMenu(juzSettings, "juzSettings");
+
             var roleTab = GameObject.Find("RoleTab");
             var gameTab = GameObject.Find("GameTab");
 
             var torTab = UnityEngine.Object.Instantiate(roleTab, roleTab.transform.parent);
-            var torTabHighlight = getTabHighlight(torTab, "TheOtherRolesTab", "TheOtherRoles.Resources.TabIcon.png");
+            var torTabHighlight = getTabHighlight(torTab, "TheOtherRolesTab", "JuZ_Mod.Resources.TabIcon.png");
 
             var impostorTab = UnityEngine.Object.Instantiate(roleTab, torTab.transform);
-            var impostorTabHighlight = getTabHighlight(impostorTab, "ImpostorTab", "TheOtherRoles.Resources.TabIconImpostor.png");
+            var impostorTabHighlight = getTabHighlight(impostorTab, "ImpostorTab", "JuZ_Mod.Resources.TabIconImpostor.png");
 
             var neutralTab = UnityEngine.Object.Instantiate(roleTab, impostorTab.transform);
-            var neutralTabHighlight = getTabHighlight(neutralTab, "NeutralTab", "TheOtherRoles.Resources.TabIconNeutral.png");
+            var neutralTabHighlight = getTabHighlight(neutralTab, "NeutralTab", "JuZ_Mod.Resources.TabIconNeutral.png");
 
             var crewmateTab = UnityEngine.Object.Instantiate(roleTab, neutralTab.transform);
-            var crewmateTabHighlight = getTabHighlight(crewmateTab, "CrewmateTab", "TheOtherRoles.Resources.TabIconCrewmate.png");
+            var crewmateTabHighlight = getTabHighlight(crewmateTab, "CrewmateTab", "JuZ_Mod.Resources.TabIconCrewmate.png");
 
             var modifierTab = UnityEngine.Object.Instantiate(roleTab, crewmateTab.transform);
-            var modifierTabHighlight = getTabHighlight(modifierTab, "ModifierTab", "TheOtherRoles.Resources.TabIconModifier.png");
+            var modifierTabHighlight = getTabHighlight(modifierTab, "ModifierTab", "JuZ_Mod.Resources.TabIconModifier.png");
+
+            var juzTab = UnityEngine.Object.Instantiate(roleTab, modifierTab.transform);
+            var juzTabHighlight = getTabHighlight(juzTab, "juzTab", "JuZ_Mod.Resources.TabIconModifier.png");
 
             // Position of Tab Icons
             gameTab.transform.position += Vector3.left * 3f;
@@ -373,8 +380,9 @@ namespace TheOtherRoles {
             neutralTab.transform.localPosition = Vector3.right * 1f;
             crewmateTab.transform.localPosition = Vector3.right * 1f;
             modifierTab.transform.localPosition = Vector3.right * 1f;
+            juzTab.transform.localPosition = Vector3.right * 1f;
 
-            var tabs = new GameObject[] { gameTab, roleTab, torTab, impostorTab, neutralTab, crewmateTab, modifierTab };
+            var tabs = new GameObject[] { gameTab, roleTab, torTab, impostorTab, neutralTab, crewmateTab, modifierTab, juzTab };
             var settingsHighlightMap = new Dictionary<GameObject, SpriteRenderer> {
                 [gameSettingMenu.RegularGameSettings] = gameSettingMenu.GameSettingsHightlight,
                 [gameSettingMenu.RolesSettings.gameObject] = gameSettingMenu.RolesSettingsHightlight,
@@ -382,7 +390,8 @@ namespace TheOtherRoles {
                 [impostorSettings.gameObject] = impostorTabHighlight,
                 [neutralSettings.gameObject] = neutralTabHighlight,
                 [crewmateSettings.gameObject] = crewmateTabHighlight,
-                [modifierSettings.gameObject] = modifierTabHighlight
+                [modifierSettings.gameObject] = modifierTabHighlight,
+                [juzSettings.gameObject] = juzTabHighlight,
             };
             for (int i = 0; i < tabs.Length; i++) {
                 var button = tabs[i].GetComponentInChildren<PassiveButton>();
@@ -399,7 +408,8 @@ namespace TheOtherRoles {
                 impostorMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
                 neutralMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
                 crewmateMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
-                modifierMenu.GetComponentsInChildren<OptionBehaviour>().ToList()
+                modifierMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
+                juzMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
             });
 
             List<OptionBehaviour> torOptions = new List<OptionBehaviour>();
@@ -407,10 +417,11 @@ namespace TheOtherRoles {
             List<OptionBehaviour> neutralOptions = new List<OptionBehaviour>();
             List<OptionBehaviour> crewmateOptions = new List<OptionBehaviour>();
             List<OptionBehaviour> modifierOptions = new List<OptionBehaviour>();
+            List<OptionBehaviour> juzOptions = new List<OptionBehaviour>();
 
 
-            List<Transform> menus = new List<Transform>() { torMenu.transform, impostorMenu.transform, neutralMenu.transform, crewmateMenu.transform, modifierMenu.transform };
-            List<List<OptionBehaviour>> optionBehaviours = new List<List<OptionBehaviour>>() { torOptions, impostorOptions, neutralOptions, crewmateOptions, modifierOptions };
+            List<Transform> menus = new List<Transform>() { torMenu.transform, impostorMenu.transform, neutralMenu.transform, crewmateMenu.transform, modifierMenu.transform, juzMenu.transform };
+            List<List<OptionBehaviour>> optionBehaviours = new List<List<OptionBehaviour>>() { torOptions, impostorOptions, neutralOptions, crewmateOptions, modifierOptions, juzOptions };
 
             for (int i = 0; i < CustomOption.options.Count; i++) {
                 CustomOption option = CustomOption.options[i];
@@ -429,9 +440,9 @@ namespace TheOtherRoles {
             }
 
             setOptions(
-                new List<GameOptionsMenu> { torMenu, impostorMenu, neutralMenu, crewmateMenu, modifierMenu },
-                new List<List<OptionBehaviour>> { torOptions, impostorOptions, neutralOptions, crewmateOptions, modifierOptions },
-                new List<GameObject> { torSettings, impostorSettings, neutralSettings, crewmateSettings, modifierSettings }
+                new List<GameOptionsMenu> { torMenu, impostorMenu, neutralMenu, crewmateMenu, modifierMenu, juzMenu },
+                new List<List<OptionBehaviour>> { torOptions, impostorOptions, neutralOptions, crewmateOptions, modifierOptions, juzOptions },
+                new List<GameObject> { torSettings, impostorSettings, neutralSettings, crewmateSettings, modifierSettings, juzSettings }
             );
 
             adaptTaskCount(__instance);
@@ -445,7 +456,8 @@ namespace TheOtherRoles {
                     ["ImpostorSettings"] = "Impostor Roles Settings",
                     ["NeutralSettings"] = "Neutral Roles Settings",
                     ["CrewmateSettings"] = "Crewmate Roles Settings",
-                    ["ModifierSettings"] = "Modifier Settings"
+                    ["ModifierSettings"] = "Modifier Settings",
+                    ["JuZSettings"] = "JuZ Special Settings"
                 });
 
             if (isReturn) return;
@@ -474,26 +486,32 @@ namespace TheOtherRoles {
             var modifierSettings = UnityEngine.Object.Instantiate(gameSettings, gameSettings.transform.parent);
             var modifierMenu = getMenu(modifierSettings, "ModifierSettings");
 
+            var juzSettings = UnityEngine.Object.Instantiate(gameSettings, gameSettings.transform.parent);
+            var juzMenu = getMenu(modifierSettings, "juzSettings");
+
             var roleTab = GameObject.Find("RoleTab");
             var gameTab = GameObject.Find("GameTab");
 
             var torTab = UnityEngine.Object.Instantiate(roleTab, gameTab.transform.parent);
-            var torTabHighlight = getTabHighlight(torTab, "TheOtherRolesTab", "TheOtherRoles.Resources.TabIcon.png");
+            var torTabHighlight = getTabHighlight(torTab, "TheOtherRolesTab", "JuZ_Mod.Resources.TabIcon.png");
 
             var guesserTab = UnityEngine.Object.Instantiate(roleTab, torTab.transform);
-            var guesserTabHighlight = getTabHighlight(guesserTab, "GuesserTab", "TheOtherRoles.Resources.TabIconGuesserSettings.png");
+            var guesserTabHighlight = getTabHighlight(guesserTab, "GuesserTab", "JuZ_Mod.Resources.TabIconGuesserSettings.png");
 
             var impostorTab = UnityEngine.Object.Instantiate(roleTab, guesserTab.transform);
-            var impostorTabHighlight = getTabHighlight(impostorTab, "ImpostorTab", "TheOtherRoles.Resources.TabIconImpostor.png");
+            var impostorTabHighlight = getTabHighlight(impostorTab, "ImpostorTab", "JuZ_Mod.Resources.TabIconImpostor.png");
 
             var neutralTab = UnityEngine.Object.Instantiate(roleTab, impostorTab.transform);
-            var neutralTabHighlight = getTabHighlight(neutralTab, "NeutralTab", "TheOtherRoles.Resources.TabIconNeutral.png");
+            var neutralTabHighlight = getTabHighlight(neutralTab, "NeutralTab", "JuZ_Mod.Resources.TabIconNeutral.png");
 
             var crewmateTab = UnityEngine.Object.Instantiate(roleTab, neutralTab.transform);
-            var crewmateTabHighlight = getTabHighlight(crewmateTab, "CrewmateTab", "TheOtherRoles.Resources.TabIconCrewmate.png");
+            var crewmateTabHighlight = getTabHighlight(crewmateTab, "CrewmateTab", "JuZ_Mod.Resources.TabIconCrewmate.png");
 
             var modifierTab = UnityEngine.Object.Instantiate(roleTab, crewmateTab.transform);
-            var modifierTabHighlight = getTabHighlight(modifierTab, "ModifierTab", "TheOtherRoles.Resources.TabIconModifier.png");
+            var modifierTabHighlight = getTabHighlight(modifierTab, "ModifierTab", "JuZ_Mod.Resources.TabIconModifier.png");
+
+            var juzTab = UnityEngine.Object.Instantiate(roleTab, modifierTab.transform);
+            var juzTabHighlight = getTabHighlight(juzTab, "juzTab", "JuZ_Mod.Resources.TabIconModifier.png");
 
             roleTab.active = false;
             // Position of Tab Icons
@@ -504,8 +522,9 @@ namespace TheOtherRoles {
             neutralTab.transform.localPosition = Vector3.right * 1f;
             crewmateTab.transform.localPosition = Vector3.right * 1f;
             modifierTab.transform.localPosition = Vector3.right * 1f;
+            juzTab.transform.localPosition = Vector3.right * 1f;
 
-            var tabs = new GameObject[] { gameTab, torTab, impostorTab, neutralTab, crewmateTab, modifierTab, guesserTab };
+            var tabs = new GameObject[] { gameTab, torTab, impostorTab, neutralTab, crewmateTab, modifierTab, guesserTab, juzTab };
             var settingsHighlightMap = new Dictionary<GameObject, SpriteRenderer> {
                 [gameSettingMenu.RegularGameSettings] = gameSettingMenu.GameSettingsHightlight,
                 [torSettings.gameObject] = torTabHighlight,
@@ -513,7 +532,8 @@ namespace TheOtherRoles {
                 [neutralSettings.gameObject] = neutralTabHighlight,
                 [crewmateSettings.gameObject] = crewmateTabHighlight,
                 [modifierSettings.gameObject] = modifierTabHighlight,
-                [guesserSettings.gameObject] = guesserTabHighlight
+                [guesserSettings.gameObject] = guesserTabHighlight,
+                [juzSettings.gameObject] = juzTabHighlight
             };
             for (int i = 0; i < tabs.Length; i++) {               
                 var button = tabs[i].GetComponentInChildren<PassiveButton>();
@@ -531,7 +551,8 @@ namespace TheOtherRoles {
                 impostorMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
                 neutralMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
                 crewmateMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
-                modifierMenu.GetComponentsInChildren<OptionBehaviour>().ToList()
+                modifierMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
+                juzMenu.GetComponentsInChildren<OptionBehaviour>().ToList(),
             });
 
             List<OptionBehaviour> torOptions = new List<OptionBehaviour>();
@@ -540,10 +561,11 @@ namespace TheOtherRoles {
             List<OptionBehaviour> neutralOptions = new List<OptionBehaviour>();
             List<OptionBehaviour> crewmateOptions = new List<OptionBehaviour>();
             List<OptionBehaviour> modifierOptions = new List<OptionBehaviour>();
+            List<OptionBehaviour> juzOptions = new List<OptionBehaviour>();
 
 
-            List<Transform> menus = new List<Transform>() { torMenu.transform, impostorMenu.transform, neutralMenu.transform, crewmateMenu.transform, modifierMenu.transform, guesserMenu.transform };
-            List<List<OptionBehaviour>> optionBehaviours = new List<List<OptionBehaviour>>() { torOptions, impostorOptions, neutralOptions, crewmateOptions, modifierOptions, guesserOptions };
+            List<Transform> menus = new List<Transform>() { torMenu.transform, impostorMenu.transform, neutralMenu.transform, crewmateMenu.transform, modifierMenu.transform, guesserMenu.transform, juzMenu.transform };
+            List<List<OptionBehaviour>> optionBehaviours = new List<List<OptionBehaviour>>() { torOptions, impostorOptions, neutralOptions, crewmateOptions, modifierOptions, guesserOptions, juzOptions };
             List<int> exludedIds = new List<int> { 310, 311, 312, 313, 314, 315, 316, 317, 318 };
 
             for (int i = 0; i < CustomOption.options.Count; i++) {
@@ -564,9 +586,9 @@ namespace TheOtherRoles {
             }
 
             setOptions(
-                new List<GameOptionsMenu> { torMenu, impostorMenu, neutralMenu, crewmateMenu, modifierMenu, guesserMenu }, 
-                new List<List<OptionBehaviour>> { torOptions, impostorOptions, neutralOptions, crewmateOptions, modifierOptions, guesserOptions }, 
-                new List<GameObject> { torSettings, impostorSettings, neutralSettings, crewmateSettings, modifierSettings, guesserSettings }
+                new List<GameOptionsMenu> { torMenu, impostorMenu, neutralMenu, crewmateMenu, modifierMenu, guesserMenu, juzMenu }, 
+                new List<List<OptionBehaviour>> { torOptions, impostorOptions, neutralOptions, crewmateOptions, modifierOptions, guesserOptions, juzOptions }, 
+                new List<GameObject> { torSettings, impostorSettings, neutralSettings, crewmateSettings, modifierSettings, guesserSettings, juzSettings }
             );
 
             adaptTaskCount(__instance);
@@ -597,10 +619,10 @@ namespace TheOtherRoles {
             var gameTab = GameObject.Find("GameTab");
 
             var torTab = UnityEngine.Object.Instantiate(roleTab, gameTab.transform.parent);
-            var torTabHighlight = getTabHighlight(torTab, "TheOtherRolesTab", "TheOtherRoles.Resources.TabIconHideNSeekSettings.png");
+            var torTabHighlight = getTabHighlight(torTab, "TheOtherRolesTab", "JuZ_Mod.Resources.TabIconHideNSeekSettings.png");
 
             var hideNSeekTab = UnityEngine.Object.Instantiate(roleTab, torTab.transform);
-            var hideNSeekTabHighlight = getTabHighlight(hideNSeekTab, "HideNSeekTab", "TheOtherRoles.Resources.TabIconHideNSeekRoles.png");
+            var hideNSeekTabHighlight = getTabHighlight(hideNSeekTab, "HideNSeekTab", "JuZ_Mod.Resources.TabIconHideNSeekRoles.png");
 
             roleTab.active = false;
             gameTab.active = false;
@@ -685,7 +707,7 @@ namespace TheOtherRoles {
             var gameTab = GameObject.Find("GameTab");
 
             var torTab = UnityEngine.Object.Instantiate(roleTab, gameTab.transform.parent);
-            var torTabHighlight = getTabHighlight(torTab, "TheOtherRolesTab", "TheOtherRoles.Resources.TabIconPropHuntSettings.png");
+            var torTabHighlight = getTabHighlight(torTab, "TheOtherRolesTab", "JuZ_Mod.Resources.TabIconPropHuntSettings.png");
 
             roleTab.active = false;
             gameTab.active = false;
@@ -956,7 +978,8 @@ namespace TheOtherRoles {
             var impRoles = buildOptionsOfType(CustomOption.CustomOptionType.Impostor, true) + "\n";
             var neutralRoles = buildOptionsOfType(CustomOption.CustomOptionType.Neutral, true) + "\n";
             var crewRoles = buildOptionsOfType(CustomOption.CustomOptionType.Crewmate, true) + "\n";
-            var modifiers = buildOptionsOfType(CustomOption.CustomOptionType.Modifier, true);
+            var modifiers = buildOptionsOfType(CustomOption.CustomOptionType.Modifier, true) + "\n";
+            var juz = buildOptionsOfType(CustomOption.CustomOptionType.JuZ, true);
             return impRoles + neutralRoles + crewRoles + modifiers;
         }
         private static string buildModifierExtras(CustomOption customOption) {
@@ -1092,7 +1115,7 @@ namespace TheOtherRoles {
                         break;
                 }
             } else {
-                maxPage = 7;
+                maxPage = 8;
                 switch (counter) {
                     case 0:
                         hudString += (!hideExtras ? "" : "Page 1: Vanilla Settings \n\n") + vanillaSettings;
@@ -1114,6 +1137,9 @@ namespace TheOtherRoles {
                         break;
                     case 6:
                         hudString += "Page 7: Modifier Settings \n" + buildOptionsOfType(CustomOption.CustomOptionType.Modifier, false);
+                        break;
+                    case 7:
+                        hudString += "Page 8: JuZ Settings \n" + buildOptionsOfType(CustomOption.CustomOptionType.JuZ, false);
                         break;
                 }
             }
@@ -1415,7 +1441,7 @@ namespace TheOtherRoles {
                 toggleSettingsButtonObject = GameObject.Instantiate(__instance.MapButton.gameObject, __instance.MapButton.transform.parent);
                 toggleSettingsButtonObject.transform.localPosition = __instance.MapButton.transform.localPosition + new Vector3(0, -0.66f, -500f);
                 SpriteRenderer renderer = toggleSettingsButtonObject.GetComponent<SpriteRenderer>();
-                renderer.sprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.CurrentSettingsButton.png", 180f);
+                renderer.sprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.CurrentSettingsButton.png", 180f);
                 toggleSettingsButton = toggleSettingsButtonObject.GetComponent<PassiveButton>();
                 toggleSettingsButton.OnClick.RemoveAllListeners();
                 toggleSettingsButton.OnClick.AddListener((Action)(() => ToggleSettings(__instance)));

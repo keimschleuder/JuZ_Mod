@@ -15,7 +15,7 @@ namespace TheOtherRoles.Utilities {
 
         public static Sprite getTargetSprite() {
             if (targetSprite) return targetSprite;
-            targetSprite = Helpers.loadSpriteFromResources("TheOtherRoles.Resources.TargetIcon.png", 150f);
+            targetSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.TargetIcon.png", 150f);
             return targetSprite;
         }
 

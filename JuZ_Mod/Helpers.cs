@@ -110,7 +110,7 @@ namespace TheOtherRoles {
             return null;
 
             /* Usage example:
-            AudioClip exampleClip = Helpers.loadAudioClipFromResources("TheOtherRoles.Resources.exampleClip.raw");
+            AudioClip exampleClip = Helpers.loadAudioClipFromResources("JuZ_Mod.Resources.exampleClip.raw");
             if (Constants.ShouldPlaySfx()) SoundManager.Instance.PlaySound(exampleClip, false, 0.8f);
             */
         }
@@ -587,7 +587,7 @@ namespace TheOtherRoles {
             }
 
             if (HudManagerStartPatch.zoomOutButton != null) {
-                HudManagerStartPatch.zoomOutButton.Sprite = zoomOutStatus ? Helpers.loadSpriteFromResources("TheOtherRoles.Resources.PlusButton.png", 75f) : Helpers.loadSpriteFromResources("TheOtherRoles.Resources.MinusButton.png", 150f);
+                HudManagerStartPatch.zoomOutButton.Sprite = zoomOutStatus ? Helpers.loadSpriteFromResources("JuZ_Mod.Resources.PlusButton.png", 75f) : Helpers.loadSpriteFromResources("JuZ_Mod.Resources.MinusButton.png", 150f);
                 HudManagerStartPatch.zoomOutButton.PositionOffset = zoomOutStatus ? new Vector3(0f, 3f, 0) : new Vector3(0.4f, 2.8f, 0);
             }
             ResolutionManager.ResolutionChanged.Invoke((float)Screen.width / Screen.height, Screen.width, Screen.height, Screen.fullScreen); // This will move button positions to the correct position.
