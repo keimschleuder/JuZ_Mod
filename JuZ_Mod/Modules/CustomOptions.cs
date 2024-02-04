@@ -370,7 +370,7 @@ namespace TheOtherRoles {
             var modifierTabHighlight = getTabHighlight(modifierTab, "ModifierTab", "JuZ_Mod.Resources.TabIconModifier.png");
 
             var juzTab = UnityEngine.Object.Instantiate(roleTab, modifierTab.transform);
-            var juzTabHighlight = getTabHighlight(juzTab, "juzTab", "JuZ_Mod.Resources.TabIconModifier.png");
+            var juzTabHighlight = getTabHighlight(juzTab, "juzTab", "JuZ_Mod.Resources.TabIcon.png");
 
             // Position of Tab Icons
             gameTab.transform.position += Vector3.left * 3f;
@@ -953,6 +953,8 @@ namespace TheOtherRoles {
                     continue;
                 if (GameObject.Find("HideNSeekSettings") && option.type != CustomOption.CustomOptionType.HideNSeekRoles)
                     continue;
+                if (GameObject.Find("juzSettings") && option.type != CustomOption.CustomOptionType.JuZ)
+                    continue;
                 if (option?.optionBehaviour != null && option.optionBehaviour.gameObject != null) {
                     bool enabled = true;
                     var parent = option.parent;
@@ -979,8 +981,8 @@ namespace TheOtherRoles {
             var neutralRoles = buildOptionsOfType(CustomOption.CustomOptionType.Neutral, true) + "\n";
             var crewRoles = buildOptionsOfType(CustomOption.CustomOptionType.Crewmate, true) + "\n";
             var modifiers = buildOptionsOfType(CustomOption.CustomOptionType.Modifier, true) + "\n";
-            var juz = buildOptionsOfType(CustomOption.CustomOptionType.JuZ, true);
-            return impRoles + neutralRoles + crewRoles + modifiers;
+            var juz = buildOptionsOfType(CustomOption.CustomOptionType.JuZ, false);
+            return impRoles + neutralRoles + crewRoles + modifiers + juz;
         }
         private static string buildModifierExtras(CustomOption customOption) {
             // find options children with quantity
@@ -1089,7 +1091,7 @@ namespace TheOtherRoles {
         }
 
 
-        public static int maxPage = 7;
+        public static int maxPage = 8;
         public static string buildAllOptions(string vanillaSettings = "", bool hideExtras = false) {
             if (vanillaSettings == "")
                 vanillaSettings = GameOptionsManager.Instance.CurrentGameOptions.ToHudString(PlayerControl.AllPlayerControls.Count);
@@ -1247,7 +1249,7 @@ namespace TheOtherRoles {
         {
             int page = TheOtherRolesPlugin.optionsPage;
             if (Input.GetKeyDown(KeyCode.Tab)) {
-                TheOtherRolesPlugin.optionsPage = (TheOtherRolesPlugin.optionsPage + 1) % 7;
+                TheOtherRolesPlugin.optionsPage = (TheOtherRolesPlugin.optionsPage + 1) % 8;
             }
             if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) {
                 TheOtherRolesPlugin.optionsPage = 0;
@@ -1269,6 +1271,9 @@ namespace TheOtherRoles {
             }
             if (Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Keypad7)) {
                 TheOtherRolesPlugin.optionsPage = 6;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha8) || Input.GetKeyDown(KeyCode.Keypad8)) {
+                TheOtherRolesPlugin.optionsPage = 7;
             }
             if (Input.GetKeyDown(KeyCode.F1))
                 HudManagerUpdate.ToggleSettings(HudManager.Instance);
