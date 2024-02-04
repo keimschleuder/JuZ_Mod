@@ -173,7 +173,7 @@ namespace TheOtherRoles
         public static class Influencer
         {
             public static PlayerControl influencer;
-            public static Color color = new Color32();
+            public static Color color = new Color32(45, 221, 228, byte.MaxValue);
 
             public static void clearAndReload()
             {
