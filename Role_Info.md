@@ -10,15 +10,15 @@
 
 ### Eyub - Alman
 
-  ![](RoleImages/Eyub.jpg)
+  ![Eyub](RoleImages/Eyub.jpg)
 
 ### Donald Trump - Amerikaner
 
-  ![](RoleImages/Trump.jpg)
+  ![Donald Trump](RoleImages/Trump.jpg)
 
 ### Mann im Mond - Godfather
 
-  ![](RoleImages/MannImMond.gif)
+  ![Mann im Mond](RoleImages/MannImMond.gif)
 
 ### Nino - Mafioso
 
@@ -26,37 +26,49 @@
 
 ### Desinee - Morphling
 
-  ![](RoleImages/Desinee.jpg)
+  ![Desinee](RoleImages/Desinee.jpg)
 
 ### Günter Guillaume - Comouflager
 
-  ![](RoleImages/Guillaume.jpg)
+  ![Günter Guillaume](RoleImages/Guillaume.jpg)
 
 ### Dracula - Vampire
 
+  ![Dracula](RoleImages/Dracula.jpg)
+
 ### Radiergummi - Eraser
+
+  ![Radiergummi](RoleImages/Radiergummi.jpeg)
 
 ### MrBeast - Trickster
 
+  ![MrBeast](RoleImages/MrBeast.webp)
+
 ### Nils - Warlock
 
-  ![](RoleImages/Nils.jpg)
+  ![Nils](RoleImages/Nils.jpg)
 
 ### Bounty Hunter - Bounty Hunter <== Change
 
 ### Plankton - Evil Guesser
 
+  ![Plankton](RoleImages/Plankton.jpg)
+
 ### Bibi Blocksberg - Witch
+
+  ![Bibi Blocksberg](RoleImages/Hexe.jpeg)
 
 ### Ninja - Ninja <== Change
 
 ### Osama Bin Laden - Bomber
 
+  ![Osama Bin Laden](RoleImages/Laden.jpg)
+
 ## Neutrale Rollen
 
 ### Jens - Deutscher
 
-  ![](RoleImages/Jens.jpg)
+  ![Jens](RoleImages/Jens.jpg)
 
 ### Emo - Jester
 
@@ -64,53 +76,81 @@
 
 ### Michael Collins - Sidekick
 
+  ![Michael Collins](RoleImages/collins.jpg)
+
 ### Uranforscher - Arsonist
+
+  ![Uran](RoleImages/Uran.jpg)
 
 ### Hannibal Lecter - Vulture
 
+  ![Hannibal Lecter](RoleImages/Lecter.webp)
+
 ### Herr Anwalt - Lawyer
 
+  ![Herr Anwalt](RoleImages/Anwalt.webp)
+
 ### dasistjay - Pursuer
+
+  ![Das ist Jay](RoleImages/Jay.png)
 
 ### Prosecutor - Prosecutor <== Change
 
 ### Pole - Thief
 
+  ![Polnische Flagge](RoleImages/Polen.jpg)
+
 ## Crewmate Rollen
 
 ### Bundesregierung - Crewmate
 
-  ![](RoleImages/Regierung.png)
+  ![Bundesregierung](RoleImages/Regierung.png)
 
 ### Gina - Crewmatratze
 
 ### David - Influencer
 
-  ![](RoleImages/David.jpg)
+  ![David](RoleImages/David.jpg)
 
 ### Cheffi - Mayor
 
-  ![](RoleImages/Cheffi.jpg)
+  ![Cheffi](RoleImages/Cheffi.jpg)
 
 ### Enderman - Portalmaker
 
+  ![Enderman](RoleiMages/Enderman.webp)
+
 ### RealCivilEngineer - Engineer
 
-### Frank Drebin - Sheriff
+  ![RCE](RoleIMages/RCE.jpg)
 
-### Nancy Drebin - Deputy
+### Frank Drebin - Sheriff & Nancy Drebin - Deputy
+
+  ![Drebin](RoleiMages/Drebin.jpeg)
 
 ### tomatolix - Lighter
 
+  ![Tomatolix](RoleiMages/Tomatolix.jpg)
+
 ### Das letzte Fragezeichen - Detective
+
+  ![Justus Jonas](RoleImages/Fragezeichen.webp)
 
 ### Wabou - Time Master
 
+  ![Wabou](RoleiMages/Wabou.webp)
+
 ### Alexander Fleming - Medic
+
+  ![Alexander Fleming](RoleImages/Fleming.jpg)
 
 ### Kaya - Swapper
 
+  ![Kaya Yanar](RoleImages/Kaya.jpg)
+
 ### MrWissen2Go - Seer
+
+  ![MrWissen2Go](RoleImages/Wissen.png)
 
 ### Niklas - Hacker
 
@@ -120,10 +160,20 @@
 
 ### Lovebot - Spy
 
+  ![Lovebot](RoleImages/Lovebot.webp)
+
 ### Rezo der Zerstörer - Security Guard
+
+  ![Rezo](RoleImages/Rezo.webp)
 
 ### Zeo - Nice Guesser
 
+  ![Zeo](RoleImages/Zeo.jpg)
+
 ### Der dunkle Parabelritter - Medium
 
+  ![Parabelritter](RoleImages/Ritter.jpg)
+
 ### Gotham Cess - Trapper
+
+  ![Gotham Chess](RoleImages/chess.jpg)
