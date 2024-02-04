@@ -4,6 +4,31 @@
   
   Danke!
 
+  Impostor | Neutral | Crewmate
+  ---------|---------|---------
+  [Julian](#julian---impostor) | [Jens](#jens---deutscher) | [Bundesregierung](#bundesregierung---crewmate)
+  [Eyub](#eyub---alman) | [Emo](#emo---jester) | [Gina](#gina---crewmatratze)
+  [Donald Trump](#donald-trump---amerikaner) | [9/11, baby](#911-baby---jackal) | [David](#david---influencer)
+  [Mann im Mond](#mann-im-mond---godfather) | [Michael Collins](#michael-collins---sidekick) | [Cheffi](#cheffi---mayor)
+  [Nino](#nino---mafioso) | [Uranforscher](#uranforscher---arsonist) | [Enderman](#enderman---portalmaker)
+  [Nicolas](#nicolas---janitor) | [Hannibal Lecter](#hannibal-lecter---vulture) | [RealCivilEngineer](#realcivilengineer---engineer)
+  [Desinee](#desinee---morphling) | [Herr Anwalt](#herr-anwalt---lawyer) | [Frank Drebin](#frank-drebin---sheriff--nancy-drebin---deputy)
+  [Günter Guillaume](#günter-guillaume---comouflager) | [dasistjay](#dasistjay---pursuer) | [Nancy Drebin](#frank-drebin---sheriff--nancy-drebin---deputy)
+  [Dracula](#dracula---vampire) | [Prosecutor](#prosecutor---prosecutor--change) | [tomatolix](#tomatolix---lighter)
+  [Radiergummi](#radiergummi---eraser) | [Pole](#pole---thief) | [Das letzte Fragezeichen](#das-letzte-fragezeichen---detective)
+  [MrBeast](#mrbeast---trickster) |  | [Wabou](#wabou---time-master)
+  [Nils](#nils---warlock) |  | [Alexander Fleming](#alexander-fleming---medic)
+  [Bounty Hunter](#bounty-hunter---bounty-hunter--change) |  | [Kaya](#kaya---swapper)
+  [Plankton](#plankton---evil-guesser) |  | [MrWissen2Go](#mrwissen2go---seer)
+  [Bibi Blocksberg](#bibi-blocksberg---witch) |  | [Niklas](#niklas---hacker)
+  [Ninja](#ninja---ninja--change) |  | [Helikoptermutter](#helikoptermutter---tracker)
+  [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Marcel](#marcel---snitch)
+  | | | [Lovebot](#lovebot---spy)
+  | | | [Rezo der Zerstörer](#rezo-der-zerstörer---security-guard)
+  | | | [Zeo](#zeo---nice-guesser)
+  | | | [Der dunkle Parabelritter](#der-dunkle-parabelritter---medium)
+  | | | [Gotham Cess](#gotham-cess---trapper)
+
 ## Inpostor Rollen
 
 ### Julian - Impostor
