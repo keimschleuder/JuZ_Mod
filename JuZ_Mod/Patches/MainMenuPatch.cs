@@ -49,8 +49,7 @@ namespace TheOtherRoles.Modules {
             passiveButtonDiscord.OnClick = new Button.ButtonClickedEvent();
             passiveButtonDiscord.OnClick.AddListener((System.Action)(() => Application.OpenURL("https://github.com/keimschleuder/JuZ_Mod/blob/working/Role_Info.md")));
 
-
-            
+           
             // TOR credits button
             if (template == null) return;
             var creditsButton = Object.Instantiate(template, template.transform.parent);
