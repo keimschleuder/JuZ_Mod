@@ -36,6 +36,7 @@ namespace TheOtherRoles
         public static RoleInfo crewmatratze = new RoleInfo("Gina", Crewmatratze.color, "Stay with another one to not get voted out", "Stays with someone to not get voted out", RoleId.Crewmatratze);
         public static RoleInfo influencer = new RoleInfo("David", Influencer.color, "Make selfies with the dead", "Has to make a selfie before reporting", RoleId.Influencer);
         public static RoleInfo amerikaner = new RoleInfo("Donald Trump", Amerikaner.color, "You have a bigger Kill Radius", "Can Kill from farther away", RoleId.Amerikaner);
+        // public static RoleInfo amerikaner = new RoleInfo("Carsten Stahl", Amerikaner.color, "You have a bigger Kill Radius", "Can Kill from farther away", RoleId.Amerikaner);
 
         public static RoleInfo jester = new RoleInfo("Emo", Jester.color, "Get voted out", "Get voted out", RoleId.Jester, true);
         public static RoleInfo mayor = new RoleInfo("Cheffi", Mayor.color, "Your vote counts twice", "Your vote counts twice", RoleId.Mayor);                                                                    // Done
@@ -77,7 +78,7 @@ namespace TheOtherRoles
         public static RoleInfo prosecutor = new RoleInfo("Prosecutor", Lawyer.color, "Vote out your target", "Vote out your target", RoleId.Prosecutor, true);
         public static RoleInfo pursuer = new RoleInfo("dasistjay", Pursuer.color, "Blank the Impostors", "Blank the Impostors", RoleId.Pursuer);
         public static RoleInfo impostor = new RoleInfo("Julian", Palette.ImpostorRed, Helpers.cs(Palette.ImpostorRed, "Sabotage and kill everyone"), "Sabotage and kill everyone", RoleId.Impostor);            // Done, orginally the Impostor
-        public static RoleInfo crewmate = new RoleInfo("Crewmate", Color.white, "Find the Impostors", "Find the Impostors", RoleId.Crewmate);
+        public static RoleInfo crewmate = new RoleInfo("Bundesregierung", Color.white, "Du kannst nichts! (Finde die Imposter)", "Du kannst nichts! (Finde die Imposter)", RoleId.Crewmate);
         public static RoleInfo witch = new RoleInfo("Bibi Blocksberg", Witch.color, "Cast a spell upon your foes", "Cast a spell upon your foes", RoleId.Witch);
         public static RoleInfo ninja = new RoleInfo("Ninja", Ninja.color, "Surprise and assassinate your foes", "Surprise and assassinate your foes", RoleId.Ninja);
         public static RoleInfo thief = new RoleInfo("Pole", Thief.color, "Steal a killers role by killing them", "Steal a killers role", RoleId.Thief, true);
