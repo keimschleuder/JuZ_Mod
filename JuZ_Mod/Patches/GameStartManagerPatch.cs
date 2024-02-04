@@ -72,18 +72,18 @@ namespace TheOtherRoles.Patches {
                         continue;
                     else if (!playerVersions.ContainsKey(client.Id))  {
                         versionMismatch = true;
-                        message += $"<color=#FF0000FF>{client.Character.Data.PlayerName} has a different or no version of The Other Roles\n</color>";
+//                        message += $"<color=#FF0000FF>{client.Character.Data.PlayerName} has a different or no version of The Other Roles\n</color>";
                     } else {
                         PlayerVersion PV = playerVersions[client.Id];
                         int diff = TheOtherRolesPlugin.Version.CompareTo(PV.version);
                         if (diff > 0) {
-                            message += $"<color=#FF0000FF>{client.Character.Data.PlayerName} has an older version of The Other Roles (v{playerVersions[client.Id].version.ToString()})\n</color>";
+//                            message += $"<color=#FF0000FF>{client.Character.Data.PlayerName} has an older version of The Other Roles (v{playerVersions[client.Id].version.ToString()})\n</color>";
                             versionMismatch = true;
                         } else if (diff < 0) {
-                            message += $"<color=#FF0000FF>{client.Character.Data.PlayerName} has a newer version of The Other Roles (v{playerVersions[client.Id].version.ToString()})\n</color>";
+//                            message += $"<color=#FF0000FF>{client.Character.Data.PlayerName} has a newer version of The Other Roles (v{playerVersions[client.Id].version.ToString()})\n</color>";
                             versionMismatch = true;
                         } else if (!PV.GuidMatches()) { // version presumably matches, check if Guid matches
-                            message += $"<color=#FF0000FF>{client.Character.Data.PlayerName} has a modified version of TOR v{playerVersions[client.Id].version.ToString()} <size=30%>({PV.guid.ToString()})</size>\n</color>";
+//                            message += $"<color=#FF0000FF>{client.Character.Data.PlayerName} has a modified version of TOR v{playerVersions[client.Id].version.ToString()} <size=30%>({PV.guid.ToString()})</size>\n</color>";
                             versionMismatch = true;
                         }
                     }

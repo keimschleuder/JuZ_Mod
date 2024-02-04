@@ -42,7 +42,7 @@ namespace TheOtherRoles.Modules {
 
             var textDiscord = buttonDiscord.transform.GetComponentInChildren<TMPro.TMP_Text>();
             __instance.StartCoroutine(Effects.Lerp(0.5f, new System.Action<float>((p) => {
-                textDiscord.SetText("TOR Discord");
+                textDiscord.SetText("Role Info");
             })));
             PassiveButton passiveButtonDiscord = buttonDiscord.GetComponent<PassiveButton>();
             
