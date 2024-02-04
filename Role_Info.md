@@ -18,8 +18,6 @@
 
 ### Mann im Mond - Godfather
 
-  [](RoleImages/MannImMond.gif)
-
 ### Nino - Mafioso
 
 ### Nicolas - Janitor
