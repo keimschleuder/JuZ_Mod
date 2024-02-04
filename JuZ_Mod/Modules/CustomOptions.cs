@@ -26,11 +26,11 @@ namespace TheOtherRoles {
             Neutral,
             Crewmate,
             Modifier,
+            JuZ,
             Guesser,
             HideNSeekMain,
             HideNSeekRoles,
             PropHunt,
-            JuZ,
         }
 
         public static List<CustomOption> options = new List<CustomOption>();
@@ -425,7 +425,7 @@ namespace TheOtherRoles {
 
             for (int i = 0; i < CustomOption.options.Count; i++) {
                 CustomOption option = CustomOption.options[i];
-                if ((int)option.type > 4) continue;
+                if ((int)option.type > 5) continue;
                 if (option.optionBehaviour == null) {
                     StringOption stringOption = UnityEngine.Object.Instantiate(template, menus[(int)option.type]);
                     optionBehaviours[(int)option.type].Add(stringOption);
@@ -571,7 +571,7 @@ namespace TheOtherRoles {
             for (int i = 0; i < CustomOption.options.Count; i++) {
                 CustomOption option = CustomOption.options[i];
                 if (exludedIds.Contains(option.id)) continue;
-                if ((int)option.type > 5) continue;
+                if ((int)option.type > 6) continue;
                 if (option.optionBehaviour == null) {
                     StringOption stringOption = UnityEngine.Object.Instantiate(template, menus[(int)option.type]);
                     optionBehaviours[(int)option.type].Add(stringOption);

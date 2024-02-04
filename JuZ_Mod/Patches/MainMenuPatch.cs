@@ -76,7 +76,14 @@ namespace TheOtherRoles.Modules {
                 popUp = Object.Instantiate(popUpTemplate);
 
                 popUp.gameObject.SetActive(true);
-                string creditsString = @$"<align=""center""><b>Team:</b>
+                string creditsString = @$"<align=""center"">
+<b>JuZ Modifikation:</b>
+Niklas (Keimschleuder) [https://www.github.com/keimschleuder]GitHub[]
+
+Thanks to all the Testers
+
+<b>TOR</b>
+<b>Team:</b>
 Mallöris    K3ndo    Bavari    Gendelo
 
 <b>Former Team Members:</b>
@@ -94,9 +101,7 @@ Draco Cordraconis    Streamblox (formerly)
 Thanks to all our discord helpers!
 
 Thanks to miniduikboot & GD for hosting modded servers (and so much more)
-
-<b>JuZ Modifikation:</b>
-Niklas (Keimschleuder) [https://www.github.com/keimschleuder]GitHub[]
+Thanks to Nicolas for Mental Support
 
 ";
                 creditsString += $@"<size=60%> <b>Other Credits & Resources:</b>
