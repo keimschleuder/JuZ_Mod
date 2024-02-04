@@ -10,13 +10,15 @@
 
 ### Eyub - Alman
 
-  [](RoleImages/Eyub.jpg)
+  ![](RoleImages/Eyub.jpg)
 
 ### Donald Trump - Amerikaner
 
-  [](RoleImages/Trump.jpg)
+  ![](RoleImages/Trump.jpg)
 
 ### Mann im Mond - Godfather
+
+  ![](RoleImages/MannImMond.gif)
 
 ### Nino - Mafioso
 
@@ -24,11 +26,11 @@
 
 ### Desinee - Morphling
 
-  [](RoleImages/Desinee.jpg)
+  ![](RoleImages/Desinee.jpg)
 
 ### Günter Guillaume - Comouflager
 
-  [](RoleImages/Guillaume.jpg)
+  ![](RoleImages/Guillaume.jpg)
 
 ### Dracula - Vampire
 
@@ -38,7 +40,7 @@
 
 ### Nils - Warlock
 
-  [](RoleImages/Nils.jpg)
+  ![](RoleImages/Nils.jpg)
 
 ### Bounty Hunter - Bounty Hunter <== Change
 
@@ -54,7 +56,7 @@
 
 ### Jens - Deutscher
 
-  [](RoleImages/Jens.jpg)
+  ![](RoleImages/Jens.jpg)
 
 ### Emo - Jester
 
@@ -78,17 +80,17 @@
 
 ### Bundesregierung - Crewmate
 
-  [](RoleImages/Regierung.png)
+  ![](RoleImages/Regierung.png)
 
 ### Gina - Crewmatratze
 
 ### David - Influencer
 
-  [](RoleImages/David.jpg)
+  ![](RoleImages/David.jpg)
 
 ### Cheffi - Mayor
 
-  [](RoleImages/Cheffi.jpg)
+  ![](RoleImages/Cheffi.jpg)
 
 ### Enderman - Portalmaker
 
