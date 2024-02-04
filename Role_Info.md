@@ -1,10 +1,10 @@
-# Who are the Roles?
+# Wer sind die Rollen?
 
   Manche Namen sind Böse, aber alles nichts ist hier aus dem Kontext zu reißen. Ich hoffe, ihr versteht den Humor und werdet mich und die Anderen nicht für die Benennung der Rollen verurteilen.
   
   Danke!
 
-## Inpostor Roles
+## Inpostor Rollen
 
 ### Julian - Impostor
 
@@ -52,7 +52,7 @@
 
 ### Osama Bin Laden - Bomber
 
-## Neutral Roles
+## Neutrale Rollen
 
 ### Jens - Deutscher
 
@@ -76,7 +76,7 @@
 
 ### Pole - Thief
 
-## Crewmate Roles
+## Crewmate Rollen
 
 ### Bundesregierung - Crewmate
 
