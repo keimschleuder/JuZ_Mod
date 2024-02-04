@@ -99,6 +99,12 @@ namespace TheOtherRoles.Modules {
                     handled = true;
                 }
 
+                if (text.ToLower().StartsWith("/älter"))
+                {
+                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Weil Marcel älter ist.");
+                    handled = true;
+                }
+
 //                if (text.ToLower().StartsWith("/role")) {
 //                    RoleInfo localRole = RoleInfo.getRoleInfoForPlayer(CachedPlayer.LocalPlayer.PlayerControl, false).FirstOrDefault();
 //                    if (localRole != RoleInfo.impostor && localRole != RoleInfo.crewmate) {
