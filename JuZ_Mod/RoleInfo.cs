@@ -80,7 +80,7 @@ namespace TheOtherRoles
         public static RoleInfo crewmate = new RoleInfo("Crewmate", Color.white, "Find the Impostors", "Find the Impostors", RoleId.Crewmate);
         public static RoleInfo witch = new RoleInfo("Bibi Blocksberg", Witch.color, "Cast a spell upon your foes", "Cast a spell upon your foes", RoleId.Witch);
         public static RoleInfo ninja = new RoleInfo("Ninja", Ninja.color, "Surprise and assassinate your foes", "Surprise and assassinate your foes", RoleId.Ninja);
-        public static RoleInfo thief = new RoleInfo("Thief", Thief.color, "Steal a killers role by killing them", "Steal a killers role", RoleId.Thief, true);
+        public static RoleInfo thief = new RoleInfo("Pole", Thief.color, "Steal a killers role by killing them", "Steal a killers role", RoleId.Thief, true);
         public static RoleInfo bomber = new RoleInfo("Osama Bin Laden", Bomber.color, "Bomb all Crewmates", "Bomb all Crewmates", RoleId.Bomber);
 
         public static RoleInfo hunter = new RoleInfo("Hunter", Palette.ImpostorRed, Helpers.cs(Palette.ImpostorRed, "Seek and kill everyone"), "Seek and kill everyone", RoleId.Impostor);
