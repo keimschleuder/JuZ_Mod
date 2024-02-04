@@ -20,7 +20,7 @@
 
   ![Donald Trump](RoleImages/Trump.jpg)
 
-  Donald Trump war 4 Jahre Präsident der Vereinigten Staaten von Amerika und ist für dumme Aussagen und Aufforderungen bekannt. Er hat zum Beispiel seine Bürger dazu angeregt, Desinfektionsmittel zu trinken und er hat in den Vereinigten Staaten von Amerika Schusswaffen legalisiert.
+  Donald Trump war 4 Jahre lang Präsident der Vereinigten Staaten von Amerika und ist für dumme Aussagen und Aufforderungen bekannt. Er hat zum Beispiel seine Bürger dazu angeregt, Desinfektionsmittel zu trinken und er hat in den Vereinigten Staaten von Amerika Schusswaffen legalisiert.
 
 ### Mann im Mond - Godfather
 
@@ -68,7 +68,7 @@
 
   ![MrBeast](RoleImages/MrBeast.webp)
 
-  [MrBeast](https://www.youtube.com/@MrBeast) aka Jimmy Donaldson ist hauptsächlich bekannt, wegen seinem YouTube-Kanal mit über 235 Millionen Abonnenten
+  [MrBeast](https://www.youtube.com/@MrBeast) aka Jimmy Donaldson ist hauptsächlich bekannt wegen seinem YouTube-Kanal mit über 235 Millionen Abonnenten
 
 ### Nils - Warlock
 
@@ -77,6 +77,8 @@
   Nils spielt gerne D&D, deshalb ist er Warlock geworden
 
 ### Bounty Hunter - Bounty Hunter <== Change
+
+  Ich brauche einen besseren Namen
 
 ### Plankton - Evil Guesser
 
@@ -91,6 +93,8 @@
   Uns ist keine bessere Hexe eingefallen. Falls ihr Ideen habt, könnt ihr sie mir gerne schicken...
 
 ### Ninja - Ninja <== Change
+
+  Ich brauche einen besseren Namen
 
 ### Osama Bin Laden - Bomber
 
@@ -150,6 +154,8 @@
 
 ### Prosecutor - Prosecutor <== Change
 
+  Ich brauche einen besseren Namen
+
 ### Pole - Thief
 
   ![Polnische Flagge](RoleImages/Polen.jpg)
@@ -167,6 +173,7 @@
   Der [Bundesregierung](https://de.wikipedia.org/wiki/Bundesregierung_(Deutschland)#Zusammensetzung) der Bundesrepublik Deutschland unter Olaf Scholz wird Nachgesagt, nichts auf die Reihe zu bekommen, wie in den Flgenden Videos zu sehen:
 
   [Annalena Baerbock](https://www.youtube.com/watch?v=ynK6YLxa_Uw), Außenministerin
+  
   [Robert Habeck](https://www.youtube.com/watch?v=3F3XjET9aCM&t=27s), Wirtschaftsminister
 
 ### Gina - Crewmatratze
@@ -235,28 +242,52 @@
 
   ![MrWissen2Go](RoleImages/Wissen.png)
 
+  [MrWissen2Go](https://www.youtube.com/@MrWissen2go) ist deutscher Content-Creator, der für seine schlichen und informativen Videos zur politischen und sozialenLage informiert.
+
 ### Niklas - Hacker
+
+  Ich schreibe das gerade...
+
+  Schaut euch meine GitHub [README](https://github.com/keimschleuder) Datei an
 
 ### Helikoptermutter - Tracker
 
+  Hat 50 Tracking-Apps auf dem Handy ihres Kindes installiert und nimmt dem Kind jegliche Privatsphäre.
+
 ### Marcel - Snitch
+
+  Marcel, kann nicht Autofahren und hält sich für was besseres.
+
+  Falls du das liest: Das ist NICHT respektlos einem Jugendmoderator gegenüber!
 
 ### Lovebot - Spy
 
   ![Lovebot](RoleImages/Lovebot.webp)
 
+  Der [Lovebot](https://julien-bam.fandom.com/de/wiki/Lovebot) ist mit Saugkraft 3000 und Kinkbooster ausgestattet. Sie ist Eigentum von Captain Jerky. Vor ihrer Lovebot-Zeit war der Lovebot als Killer-Roboter tätig.
+
+  Der Lovebot soll der Ersatz von D.1-C.K. werden, nachdem dieser zerstört wurde. Der Lovebot erhält die Memory-Disk von D.1-C.K.. Da diese allerdings zerstört ist, wird ihr Empathie-Zentrum beschädigt. Aufgrund dessen wird der Lovebot gewalttätig und will die A.N.U.S. seven_ übernehmen. Sie deaktiviert die Schutzschilde und erlangt die Kontrolle über die Datenbanken. Der Lovebot leakt Captain Jerkys Browserverlauf, sowie einen geheimen Miami Rose Ordner auf seiner Datenbank. Miami Rose will den Lovebot aufhalten, wird aber sehr schnell von ihr aufgehalten. Sie bekommt von Curly eine magische Bohne zu geworfen und verwandelt sich in die Musikerin "Bella Poarch". Sie kann den Lovebot neu programmieren. Der Lovebot wird daraufhin in die Crew aufgenommen. Sie reaktiviert den Schutzschild und fügt einen extra Schutzschild für die privaten Daten von Captain Jerky hinzu.
+
 ### Rezo der Zerstörer - Security Guard
 
   ![Rezo](RoleImages/Rezo.webp)
+
+  [Rezo](https://www.youtube.com/@Renzo69) ist deutscher Content-Creator, der für seine [Zerstörung der CDU](https://www.youtube.com/watch?v=4Y1lZQsyuSQ) bekannt geworden ist.
 
 ### Zeo - Nice Guesser
 
   ![Zeo](RoleImages/Zeo.jpg)
 
+  [Zeo](https://www.youtube.com/@Zeo) ist deutscher Content-Creator.
+
 ### Der dunkle Parabelritter - Medium
 
   ![Parabelritter](RoleImages/Ritter.jpg)
 
+  [Der dunkle Parabelritter](https://www.youtube.com/@Parabelritter) ist deutscher Content-Creator, der über gesellschaftspolitische Themen informiert.
+
 ### Gotham Cess - Trapper
 
   ![Gotham Chess](RoleImages/chess.jpg)
+
+  [Gotham Chess](https://www.youtube.com/@GothamChess) ist amerikanischer Content-Creator, bekannt für seine Schach-Videos und Clips wie [diesen](https://www.youtube.com/watch?v=l6wL0lGtv-I).
