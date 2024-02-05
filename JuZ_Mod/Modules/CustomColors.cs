@@ -138,6 +138,9 @@ namespace TheOtherRoles.Modules {
                 shadow = new Color32(197, 98, 54, byte.MaxValue),
                 isLighterColor = false
             });
+
+            // Add colors here
+
             pickableColors += (uint)colors.Count; // Colors to show in Tab
             /** Hidden Colors **/     
                     

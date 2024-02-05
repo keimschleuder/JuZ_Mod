@@ -4,6 +4,8 @@
   
   Danke!
 
+  Wir baruchen noch [Bounty Hunter](#bounty-hunter---bounty-hunter--change) und [Prosecutor](#prosecutor---prosecutor--change).
+
   Impostor | Neutral | Crewmate
   ---------|---------|---------
   [Julian](#julian---impostor) | [Jens](#jens---deutscher) | [Bundesregierung](#bundesregierung---crewmate)
@@ -21,7 +23,7 @@
   [Bounty Hunter](#bounty-hunter---bounty-hunter--change) |  | [Kaya](#kaya---swapper)
   [Plankton](#plankton---evil-guesser) |  | [MrWissen2Go](#mrwissen2go---seer)
   [Bibi Blocksberg](#bibi-blocksberg---witch) |  | [Niklas](#niklas---hacker)
-  [Pablo Escobar](#pablo-escbar---ninja) |  | [Helikoptermutter](#helikoptermutter---tracker)
+  [Pablo Escobar](#pablo-escobar---ninja) |  | [Helikoptermutter](#helikoptermutter---tracker)
   [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Marcel](#marcel---snitch)
   | | | [Lovebot](#lovebot---spy)
   | | | [Rezo der Zerstörer](#rezo-der-zerstörer---security-guard)
@@ -61,7 +63,7 @@
 
   Spaß!
 
-  Pablo Escobar?
+  Al Capone?
 
 ### Nicolas - Janitor
 
@@ -120,6 +122,8 @@
   Uns ist keine bessere Hexe eingefallen. Falls ihr Ideen habt, könnt ihr sie mir gerne schicken...
 
 ### Pablo Escobar - Ninja
+
+  ![Pablo Escobar](RoleImages/escobar.jpg)
 
   [Pablo Escobar](https://de.m.wikipedia.org/wiki/Pablo_Escobar) war ein kolumbianischer Drogenbaron, Drogenschmuggler und Terrorist.
 
@@ -204,6 +208,8 @@
   [Robert Habeck](https://www.youtube.com/watch?v=3F3XjET9aCM&t=27s), Wirtschaftsminister
 
 ### Gina - Crewmatratze
+
+  Sie hatte 4 Partner in 3 Wochen...
 
 ### David - Influencer
 
