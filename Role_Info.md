@@ -21,7 +21,7 @@
   [Bounty Hunter](#bounty-hunter---bounty-hunter--change) |  | [Kaya](#kaya---swapper)
   [Plankton](#plankton---evil-guesser) |  | [MrWissen2Go](#mrwissen2go---seer)
   [Bibi Blocksberg](#bibi-blocksberg---witch) |  | [Niklas](#niklas---hacker)
-  [Ninja](#ninja---ninja--change) |  | [Helikoptermutter](#helikoptermutter---tracker)
+  [Pablo Escobar](#pablo-escbar---ninja) |  | [Helikoptermutter](#helikoptermutter---tracker)
   [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Marcel](#marcel---snitch)
   | | | [Lovebot](#lovebot---spy)
   | | | [Rezo der Zerstörer](#rezo-der-zerstörer---security-guard)
