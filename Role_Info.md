@@ -119,9 +119,9 @@
 
   Uns ist keine bessere Hexe eingefallen. Falls ihr Ideen habt, könnt ihr sie mir gerne schicken...
 
-### Ninja - Ninja <== Change
+### Pablo Escobar - Ninja
 
-  Ich brauche einen besseren Namen
+  [Pablo Escobar](https://de.m.wikipedia.org/wiki/Pablo_Escobar) war ein kolumbianischer Drogenbaron, Drogenschmuggler und Terrorist.
 
 ### Osama Bin Laden - Bomber
 
