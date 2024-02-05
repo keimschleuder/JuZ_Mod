@@ -197,7 +197,7 @@
 
   Der [Bundesregierung](https://de.wikipedia.org/wiki/Bundesregierung_(Deutschland)#Zusammensetzung) der Bundesrepublik Deutschland unter Olaf Scholz wird Nachgesagt, nichts auf die Reihe zu bekommen, wie in den Flgenden Videos zu sehen:
 
-  [Annalena Baerbock](https://www.youtube.com/watch?v=ynK6YLxa_Uw), Außenministerin
+  [Annalena Baerbock](https://m.youtube.com/shorts/Q6urrVltmMo), Außenministerin
   
   [Robert Habeck](https://www.youtube.com/watch?v=3F3XjET9aCM&t=27s), Wirtschaftsminister
 
