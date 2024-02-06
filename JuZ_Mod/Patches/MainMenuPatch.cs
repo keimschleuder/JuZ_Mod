@@ -80,6 +80,9 @@ namespace TheOtherRoles.Modules {
 <b>JuZ Modifikation:</b>
 Niklas (Keimschleuder) [https://www.github.com/keimschleuder]GitHub[]
 
+<b>JuZ Design</b>
+Jonas
+
 Thanks to all the Testers
 
 <b>TOR</b>

@@ -981,7 +981,7 @@ namespace TheOtherRoles {
             var neutralRoles = buildOptionsOfType(CustomOption.CustomOptionType.Neutral, true) + "\n";
             var crewRoles = buildOptionsOfType(CustomOption.CustomOptionType.Crewmate, true) + "\n";
             var modifiers = buildOptionsOfType(CustomOption.CustomOptionType.Modifier, true) + "\n";
-            var juz = buildOptionsOfType(CustomOption.CustomOptionType.JuZ, false);
+            var juz = buildOptionsOfType(CustomOption.CustomOptionType.JuZ, true);
             return impRoles + neutralRoles + crewRoles + modifiers + juz;
         }
         private static string buildModifierExtras(CustomOption customOption) {

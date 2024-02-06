@@ -23,7 +23,7 @@ Changed by <color=#FCCE03FF>Niklas</color></size>";
 
     public static string mainMenuCredentials = 
 $@"Modded by <color=#FCCE03FF>Eisbison</color>, <color=#FCCE03FF>Thunderstorm584</color>, <color=#FCCE03FF>EndOfFile</color>, <color=#FCCE03FF>Mallöris</color> & <color=#FCCE03FF>Gendelo</color>
-Design by <color=#FCCE03FF>Bavari</color>
+Design by <color=#FCCE03FF>Bavari</color> & <color=#FCCE03FF>Jonas</color>
 Changed by <color=#FCCE03FF>Niklas</color>";
 
         public static string contributorsCredentials =
