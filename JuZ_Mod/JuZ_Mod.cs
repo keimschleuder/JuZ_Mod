@@ -164,9 +164,16 @@ namespace TheOtherRoles
             public static PlayerControl crewmatratze;
             public static Color color = new Color32(255, 150, 200, byte.MaxValue);
 
+            public static PlayerControl sleepsWith;
+
             public static void clearAndReload()
             {
                 crewmatratze = null;
+                sleepsWith = null;
+            }
+            public static void clearBed()
+            {
+                sleepsWith = null;
             }
         }
 

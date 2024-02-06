@@ -306,7 +306,8 @@ namespace TheOtherRoles
             // Amerikaner Desinfektionsmittel
             amerikanerDesinfektionsmittelButton = new CustomButton(
                 () => {
-                    CachedPlayer.LocalPlayer.Data.IsDead = true;
+                    Amerikaner.amerikaner.Data.IsDead = true;
+                    Amerikaner.clearAndReload();
                 },
                 () => { return Amerikaner.amerikaner != null && CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
                 () => { return !CachedPlayer.LocalPlayer.Data.IsDead;  },

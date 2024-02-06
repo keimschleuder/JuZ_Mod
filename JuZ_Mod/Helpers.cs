@@ -192,9 +192,9 @@ namespace TheOtherRoles {
 
         internal static string getRoleString(RoleInfo roleInfo)
         {
-            if (roleInfo.name == "Jackal") 
+            if (roleInfo.name == "9/11, baby!") 
             {
-                var getSidekickText = Jackal.canCreateSidekick ? " and recruit a Sidekick" : "";
+                var getSidekickText = Jackal.canCreateSidekick ? " and recruit Michael Collins" : "";
                 return cs(roleInfo.color, $"{roleInfo.name}: Kill everyone{getSidekickText}");  
             }
 
