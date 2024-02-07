@@ -1,6 +1,6 @@
 # JuZ Mod for AmungUs
 
-# Look at Branch [working]()
+# Look at Branch [working](https://github.com/keimschleuder/JuZ_Mod/tree/working)
 
 ## Look at the [Padlet](https://padlet.com/niklaskeim/among-us-mod-v52klgwhl1whsjl1) for more info
 
