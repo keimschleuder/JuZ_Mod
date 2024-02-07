@@ -14,7 +14,7 @@
 
   This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.</p>
   <p align="center">
-    To other mod devs: for usage of our code, please read and respect the <a href="#license">license</a></p>
+    To other mod devs: for usage of our code, please read and respect the <a href="##license">license</a></p>
   
 ## License
   This Mod is licensed under the
