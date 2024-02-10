@@ -4,12 +4,12 @@
   
   Danke!
 
-  Wir baruchen noch [Bounty Hunter](#bounty-hunter---bounty-hunter--change) und [Prosecutor](#prosecutor---prosecutor--change).
+  Wir baruchen noch [Prosecutor](#prosecutor---prosecutor--change).
 
   Impostor | Neutral | Crewmate
   ---------|---------|---------
   [Julian](#julian---impostor) | [Jens](#jens---deutscher) | [Bundesregierung](#bundesregierung---crewmate)
-  [Eyub](#eyub---alman) | [Emo](#emo---jester) | [Gina](#gina---crewmatratze)
+  [Eyub](#eyub---alman) | [Emo](#emo---jester) | [Charlie](#charlie---crewmatratze)
   [Donald Trump](#donald-trump---amerikaner) | [9/11, baby](#911-baby---jackal) | [David](#david---influencer)
   [Mann im Mond](#mann-im-mond---godfather) | [Michael Collins](#michael-collins---sidekick) | [Cheffi](#cheffi---mayor)
   [Nino](#nino---mafioso) | [Uranforscher](#uranforscher---arsonist) | [Enderman](#enderman---portalmaker)
@@ -20,7 +20,7 @@
   [Radiergummi](#radiergummi---eraser) | [Pole](#pole---thief) | [Das letzte Fragezeichen](#das-letzte-fragezeichen---detective)
   [MrBeast](#mrbeast---trickster) |  | [Wabou](#wabou---time-master)
   [Nils](#nils---warlock) |  | [Alexander Fleming](#alexander-fleming---medic)
-  [Bounty Hunter](#bounty-hunter---bounty-hunter--change) |  | [Kaya](#kaya---swapper)
+  [Boba Fett](#boba-fett---bounty-hunter) |  | [Kaya](#kaya---swapper)
   [Plankton](#plankton---evil-guesser) |  | [MrWissen2Go](#mrwissen2go---seer)
   [Bibi Blocksberg](#bibi-blocksberg---witch) |  | [Niklas](#niklas---hacker)
   [Pablo Escobar](#pablo-escobar---ninja) |  | [Helikoptermutter](#helikoptermutter---tracker)
@@ -105,9 +105,11 @@
 
   Nils spielt gerne D&D, deshalb ist er Warlock geworden
 
-### Bounty Hunter - Bounty Hunter <== Change
+### Boba Fett - Bounty Hunter
 
-  Ich brauche einen besseren Namen
+  ![Boba Fett](RoleImages/bobaFett.webp)
+
+  Kopfgeldjäger aus [Star Wars](https://de.wikipedia.org/wiki/Star_Wars)
 
 ### Plankton - Evil Guesser
 
@@ -207,9 +209,11 @@
   
   [Robert Habeck](https://www.youtube.com/watch?v=3F3XjET9aCM&t=27s), Wirtschaftsminister
 
-### Gina - Crewmatratze
+### Charlie - Crewmatratze
 
-  Sie hatte 4 Partner in 3 Wochen...
+  ![Charlie](RoleImages/charlie.jpg)
+
+  Aus [Fack ju Göthe](https://de.wikipedia.org/wiki/Fack_ju_G%C3%B6hte)
 
 ### David - Influencer
 

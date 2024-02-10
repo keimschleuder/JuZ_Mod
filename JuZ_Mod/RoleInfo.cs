@@ -33,7 +33,7 @@ namespace TheOtherRoles
 
         public static RoleInfo alman = new RoleInfo("Eyub", Alman.color, "Place Towels in front of tasks to prevent them from being used", "Locks Tasks with his Towels", RoleId.Alman);                       // Button functionality missing
         public static RoleInfo deutscher = new RoleInfo("Jens", Deutscher.color, "Pace Towels to block other players", "Blocks paths with his towels", RoleId.Deutscher, true);
-//        public static RoleInfo crewmatratze = new RoleInfo("Gina", Crewmatratze.color, "Stay with another one to not get voted out", "Stays with someone to not get voted out", RoleId.Crewmatratze);     Remove, change Name or ask
+        public static RoleInfo crewmatratze = new RoleInfo("Charlie", Crewmatratze.color, "Stay with another one to not get voted out", "Stays with someone to not get voted out", RoleId.Crewmatratze);
         public static RoleInfo influencer = new RoleInfo("David", Influencer.color, "Make selfies with the dead", "Has to make a selfie before reporting", RoleId.Influencer);
         public static RoleInfo amerikaner = new RoleInfo("Donald Trump", Amerikaner.color, "You have a bigger Kill Radius", "Can Kill from farther away", RoleId.Amerikaner);
         // public static RoleInfo amerikaner = new RoleInfo("Carsten Stahl", Amerikaner.color, "You have a bigger Kill Radius", "Can Kill from farther away", RoleId.Amerikaner);
@@ -55,7 +55,7 @@ namespace TheOtherRoles
         public static RoleInfo trickster = new RoleInfo("MrBeast", Trickster.color, "Use your jack-in-the-boxes to surprise others", "Surprise your enemies", RoleId.Trickster);
         public static RoleInfo cleaner = new RoleInfo("Rainer", Cleaner.color, "Kill everyone and leave no traces", "Clean up dead bodies", RoleId.Cleaner);                                                   // Done
         public static RoleInfo warlock = new RoleInfo("Nils", Warlock.color, "Curse other players and kill everyone", "Curse and kill everyone", RoleId.Warlock);
-        public static RoleInfo bountyHunter = new RoleInfo("Bounty Hunter", BountyHunter.color, "Hunt your bounty down", "Hunt your bounty down", RoleId.BountyHunter);
+        public static RoleInfo bountyHunter = new RoleInfo("Boba Fett", BountyHunter.color, "Hunt your bounty down", "Hunt your bounty down", RoleId.BountyHunter);
         public static RoleInfo detective = new RoleInfo("Das letzte Fragezeichen", Detective.color, "Find the <color=#FF1919FF>Impostors</color> by examining footprints", "Examine footprints", RoleId.Detective);
         public static RoleInfo timeMaster = new RoleInfo("Wabou", TimeMaster.color, "Save yourself with your time shield", "Use your time shield", RoleId.TimeMaster);
         public static RoleInfo medic = new RoleInfo("Alexander Fleming", Medic.color, "Protect someone with your shield", "Protect other players", RoleId.Medic);
