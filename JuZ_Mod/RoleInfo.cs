@@ -339,6 +339,9 @@ namespace TheOtherRoles
                                 case DeadPlayer.CustomDeathReason.Arson:
                                     deathReasonString = $" - burnt by {Helpers.cs(killerColor, deadPlayer.killerIfExisting.Data.PlayerName)}";
                                     break;
+                                case DeadPlayer.CustomDeathReason.Desinfect:
+                                    deathReasonString = $" - was dumb enough to drink desinfect";
+                                    break;
                             }
                             roleName = roleName + deathReasonString;
                         }

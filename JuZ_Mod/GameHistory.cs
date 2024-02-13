@@ -17,6 +17,7 @@ namespace TheOtherRoles {
             WitchExile,
             Bomb,
             Arson,
+            Desinfect,
         };
 
         public PlayerControl player;

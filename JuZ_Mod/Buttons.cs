@@ -306,6 +306,7 @@ namespace TheOtherRoles
             // Amerikaner Desinfektionsmittel
             amerikanerDesinfektionsmittelButton = new CustomButton(
                 () => {
+                    GameHistory.overrideDeathReasonAndKiller(Amerikaner.amerikaner, DeadPlayer.CustomDeathReason.Desinfect, Amerikaner.amerikaner);
                     Amerikaner.amerikaner.Data.IsDead = true;
                     Amerikaner.clearAndReload();
                 },
