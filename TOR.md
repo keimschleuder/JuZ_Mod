@@ -1216,6 +1216,24 @@ Crewmates can defuse a bomb depending on the settings.
 | Bomb Is Active After |
 -----------------------
 
+## Amerikaner
+### **Team: Impostors**
+
+  Der Amerikaner ist ein Impostor, der wegen seiner Pistole einen größeren Kill-Radius hat. Er kann entweder als amerikaner Spawnen, oder die Pistole vom Waffenhändler erhalten.
+
+**NOTE:**
+
+- Der Amerikaner kann sich selbst umbringen, indem er Desinfektionsmittel trinkt
+
+### Game Options
+
+| Name | Description |
+|----------|:-------------:|
+| Amerikaner Natural Spawn Rate | Spawn Rate, ohne den Einfluss eines Waffenhändlers |
+| Amerikaner Range Buff | - |
+
+-----------------------
+
 ## Guesser
 ### **Team: Crewmates or Impostors**
 The Guesser can be a Crewmate or an Impostor (depending on the settings).\
@@ -1241,6 +1259,26 @@ Depending on the options, the Guesser can't guess the shielded player and depend
 | Evil Guesser Can Guess The Spy | -
 | Both Guesser Spawn Rate | -
 | Guesser Can't Guess Snitch When Tasks Completed | -
+
+-----------------------
+
+## Deutsche Rollen
+### **Team: Crewmates or Impostors**
+### Alman & Deutscher
+
+  Die deutschen Rollen können Handtücher platzieren.
+
+**NOTE:**
+
+- jede Rolle kann ein Handtuch legen. Wenn ein neues Handtuch gelegt wird, während das HAndtuch an einer anderen Position liegt, wird diese überschrieben.s
+
+### Game Options
+
+| Name | Description |
+|----------|:-------------:|
+| Spawn Rate | For both Roles the same |
+| Towel Cooldown | - |
+| Towel Cooldown | - |
 
 -----------------------
 
@@ -1849,6 +1887,40 @@ The traps have a maximum of charges (uses) and a configurable amount of tasks ar
 | Show Anonymous Map | -
 | Trap Information Type | "Name", "Role", "Good/Evil Role"
 | Trap Duration | -
+-----------------------
+
+## Influencer
+### **Team: Crewmates**
+
+  Der influencer ist ein Crewmate, der ein Selfie mit jeder Leiche machen muss, bevor er sie reporten kann.
+
+**NOTE**
+- Andere Spieler werden keine animation sehen.
+
+### Game Options
+
+| Name | Description
+|----------|:-------------:|
+| Influencer Spawn Rate | - |
+| Selfie Duration | - |
+
+-----------------------
+
+## Crewmatratze
+### **Team: Crewmates**
+
+  Die Crewmatratze kann Zeit mit einem anderen Spieler verbringen. Stirbt dieser andere Spieler in dieser Zeit, stirbt die Crewmatratze mit, wird versucht, die Crewmatratze zu töten stirbt diese nicht, da sie ja wo anders ist.
+
+**Questions**
+
+  [Wann darf die Crewmatratze Zeit mit anderen verbringen?](https://github.com/keimschleuder/JuZ_Mod/discussions/5)
+
+### Game Options
+
+| Name | Description
+|----------|:-------------:|
+| Crewmatratze Spawn Rate | - |
+
 -----------------------
 
 # Modifier

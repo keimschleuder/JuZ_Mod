@@ -425,7 +425,7 @@ namespace TheOtherRoles {
             influencerSpawnRate = CustomOption.Create(1000101, Types.JuZ, cs(Influencer.color, "Influencer Spawn Rate"), rates, null, true);
             influencerSelfieDuration = CustomOption.Create(1000102, Types.JuZ, cs(Influencer.color, "Time the selfie takes"), 5f, 0f, 10f, 1f, influencerSpawnRate);
 
-            amerikanerNaturalSpawnRate = CustomOption.Create(1000301, Types.JuZ, cs(Amerikaner.color, "Amerikaner natürliche Spawn Rate\nOhne einfluss eines Waffenhändlers"), rates, null, true);
+            amerikanerNaturalSpawnRate = CustomOption.Create(1000301, Types.JuZ, cs(Amerikaner.color, "Amerikaner natï¿½rliche Spawn Rate\nOhne einfluss eines Waffenhï¿½ndlers"), rates, null, true);
             amerikanerRangeBuff = CustomOption.Create(1000302, Types.JuZ, cs(Amerikaner.color, "Amerikaner Range Buff"), 5f, 1f, 10f, 1f, null, true);
 
             crewmatratzeSpawnRate = CustomOption.Create(1000201, Types.JuZ, cs(Crewmatratze.color, "Crewmatratze Spawn Rate"), rates, null, true);

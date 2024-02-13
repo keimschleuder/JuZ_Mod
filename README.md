@@ -6,7 +6,7 @@
 
   available here, please download there
 
-## original [README](README_TOR.md) still available
+## original [README](TOR.md) still available
 
 ## Role Name Explanation [here](Role_Info.md)
 
