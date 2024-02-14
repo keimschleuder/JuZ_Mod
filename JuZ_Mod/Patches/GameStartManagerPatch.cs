@@ -111,15 +111,7 @@ namespace TheOtherRoles.Patches {
                 // Client update with handshake infos
                 else {
                     if (!playerVersions.ContainsKey(AmongUsClient.Instance.HostId) || TheOtherRolesPlugin.Version.CompareTo(playerVersions[AmongUsClient.Instance.HostId].version) != 0) {
-                        kickingTimer += Time.deltaTime;
-                        if (kickingTimer > 10) {
-                            kickingTimer = 0;
-			                AmongUsClient.Instance.ExitGame(DisconnectReasons.ExitGame);
-                            SceneChanger.ChangeScene("MainMenu");
-                        }
-
-                        __instance.GameStartText.text = $"<color=#FF0000FF>The host has no or a different version of The Other Roles\nYou will be kicked in {Math.Round(10 - kickingTimer)}s</color>";
-                        __instance.GameStartText.transform.localPosition = __instance.StartButton.transform.localPosition + Vector3.up * 2;
+                        __instance.GameStartText.text = $"<color=#FF0000FF>The host has no or a different version of the Mod. May not work</color>";
                     } else if (versionMismatch) {
                         __instance.GameStartText.text = $"<color=#FF0000FF>Players With Different Versions:\n</color>" + message;
                         __instance.GameStartText.transform.localPosition = __instance.StartButton.transform.localPosition + Vector3.up * 2;
