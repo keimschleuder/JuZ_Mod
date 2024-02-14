@@ -311,10 +311,10 @@ namespace TheOtherRoles
                     Amerikaner.clearAndReload();
                 },
                 () => { return Amerikaner.amerikaner != null && CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
-                () => { return !CachedPlayer.LocalPlayer.Data.IsDead;  },
+                () => { return !CachedPlayer.LocalPlayer.Data.IsDead; },
                 () => { },
                 Amerikaner.getDesinfektionsmittelSprite(),
-                CustomButton.ButtonPositions.upperRowFarLeft,
+                CustomButton.ButtonPositions.upperRowLeft,
                 __instance,
                 KeyCode.F
             );

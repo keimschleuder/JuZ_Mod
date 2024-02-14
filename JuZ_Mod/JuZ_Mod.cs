@@ -104,7 +104,7 @@ namespace TheOtherRoles
             public static Sprite getDesinfektionsmittelSprite()
             {
                 if (trinkDesinfektionsmittel) return trinkDesinfektionsmittel;
-                trinkDesinfektionsmittel = Helpers.loadSpriteFromResources("JuZ_Mod.Ressources.Desinfect.png", 115f);
+                trinkDesinfektionsmittel = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Desinfect.png", 115f);
                 return trinkDesinfektionsmittel;
             }
         }
