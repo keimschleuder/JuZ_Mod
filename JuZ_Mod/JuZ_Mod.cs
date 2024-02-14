@@ -182,6 +182,8 @@ namespace TheOtherRoles
             public static PlayerControl influencer;
             public static Color color = new Color32(45, 221, 228, byte.MaxValue);
 
+            public static float selfieDuration = CustomOptionHolder.influencerSelfieDuration.getFloat();
+
             public static void clearAndReload()
             {
                 influencer = null;
