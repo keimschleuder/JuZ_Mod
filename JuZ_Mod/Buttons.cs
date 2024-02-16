@@ -310,7 +310,7 @@ namespace TheOtherRoles
                     Amerikaner.amerikaner.Data.IsDead = true;
                     Amerikaner.clearAndReload();
                 },
-                () => { return Amerikaner.amerikaner != null && CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
+                () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
                 () => { return !CachedPlayer.LocalPlayer.Data.IsDead; },
                 () => { },
                 Amerikaner.getDesinfektionsmittelSprite(),
