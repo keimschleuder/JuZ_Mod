@@ -89,7 +89,7 @@ namespace TheOtherRoles.Modules {
 
                 if (text.ToLower().StartsWith("/respekt"))
                 {
-                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem Jugendmoderator gegenüber!");
+                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem ehemaligen Jugendmoderator gegenüber!");
                     handled = true;
                 }
 
