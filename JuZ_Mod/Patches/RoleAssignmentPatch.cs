@@ -136,6 +136,7 @@ namespace TheOtherRoles.Patches {
                 neutralSettings.Add((byte)RoleId.Lawyer, CustomOptionHolder.lawyerSpawnRate.getSelection());
 
             neutralSettings.Add((byte)RoleId.Deutscher, CustomOptionHolder.almanSpawnRate.getSelection());
+            neutralSettings.Add((byte)RoleId.Kommunist, CustomOptionHolder.kommunistSpawnRate.getSelection());
 
             crewSettings.Add((byte)RoleId.Mayor, CustomOptionHolder.mayorSpawnRate.getSelection());
             crewSettings.Add((byte)RoleId.Portalmaker, CustomOptionHolder.portalmakerSpawnRate.getSelection());

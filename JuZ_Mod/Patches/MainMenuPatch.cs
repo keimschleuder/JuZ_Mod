@@ -79,6 +79,7 @@ namespace TheOtherRoles.Modules {
                 string creditsString = @$"<align=""center"">
 <b>JuZ Modifikation:</b>
 Niklas (Keimschleuder) [https://www.github.com/keimschleuder]GitHub[]
+Nicolas (TheOnCraft / Nici12327) [https://github.com/Nici12327]GitHub[]
 
 <b>JuZ Design</b>
 Jonas

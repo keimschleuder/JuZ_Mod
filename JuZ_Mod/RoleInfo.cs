@@ -31,6 +31,7 @@ namespace TheOtherRoles
             this.isModifier = isModifier;
         }
 
+        public static RoleInfo kommunist = new RoleInfo("Josef Stalin", Kommunist.color, "Take away other people's Powers", "Can make everybody lose their abilities", RoleId.Kommunist, true);
         public static RoleInfo alman = new RoleInfo("Eyub", Alman.color, "Place Towels in front of tasks to prevent them from being used", "Locks Tasks with his Towels", RoleId.Alman);                       // Button functionality missing
         public static RoleInfo deutscher = new RoleInfo("Jens", Deutscher.color, "Pace Towels to block other players", "Blocks paths with his towels", RoleId.Deutscher, true);
         public static RoleInfo crewmatratze = new RoleInfo("Charlie", Crewmatratze.color, "Stay with another one to not get voted out", "Stays with someone to not get voted out", RoleId.Crewmatratze);
@@ -167,6 +168,7 @@ namespace TheOtherRoles
             crewmatratze,
             influencer,
             amerikaner,
+            kommunist,
         };
 
         public static List<RoleInfo> getRoleInfoForPlayer(PlayerControl p, bool showModifier = true) {
@@ -200,6 +202,7 @@ namespace TheOtherRoles
             if (p == Influencer.influencer) infos.Add(influencer);
             if (p == Crewmatratze.crewmatratze) infos.Add(crewmatratze);
             if (p == Amerikaner.amerikaner) infos.Add(amerikaner);
+            if (p == Kommunist.kommunist) infos.Add(kommunist);
 
             if (p == Jester.jester) infos.Add(jester);
             if (p == Mayor.mayor) infos.Add(mayor);

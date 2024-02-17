@@ -21,6 +21,10 @@ namespace TheOtherRoles {
 
         public static CustomOption crewmatratzeSpawnRate;
 
+        public static CustomOption kommunistSpawnRate;
+        public static CustomOption kommunistCooldown;
+        public static CustomOption kommunistDuration;
+
         public static CustomOption presetSelection;
         public static CustomOption activateRoles;
         public static CustomOption crewmateRolesCountMin;
@@ -433,6 +437,10 @@ namespace TheOtherRoles {
             almanSpawnRate = CustomOption.Create(1000003, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Alman & Deutscher Spawn Rate"), rates, null, true);
             almanTowelCooldown = CustomOption.Create(1000000, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Set Cooldown for Alman & Deutscher to place Towels"), 20f, 0f, 30f, 1f, almanSpawnRate);
             almanTowelDuration = CustomOption.Create(1000001, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Set Towel Duration for Alman & Deutscher"), 30f, 5f, 60f, 1f, almanSpawnRate);
+
+            kommunistSpawnRate = CustomOption.Create(1000401, Types.JuZ, cs(Kommunist.color, "Kommunist Spawn Rate"), rates, null, true);
+            kommunistCooldown = CustomOption.Create(1000402, Types.JuZ, cs(Kommunist.color, "Kommunist Cooldown"), 60f, 30f, 90f, 5f, kommunistSpawnRate);
+            kommunistDuration = CustomOption.Create(1000403, Types.JuZ, cs(Kommunist.color, "Kommunist Duration"), 10f, 5f, 15f, 1f, kommunistSpawnRate);
 
             // Role Options
             presetSelection = CustomOption.Create(0, Types.General, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Preset"), presets, null, true);

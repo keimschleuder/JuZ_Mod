@@ -86,6 +86,32 @@ namespace TheOtherRoles
 
         }
 
+        public static class Kommunist
+        {
+            public static PlayerControl kommunist;
+            public static Color color = new Color32(226, 184, 36, byte.MaxValue);
+            public static Sprite sowjet;
+
+            public static float cooldown;
+            public static float duration;
+
+            public static bool isActive = false;
+
+            public static void clearAndReload()
+            {
+                kommunist = null;
+                cooldown = CustomOptionHolder.kommunistCooldown.getFloat();
+                duration = CustomOptionHolder.kommunistDuration.getFloat();
+            }
+
+            public static Sprite getSowjetSprite()
+            {
+                if (sowjet) return sowjet;
+                sowjet = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Sowjet.png", 115f);
+                return sowjet;
+            }
+        }
+
         public static class Amerikaner
         {
             public static PlayerControl amerikaner;

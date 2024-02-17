@@ -83,6 +83,7 @@ namespace TheOtherRoles
         Crewmatratze,
         Influencer,
         Amerikaner,
+        Kommunist,
     }
 
     enum CustomRPC
@@ -392,6 +393,9 @@ namespace TheOtherRoles
                             break;
                         case RoleId.Amerikaner:
                             Amerikaner.amerikaner = player;
+                            break;
+                        case RoleId.Kommunist:
+                            Kommunist.kommunist = player;
                             break;
                     }
                     
@@ -719,6 +723,11 @@ namespace TheOtherRoles
 
             // My Roles
             if (player == Alman.alman) Alman.clearAndReload();
+            if (player == Deutscher.deutscher) Deutscher.clearAndReload();
+            if (player == Crewmatratze.crewmatratze) Crewmatratze.clearAndReload();
+            if (player == Influencer.influencer) Influencer.clearAndReload();
+            if (player == Amerikaner.amerikaner) Amerikaner.clearAndReload();
+            if (player == Kommunist.kommunist) Kommunist.clearAndReload();
 
             // Crewmate roles
             if (player == Mayor.mayor) Mayor.clearAndReload();
