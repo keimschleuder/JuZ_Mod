@@ -89,7 +89,11 @@ namespace TheOtherRoles.Modules {
 
                 if (text.ToLower().StartsWith("/respekt"))
                 {
-                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem ehemaligen <color=#E67E22>Jugendmoderator</color> gegenüber!");
+                    if (Snitch.snitch != null) {
+                        __instance.AddChat(Snitch.snitch, "Das ist respektlos einem ehemaligen <color=#E67E22>Jugendmoderator</color> gegenüber!");
+                    } else {
+                        __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem ehemaligen <color=#E67E22>Jugendmoderator</color> gegenüber!");
+                    }
                     handled = true;
                 }
 
