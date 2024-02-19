@@ -109,7 +109,7 @@ namespace TheOtherRoles.Modules {
                     handled = true;
                 }
 
-                if (text.ToLower().StartsWith("Desiree"))
+                if (text.ToLower().StartsWith("desiree"))
                 {
                     text = text.Remove(0, 6);
                     text = "Desire" + text;
