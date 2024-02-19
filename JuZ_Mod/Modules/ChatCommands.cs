@@ -112,9 +112,9 @@ namespace TheOtherRoles.Modules {
                 if (text.ToLower().Contains("desiree "))
                 {
                     int index = text.ToLower().IndexOf("desiree ");
-                    text = text.Remove(index, index + 8);
+                    text = text.Remove(index + 4, index + 5);
 
-                    text = text.Insert(index, "Desine");
+                    text = text.Insert(index + 4, "n");
 
                     __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, text);
                     handled = true;
