@@ -109,12 +109,20 @@ namespace TheOtherRoles.Modules {
                     handled = true;
                 }
 
-                if (text.ToLower().StartsWith("desiree"))
+                if (text.ToLower().Contains("desiree "))
                 {
-                    text = text.Remove(0, 6);
-                    text = "Desire" + text;
+                    int index = text.ToLower().IndexOf("desiree ");
+                    text = text.Remove(index, index + 8);
+
+                    text = text.Insert(index, "Desine");
 
                     __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, text);
+                    handled = true;
+                }
+
+                if (text.ToLower().Contains("trump"))
+                {
+                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Make America Great Again!");
                     handled = true;
                 }
 

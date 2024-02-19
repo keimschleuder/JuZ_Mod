@@ -151,7 +151,7 @@ namespace TheOtherRoles.Modules {
         }
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-            if (_busy || scene.name != "MainMenu") return;
+/*            if (_busy || scene.name != "MainMenu") return;
             var latestRelease = Releases.FirstOrDefault();
             if (latestRelease == null || latestRelease.Version <= TheOtherRolesPlugin.Version)
                 return;
@@ -180,7 +180,7 @@ namespace TheOtherRoles.Modules {
             // var announcement = $"<size=150%>A new THE OTHER ROLES update to {latestRelease.Tag} is available</size>\n{latestRelease.Description}";
             // var mgr = FindObjectOfType<MainMenuManager>(true);
             // if (showPopUp) mgr.StartCoroutine(CoShowAnnouncement(announcement, shortTitle: "TOR Update", date : latestRelease.PublishedAt)) ;
-            showPopUp = false;
+           showPopUp = false; */
 
         }
 
