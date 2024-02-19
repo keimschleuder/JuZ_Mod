@@ -20,6 +20,7 @@ namespace TheOtherRoles
 
         private static CustomButton almanTowelButton;
         private static CustomButton amerikanerDesinfektionsmittelButton;
+        private static CustomButton amerikanerFoundOil;
         private static CustomButton kommunistEqualityButton;
 
         private static CustomButton engineerRepairButton;
@@ -103,6 +104,7 @@ namespace TheOtherRoles
             }
             almanTowelButton.MaxTimer = Alman.towelCooldown;
             amerikanerDesinfektionsmittelButton.MaxTimer = 0f;
+            amerikanerFoundOil.MaxTimer = 0f;
             kommunistEqualityButton.MaxTimer = Kommunist.cooldown;
 
             engineerRepairButton.MaxTimer = 0f;
@@ -326,6 +328,18 @@ namespace TheOtherRoles
                 }
             );
 
+            // Amerikaner Found Oil
+            amerikanerFoundOil = new CustomButton(
+                () => { SoundEffectsManager.play("America"); }, 
+                () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
+                () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
+                () => { },
+                Amerikaner.getOilSprite(),
+                CustomButton.ButtonPositions.upperRowFarLeft,
+                __instance,
+                KeyCode.O
+            );
+
             // Amerikaner Desinfektionsmittel
             amerikanerDesinfektionsmittelButton = new CustomButton(
                 () => {
@@ -333,8 +347,8 @@ namespace TheOtherRoles
                     Amerikaner.amerikaner.Data.IsDead = true;
                     Amerikaner.clearAndReload();
                 },
+                () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
                 () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
-                () => { return !CachedPlayer.LocalPlayer.Data.IsDead; },
                 () => { },
                 Amerikaner.getDesinfektionsmittelSprite(),
                 CustomButton.ButtonPositions.upperRowLeft,

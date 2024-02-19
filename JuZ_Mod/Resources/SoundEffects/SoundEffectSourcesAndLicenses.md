@@ -1,4 +1,4 @@
-#### Custom Button Sound credits, sources and licenses:
+# Custom Button Sound credits, sources and licenses
 
 | Name | Comment | Url | License |
 |---|---|---|---|
@@ -9,7 +9,7 @@
 |timeMasterShield  | | [Mechanical alarm clock is ticking (SLAVA).wav](https://freesound.org/people/ST303/sounds/171043/ ) | CC0 1.0|
 |medicShield | | [energy](https://freesound.org/people/Leszek_Szary/sounds/146727/ )| CC0 1.0 |
 |shifterShift | recorded by gendelo3 | - | GPLv3 |
-|morphlingSample |Combined and cut |[Scanner 03.wav](https://freesound.org/people/Glitchedtones/sounds/375942/ ) + [ scanner epson V600](https://freesound.org/people/gecop/sounds/521298/ )| CC0 1.0 both|
+|morphlingSample |Combined and cut |[Scanner 03.wav](https://freesound.org/people/Glitchedtones/sounds/375942/ ) + [scanner epson V600](https://freesound.org/people/gecop/sounds/521298/ )| CC0 1.0 both|
 |morphlingMorph | | [Whoosh](https://freesound.org/people/qubodup/sounds/60013/) | CC0 1.0 |
 |camouflagerCamo | same as morphlingMorph | - | - |
 |hackerHack | recorded by gendelo3 | - | GPLv3 |
@@ -32,7 +32,7 @@
 |securityGuardSealVent | same as securityGuardPlaceCam |-|-|
 |securityGuardCam | (already has a sound) |-|-|
 |arsonistDouse | | [Water Pouring Out of Bucket](https://freesound.org/people/Breviceps/sounds/508178/ )| CC0 1.0 |
-|vultureEat | combined | [Vulture](https://freesound.org/people/AntumDeluge/sounds/188041/ ) + [Eating Crisps](https://freesound.org/people/Sethroph/sounds/334209/ )| CC0 1.0 both| |
+|vultureEat | combined | [Vulture](https://freesound.org/people/AntumDeluge/sounds/188041/ ) + [Eating Crisps](https://freesound.org/people/Sethroph/sounds/334209/ )| CC0 1.0 both|
 |mediumAsk| |[ghost_sounds.wav](https://freesound.org/people/fishwithfeathers/sounds/177768/ )| CC0 1.0|
 |pursuerBlank | | [gun load.wav](https://freesound.org/people/Shelby_Wideman/sounds/178141/ )| CC0 1.0 |
 |witchSpell | | [witch's laugh](https://freesound.org/people/Yogoorth/sounds/589144/ ) | CC0 1.0 |
@@ -40,3 +40,4 @@
 |portalUse | | [Static electronic noise - Xbox 360](https://freesound.org/people/scenes/sounds/431654/ ) + [Teleport Slurp](https://freesound.org/people/GameAudio/sounds/220163/  ) | CC0 1.0 both |
 |fail | | [twitch: SmeggyTV: Mein Auge](https://www.twitch.tv/smeggytv/clip/KindQuaintEndiveDancingBanana-Zoc-bXUnqNCoqQD5 )  | License granted for use in TOR |
 |trapperTrap | | [Karabiner_Click_04.wav](https://freesound.org/people/Rudmer_Rotteveel/sounds/457454/ ) &  [Steel Spring Bear Trap](https://freesound.org/people/fractionalist/sounds/644245/ )| CC0 1.0 both |
+|America || [America National Anthem with Gunshots and Eagle Screatches](https://www.youtube.com/watch?v=W8ntQswP2cE) | - |

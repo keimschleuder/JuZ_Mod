@@ -121,6 +121,7 @@ namespace TheOtherRoles
             public static float rangeBuff;
 
             public static Sprite trinkDesinfektionsmittel;
+            public static Sprite foundOil;
 
             public static void clearAndReload()
             {
@@ -128,6 +129,13 @@ namespace TheOtherRoles
                 rangeBuff = CustomOptionHolder.amerikanerRangeBuff.getFloat();
             }
             
+            public static Sprite getOilSprite()
+            {
+                if (foundOil) return foundOil;
+                foundOil = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Oil.png", 115f);
+                return foundOil;
+            }
+
             public static Sprite getDesinfektionsmittelSprite()
             {
                 if (trinkDesinfektionsmittel) return trinkDesinfektionsmittel;
