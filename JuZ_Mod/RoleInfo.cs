@@ -368,7 +368,7 @@ namespace TheOtherRoles
         public static string GetRoleDescription(RoleInfo roleInfo) {
             while (ReadmePage == "") {
             }
-                
+            
             int index = ReadmePage.IndexOf($"## {roleInfo.name}");
             int endindex = ReadmePage.Substring(index).IndexOf("### Game Options");
             return ReadmePage.Substring(index, endindex);

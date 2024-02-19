@@ -24,6 +24,7 @@ namespace TheOtherRoles
             Crewmatratze.clearAndReload();
             Influencer.clearAndReload();
             Amerikaner.clearAndReload();
+            Kommunist.clearAndReload();
             
             Jester.clearAndReload();
             Mayor.clearAndReload();
