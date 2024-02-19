@@ -109,6 +109,15 @@ namespace TheOtherRoles.Modules {
                     handled = true;
                 }
 
+                if (text.ToLower().StartsWith("Desiree"))
+                {
+                    text = text.Remove(0, 6);
+                    text = "Desire" + text;
+
+                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, text);
+                    handled = true;
+                }
+
 /*                if (text.ToLower().StartsWith("/role")) {
                     RoleInfo localRole = RoleInfo.getRoleInfoForPlayer(CachedPlayer.LocalPlayer.PlayerControl, false).FirstOrDefault();
                     if (localRole != RoleInfo.impostor && localRole != RoleInfo.crewmate) {
