@@ -109,10 +109,10 @@ namespace TheOtherRoles.Modules {
                     handled = true;
                 }
 
-                if (text.ToLower().Contains("desiree "))
+                if (text.ToLower().Contains("desiree"))
                 {
-                    int index = text.ToLower().IndexOf("desiree ");
-                    text = text.Remove(index + 4, index + 5);
+                    int index = text.ToLower().IndexOf("desiree");
+                    text = text.Remove(index + 4, 1);
 
                     text = text.Insert(index + 4, "n");
 
