@@ -99,7 +99,7 @@ namespace TheOtherRoles.Modules {
 
                 if (text.ToLower().StartsWith("/adhs"))
                 {
-                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Nicolas im Anmarsch!");
+                    __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Nicolas");
                     handled = true;
                 }
 
