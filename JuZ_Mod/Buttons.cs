@@ -104,7 +104,7 @@ namespace TheOtherRoles
             }
             almanTowelButton.MaxTimer = Alman.towelCooldown;
             amerikanerDesinfektionsmittelButton.MaxTimer = 0f;
-            amerikanerFoundOil.MaxTimer = 0f;
+            amerikanerFoundOil.MaxTimer = 20f;
             kommunistEqualityButton.MaxTimer = Kommunist.cooldown;
 
             engineerRepairButton.MaxTimer = 0f;
@@ -330,7 +330,7 @@ namespace TheOtherRoles
 
             // Amerikaner Found Oil
             amerikanerFoundOil = new CustomButton(
-                () => { SoundEffectsManager.play("America"); }, 
+                () => { SoundEffectsManager.play("America"); amerikanerFoundOil.Timer = amerikanerFoundOil.MaxTimer; }, 
                 () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
                 () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
                 () => { },
