@@ -64,7 +64,7 @@ namespace TheOtherRoles
         public static RoleInfo seer = new RoleInfo("MrWissen2go", Seer.color, "You will see players die", "You will see players die", RoleId.Seer);
         public static RoleInfo hacker = new RoleInfo("Niklas", Hacker.color, "Hack systems to find the <color=#FF1919FF>Impostors</color>", "Hack to find the Impostors", RoleId.Hacker);
         public static RoleInfo tracker = new RoleInfo("Helikoptermutter", Tracker.color, "Track the <color=#FF1919FF>Impostors</color> down", "Track the Impostors down", RoleId.Tracker);
-        public static RoleInfo snitch = new RoleInfo("placeholder", Snitch.color, "Das ist Respektlos einem ehemaligen <color=#E67E22>Jugendmoderator</color> gegenüber", "Finish your tasks", RoleId.Snitch);
+        public static RoleInfo snitch = new RoleInfo("placeholder", Snitch.color, "Finish your Tasks", "Finish your tasks", RoleId.Snitch);
         public static RoleInfo jackal = new RoleInfo("9/11, baby!", Jackal.color, "Kill all Crewmates and <color=#FF1919FF>Impostors</color> to win", "Kill everyone", RoleId.Jackal, true);
         public static RoleInfo sidekick = new RoleInfo("Michael Collins", Sidekick.color, "Help your Jackal to kill everyone", "Help your Jackal to kill everyone", RoleId.Sidekick, true);
         public static RoleInfo spy = new RoleInfo("Lovebot", Spy.color, "Confuse the <color=#FF1919FF>Impostors</color>", "Confuse the Impostors", RoleId.Spy);
@@ -76,7 +76,7 @@ namespace TheOtherRoles
         public static RoleInfo medium = new RoleInfo("Der dunkle Parabelritter", Medium.color, "Question the souls of the dead to gain information", "Question the souls", RoleId.Medium);
         public static RoleInfo trapper = new RoleInfo("Gotham Chess", Trapper.color, "Place traps to find the Impostors", "Place traps", RoleId.Trapper);
         public static RoleInfo lawyer = new RoleInfo("Herr Anwalt", Lawyer.color, "Defend your client", "Defend your client", RoleId.Lawyer, true);
-        public static RoleInfo prosecutor = new RoleInfo("Prosecutor", Lawyer.color, "Vote out your target", "Vote out your target", RoleId.Prosecutor, true);
+        public static RoleInfo prosecutor = new RoleInfo("Marcel", Lawyer.color, "Das ist Respektlos einem ehemaligen <color=#E67E22>Jugendmoderator</color> gegenüber", "Vote out your target", RoleId.Prosecutor, true);
         public static RoleInfo pursuer = new RoleInfo("dasistjay", Pursuer.color, "Blank the Impostors", "Blank the Impostors", RoleId.Pursuer);
         public static RoleInfo impostor = new RoleInfo("Julian", Palette.ImpostorRed, Helpers.cs(Palette.ImpostorRed, "Sabotage and kill everyone"), "Sabotage and kill everyone", RoleId.Impostor);            // Done, orginally the Impostor
         public static RoleInfo crewmate = new RoleInfo("Bundesregierung", Color.white, "Du kannst nichts! (Finde die Imposter)", "Du kannst nichts! (Finde die Imposter)", RoleId.Crewmate);

@@ -138,7 +138,7 @@ ugackMiner53 - Idea and core code for the Prop Hunt game mode</size>";
                     ShortTitle = "TOR Credits",
                     SubTitle = "",
                     PinState = false,
-                    Date = "Your Mom",
+                    Date = "01.07.2021",
                     Text = creditsString,
                 };
                 __instance.StartCoroutine(Effects.Lerp(0.1f, new Action<float>((p) => {
