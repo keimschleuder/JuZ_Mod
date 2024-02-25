@@ -4,7 +4,7 @@
   
   Danke!
 
-  Wir baruchen noch [Prosecutor](#prosecutor---prosecutor--change).
+  Wir baruchen noch [Snitch](#prosecutor---prosecutor--change).
 
   Impostor | Neutral | Crewmate
   ---------|---------|---------
@@ -16,7 +16,7 @@
   [Nicolas](#nicolas---janitor) | [Hannibal Lecter](#hannibal-lecter---vulture) | [RealCivilEngineer](#realcivilengineer---engineer)
   [Desinee](#desinee---morphling) | [Herr Anwalt](#herr-anwalt---lawyer) | [Frank Drebin](#frank-drebin---sheriff--nancy-drebin---deputy)
   [Günter Guillaume](#günter-guillaume---comouflager) | [dasistjay](#dasistjay---pursuer) | [Nancy Drebin](#frank-drebin---sheriff--nancy-drebin---deputy)
-  [Dracula](#dracula---vampire) | [Prosecutor](#prosecutor---prosecutor--change) | [tomatolix](#tomatolix---lighter)
+  [Dracula](#dracula---vampire) | [Marcel](#marcel---prosecutor) | [tomatolix](#tomatolix---lighter)
   [Radiergummi](#radiergummi---eraser) | [Pole](#pole---thief) | [Das letzte Fragezeichen](#das-letzte-fragezeichen---detective)
   [MrBeast](#mrbeast---trickster) |  | [Wabou](#wabou---time-master)
   [Nils](#nils---warlock) |  | [Alexander Fleming](#alexander-fleming---medic)
@@ -24,7 +24,7 @@
   [Plankton](#plankton---evil-guesser) |  | [MrWissen2Go](#mrwissen2go---seer)
   [Bibi Blocksberg](#bibi-blocksberg---witch) |  | [Niklas](#niklas---hacker)
   [Pablo Escobar](#pablo-escobar---ninja) |  | [Helikoptermutter](#helikoptermutter---tracker)
-  [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Marcel](#marcel---snitch)
+  [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Snitch](#snitch---snitch)
   | | | [Lovebot](#lovebot---spy)
   | | | [Rezo der Zerstörer](#rezo-der-zerstörer---security-guard)
   | | | [Zeo](#zeo---nice-guesser)
@@ -167,6 +167,12 @@
 
   ![Uran](RoleImages/Uran.jpg)
 
+### Josef Stalin - [Kommunist]()
+
+  ![Josef Stalin](RoleImages/Stalin.jpg)
+
+  [Josef Stalin](https://de.wikipedia.org/wiki/Josef_Stalin) war Diktator der Sowjetunion von 1927 bis 1953.
+
 ### Hannibal Lecter - [Vulture](TOR.md/#vulture)
 
   ![Hannibal Lecter](RoleImages/Lecter.webp)
@@ -185,9 +191,9 @@
 
   [Das ist Jay](https://www.youtube.com/@dasistjay) ist deutscher Content-Creator und bekannt für [Warum, Wieso, Weshalb, Technik](https://www.youtube.com/shorts/tfeDKqLndTY), wie in diesem Video zu sehen.
 
-### Prosecutor - [Prosecutor](TOR.md/#prosecutor) <== Change
+### Marcel - [Prosecutor](TOR.md/#prosecutor)
 
-  Ich brauche einen besseren Namen
+  Er wollte nicht Snitch werden
 
 ### Pole - [Thief](TOR.md/#thief)
 
@@ -291,11 +297,10 @@
 
   Hat 50 Tracking-Apps auf dem Handy ihres Kindes installiert und nimmt dem Kind jegliche Privatsphäre.
 
-### Marcel - [Snitch](TOR.md/#snitch)
+### Snitch - [Snitch](TOR.md/#snitch)
 
-  Marcel, kann nicht Autofahren und hält sich für was besseres.
-
-  Falls du das liest: Das ist NICHT respektlos einem Jugendmoderator gegenüber!
+  Neuer Name.
+  Rico?
 
 ### Lovebot - [Spy](TOR.md/#spy)
 
