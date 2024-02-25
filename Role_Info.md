@@ -18,7 +18,7 @@
   [Günter Guillaume](#günter-guillaume---comouflager) | [dasistjay](#dasistjay---pursuer) | [Nancy Drebin](#frank-drebin---sheriff--nancy-drebin---deputy)
   [Dracula](#dracula---vampire) | [Marcel](#marcel---prosecutor) | [tomatolix](#tomatolix---lighter)
   [Radiergummi](#radiergummi---eraser) | [Pole](#pole---thief) | [Das letzte Fragezeichen](#das-letzte-fragezeichen---detective)
-  [MrBeast](#mrbeast---trickster) | [Josef Stalin](#kommunist) | [Wabou](#wabou---time-master)
+  [MrBeast](#mrbeast---trickster) | [Josef Stalin](#josef-stalin---kommunist) | [Wabou](#wabou---time-master)
   [Nils](#nils---warlock) |  | [Alexander Fleming](#alexander-fleming---medic)
   [Boba Fett](#boba-fett---bounty-hunter) |  | [Kaya](#kaya---swapper)
   [Plankton](#plankton---evil-guesser) |  | [MrWissen2Go](#mrwissen2go---seer)
