@@ -87,6 +87,27 @@ namespace TheOtherRoles
 
         }
 
+        public static class Waffenhaendler
+        {
+            public static PlayerControl waffenhaendler;
+            public static Color color = new Color32(128, 64, 64, byte.MaxValue);
+            public static Sprite giveWeapon;
+
+            public static bool hasWeapon;
+
+            public static void clearAndReload()
+            {
+                waffenhaendler = null;
+                hasWeapon = true;
+            }
+            public static Sprite getWeaponSprite()
+            {
+                if (giveWeapon) return giveWeapon;
+                giveWeapon = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Waffe.png", 115f);
+                return giveWeapon;
+            }
+        }
+
         public static class Kommunist
         {
             public static PlayerControl kommunist;
@@ -96,13 +117,14 @@ namespace TheOtherRoles
             public static float cooldown;
             public static float duration;
 
-            public static bool isActive = false;
+            public static bool isActive;
 
             public static void clearAndReload()
             {
                 kommunist = null;
                 cooldown = CustomOptionHolder.kommunistCooldown.getFloat();
                 duration = CustomOptionHolder.kommunistDuration.getFloat();
+                isActive = false;
             }
 
             public static Sprite getSowjetSprite()

@@ -84,6 +84,7 @@ namespace TheOtherRoles
         Influencer,
         Amerikaner,
         Kommunist,
+        Waffenhaendler,
     }
 
     enum CustomRPC

@@ -37,6 +37,7 @@ namespace TheOtherRoles
         public static RoleInfo crewmatratze = new RoleInfo("Charlie", Crewmatratze.color, "Stay with another one to not get voted out", "Stays with someone to not get voted out", RoleId.Crewmatratze);
         public static RoleInfo influencer = new RoleInfo("David", Influencer.color, "Make selfies with the dead", "Has to make a selfie before reporting", RoleId.Influencer);
         public static RoleInfo amerikaner = new RoleInfo("Donald Trump", Amerikaner.color, "You have a bigger Kill Radius", "Can Kill from farther away", RoleId.Amerikaner);
+        public static RoleInfo waffenhaendler = new RoleInfo("placeholder", Waffenhaendler.color, "Give away your weapon to a crewmate", "Can make a Sheriff or American", RoleId.Waffenhaendler);
 
         public static RoleInfo jester = new RoleInfo("Emo", Jester.color, "Get voted out", "Get voted out", RoleId.Jester, true);
         public static RoleInfo mayor = new RoleInfo("Cheffi", Mayor.color, "Your vote counts twice", "Your vote counts twice", RoleId.Mayor);                                                                    // Done
@@ -168,6 +169,7 @@ namespace TheOtherRoles
             influencer,
             amerikaner,
             kommunist,
+            waffenhaendler,
         };
 
         public static List<RoleInfo> getRoleInfoForPlayer(PlayerControl p, bool showModifier = true) {
@@ -202,6 +204,7 @@ namespace TheOtherRoles
             if (p == Crewmatratze.crewmatratze) infos.Add(crewmatratze);
             if (p == Amerikaner.amerikaner) infos.Add(amerikaner);
             if (p == Kommunist.kommunist) infos.Add(kommunist);
+            if (p == Waffenhaendler.waffenhaendler) infos.Add(waffenhaendler);
 
             if (p == Jester.jester) infos.Add(jester);
             if (p == Mayor.mayor) infos.Add(mayor);
