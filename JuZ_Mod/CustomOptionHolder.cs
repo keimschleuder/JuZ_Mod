@@ -840,6 +840,8 @@ namespace TheOtherRoles {
             blockedRolePairings.Add((byte)RoleId.Vulture, new [] { (byte)RoleId.Cleaner});
             blockedRolePairings.Add((byte)RoleId.Cleaner, new [] { (byte)RoleId.Vulture});
             
+            // TODO: Block Sheriff & Amerikaner, wenn Waffenhändler
+            // TODO: Block Waffenhändler, wenn Sherif oder Amerikaner
         }
     }
 }
