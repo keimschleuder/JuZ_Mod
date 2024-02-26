@@ -360,7 +360,12 @@ namespace TheOtherRoles
                     Amerikaner.amerikaner.Exiled();
                     GameHistory.overrideDeathReasonAndKiller(Amerikaner.amerikaner, DeadPlayer.CustomDeathReason.Desinfect, Amerikaner.amerikaner);
                     Amerikaner.amerikaner.Data.IsDead = true;
-                    Amerikaner.clearAndReload();
+                    if (Amerikaner.amerikaner == Lawyer.target && AmongUsClient.Instance.AmHost && Lawyer.lawyer != null)
+                    {
+                        MessageWriter writer = AmongUsClient.Instance.StartRpcImmediately(CachedPlayer.LocalPlayer.PlayerControl.NetId, (byte)CustomRPC.LawyerPromotesToPursuer, Hazel.SendOption.Reliable, -1);
+                        AmongUsClient.Instance.FinishRpcImmediately(writer);
+                        RPCProcedure.lawyerPromotesToPursuer();
+                    }
                 },
                 () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead; },
                 () => { return Amerikaner.amerikaner != null && Amerikaner.amerikaner == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },

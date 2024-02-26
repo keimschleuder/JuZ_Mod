@@ -90,7 +90,7 @@ namespace TheOtherRoles.Modules {
                 if (text.ToLower().StartsWith("/respekt"))
                 {
                     if (Lawyer.isProsecutor && Lawyer.lawyer != null) {
-                        __instance.AddChat(Lawyer.lawyer, "Das ist respektlos einem ehemaligen <color=#E67E22>Jugendmoderator</color> gegenüber!");
+                        __instance.AddChat(Lawyer.lawyer, "Das ist respektlos einem <color=#E67E22>Jugendmoderator</color> gegenüber!");
                     } else {
                         __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem ehemaligen <color=#E67E22>Jugendmoderator</color> gegenüber!");
                     }
