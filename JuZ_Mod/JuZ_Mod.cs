@@ -10,6 +10,7 @@ using TheOtherRoles.CustomGameModes;
 using static TheOtherRoles.TheOtherRoles;
 using AmongUs.Data;
 using Hazel;
+using Steamworks;
 
 namespace TheOtherRoles
 {
@@ -106,6 +107,107 @@ namespace TheOtherRoles
                 if (giveWeapon) return giveWeapon;
                 giveWeapon = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Waffe.png", 115f);
                 return giveWeapon;
+            }
+            public static void reloadOld(PlayerControl target)
+            {
+                // Crewmates
+                if (Mayor.mayor != null && Mayor.mayor == target){
+                    Mayor.clearAndReload();
+                } else if (Portalmaker.portalmaker != null && Portalmaker.portalmaker == target){
+                    Portalmaker.clearAndReload();
+                } else if (Engineer.engineer != null && Engineer.engineer == target){
+                    Engineer.clearAndReload();
+                } else if (Sheriff.sheriff != null && Sheriff.sheriff == target){
+                    Sheriff.clearAndReload();
+                } else if (Deputy.deputy != null && Deputy.deputy == target){
+                    Deputy.clearAndReload();
+                } else if (Lighter.lighter != null && Lighter.lighter == target){
+                    Lighter.clearAndReload();
+                } else if (Detective.detective != null && Detective.detective == target){
+                    Detective.clearAndReload();
+                } else if (TimeMaster.timeMaster != null && TimeMaster.timeMaster == target){
+                    TimeMaster.clearAndReload();
+                } else if (Medic.medic != null && Medic.medic == target){
+                    Medic.clearAndReload();
+                } else if (Swapper.swapper != null && Swapper.swapper == target){
+                    Swapper.clearAndReload();
+                } else if (Seer.seer != null && Seer.seer == target){
+                    Seer.clearAndReload();
+                } else if (Hacker.hacker != null && Hacker.hacker == target){
+                    Hacker.clearAndReload();
+                } else if (Tracker.tracker != null && Tracker.tracker == target){
+                    Tracker.clearAndReload();
+                } else if (Snitch.snitch != null && Snitch.snitch == target){
+                    Snitch.clearAndReload();
+                } else if (Spy.spy != null && Spy.spy == target){
+                    Spy.clearAndReload();
+                } else if (SecurityGuard.securityGuard != null && SecurityGuard.securityGuard == target){
+                    SecurityGuard.clearAndReload();
+                } else if (Guesser.niceGuesser != null && Guesser.niceGuesser == target){
+                    Guesser.clearAndReload();
+                } else if (Medium.medium != null && Medium.medium == target){
+                    Medium.clearAndReload();
+                } else if (Pursuer.pursuer != null && Pursuer.pursuer == target){
+                    Pursuer.clearAndReload();
+                } else if (Trapper.trapper != null && Trapper.trapper == target){
+                    Trapper.clearAndReload();
+                } else if (Crewmatratze.crewmatratze != null && Crewmatratze.crewmatratze == target){
+                    Crewmatratze.clearAndReload();
+                } else if (Influencer.influencer != null && Influencer.influencer == target){
+                    Influencer.clearAndReload();
+                } /* Neutral */ else if (Jester.jester != null && Jester.jester == target) {
+                    Jester.clearAndReload();
+                } else if (Arsonist.arsonist != null && Arsonist.arsonist == target) {
+                    Arsonist.clearAndReload();
+                } else if (Jackal.jackal != null && Jackal.jackal == target) {
+                    Jackal.clearAndReload();
+                } else if (Sidekick.sidekick != null && Sidekick.sidekick == target) {
+                    Sidekick.clearAndReload();
+                } else if (Vulture.vulture != null && Vulture.vulture == target) {
+                    Vulture.clearAndReload();
+                } else if (Lawyer.lawyer != null && Lawyer.lawyer == target) {
+                    Lawyer.clearAndReload();
+                } else if (Thief.thief != null && Thief.thief == target) {
+                    Thief.clearAndReload();
+                } else if (Kommunist.kommunist != null && Kommunist.kommunist == target) {
+                    Kommunist.clearAndReload();
+                } else if (Deutscher.deutscher != null && Deutscher.deutscher == target) {
+                    Deutscher.clearAndReload();  
+                } /* Impostors */ else if (Godfather.godfather != null && Godfather.godfather == target) {
+                    Godfather.clearAndReload();
+                } else if (Mafioso.mafioso != null && Mafioso.mafioso == target) {
+                    Mafioso.clearAndReload();
+                } else if (Janitor.janitor != null && Janitor.janitor == target) {
+                    Janitor.clearAndReload();
+                } else if (Morphling.morphling != null && Morphling.morphling == target) {
+                    Morphling.clearAndReload();
+                } else if (Camouflager.camouflager != null && Camouflager.camouflager == target) {
+                    Camouflager.clearAndReload();
+                } else if (Vampire.vampire != null && Vampire.vampire == target) {
+                    Vampire.clearAndReload();
+                } else if (Eraser.eraser != null && Eraser.eraser == target) {
+                    Eraser.clearAndReload();
+                } else if (Trickster.trickster != null && Trickster.trickster == target) {
+                    Trickster.clearAndReload();
+                } else if (Cleaner.cleaner != null && Cleaner.cleaner == target) {
+                    Cleaner.clearAndReload();
+                } else if (Warlock.warlock != null && Warlock.warlock == target) {
+                    Warlock.clearAndReload();
+                } else if (BountyHunter.bountyHunter != null && BountyHunter.bountyHunter == target) {
+                    BountyHunter.clearAndReload();
+                } else if (Witch.witch != null && Witch.witch == target) {
+                    Witch.clearAndReload();
+                } else if (Ninja.ninja != null && Ninja.ninja == target) {
+                    Ninja.clearAndReload();
+                } else if (Bomber.bomber != null && Bomber.bomber == target) {
+                    Bomber.clearAndReload();
+                } else if (Guesser.evilGuesser != null && Guesser.evilGuesser == target) {
+                    Guesser.clearAndReload();
+                } else if (Amerikaner.amerikaner != null && Amerikaner.amerikaner == target) {
+                    Amerikaner.clearAndReload();
+                } else if (Alman.alman != null && Alman.alman == target) {
+                    Alman.clearAndReload();
+                }
             }
         }
 
@@ -2204,6 +2306,12 @@ namespace TheOtherRoles
             } else if (Trapper.trapper != null && Trapper.trapper == player2) {
                 if (repeat) shiftRole(player2, player1, false);
                 Trapper.trapper = player1;
+            } else if (Crewmatratze.crewmatratze != null && Crewmatratze.crewmatratze == player2) {
+                if (repeat) shiftRole(player2, player1, false);
+                Crewmatratze.crewmatratze = player1;
+            } else if (Influencer.influencer != null && Influencer.influencer == player2) {
+                if (repeat) shiftRole(player2, player1, false);
+                Influencer.influencer = player1;
             }
         }
 

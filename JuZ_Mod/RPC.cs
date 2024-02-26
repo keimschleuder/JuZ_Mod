@@ -515,7 +515,7 @@ namespace TheOtherRoles
                 Sheriff.clearAndReload();
                 Sheriff.sheriff = target;
             }
-            // clear and reload old role
+            Waffenhaendler.reloadOld(target);
         }
 
         // Role functionality
