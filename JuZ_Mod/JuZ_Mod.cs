@@ -25,6 +25,7 @@ namespace TheOtherRoles
             Influencer.clearAndReload();
             Amerikaner.clearAndReload();
             Kommunist.clearAndReload();
+            Waffenhaendler.clearAndReload();
             
             Jester.clearAndReload();
             Mayor.clearAndReload();

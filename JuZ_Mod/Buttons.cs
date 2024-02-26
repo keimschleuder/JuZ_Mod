@@ -22,6 +22,7 @@ namespace TheOtherRoles
         private static CustomButton amerikanerDesinfektionsmittelButton;
         private static CustomButton amerikanerFoundOil;
         private static CustomButton kommunistEqualityButton;
+        private static CustomButton waffenButton;
 
         private static CustomButton engineerRepairButton;
         private static CustomButton janitorCleanButton;
@@ -106,6 +107,7 @@ namespace TheOtherRoles
             amerikanerDesinfektionsmittelButton.MaxTimer = 0f;
             amerikanerFoundOil.MaxTimer = 20f;
             kommunistEqualityButton.MaxTimer = Kommunist.cooldown;
+            waffenButton.MaxTimer = 0f;
 
             engineerRepairButton.MaxTimer = 0f;
             janitorCleanButton.MaxTimer = Janitor.cooldown;
@@ -307,6 +309,18 @@ namespace TheOtherRoles
             // get map id, or raise error to wait...
             var mapId = GameOptionsManager.Instance.currentNormalGameOptions.MapId;
 
+            // Waffenhaendler
+            waffenButton = new CustomButton(
+                () => { },
+                () => { return Waffenhaendler.waffenhaendler != null && Waffenhaendler.waffenhaendler == CachedPlayer.LocalPlayer.PlayerControl && CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive && Waffenhaendler.hasWeapon; },
+                () => { return CachedPlayer.LocalPlayer.PlayerControl.CanMove; },
+                () => { },
+                Waffenhaendler.getWeaponSprite(),
+                CustomButton.ButtonPositions.upperRowRight,
+                __instance,
+                KeyCode.F
+            );
+
             // Kommunist
             kommunistEqualityButton = new CustomButton(
                 () => { Kommunist.isActive = true; },
@@ -337,12 +351,13 @@ namespace TheOtherRoles
                 Amerikaner.getOilSprite(),
                 CustomButton.ButtonPositions.upperRowFarLeft,
                 __instance,
-                KeyCode.O
+                KeyCode.R
             );
 
             // Amerikaner Desinfektionsmittel
             amerikanerDesinfektionsmittelButton = new CustomButton(
                 () => {
+                    Amerikaner.amerikaner.Exiled();
                     GameHistory.overrideDeathReasonAndKiller(Amerikaner.amerikaner, DeadPlayer.CustomDeathReason.Desinfect, Amerikaner.amerikaner);
                     Amerikaner.amerikaner.Data.IsDead = true;
                     Amerikaner.clearAndReload();

@@ -170,6 +170,9 @@ namespace TheOtherRoles
         // Other functionality
         ShareTimer,
         ShareGhostInfo,
+
+        // My functionality
+        WaffeAbgeben,
     }
 
     public static class RPCProcedure {
@@ -195,7 +198,7 @@ namespace TheOtherRoles
             MapBehaviourPatch.clearAndReload();
         }
 
-    public static void HandleShareOptions(byte numberOfOptions, MessageReader reader) {            
+        public static void HandleShareOptions(byte numberOfOptions, MessageReader reader) {            
             try {
                 for (int i = 0; i < numberOfOptions; i++) {
                     uint optionId = reader.ReadPackedUInt32();
@@ -398,6 +401,9 @@ namespace TheOtherRoles
                         case RoleId.Kommunist:
                             Kommunist.kommunist = player;
                             break;
+                        case RoleId.Waffenhaendler:
+                            Waffenhaendler.waffenhaendler = player;
+                            break;
                     }
                     
                 }
@@ -494,6 +500,22 @@ namespace TheOtherRoles
 
         public static void setGameStarting() {
             GameStartManagerPatch.GameStartManagerUpdatePatch.startingTimer = 5f;
+        }
+
+        // My functionality
+
+        public static void waffeAbgeben(byte targetID)
+        {
+            PlayerControl target = Helpers.playerById(targetID);
+
+            if (Helpers.isKiller(target)) {
+                Amerikaner.clearAndReload();
+                Amerikaner.amerikaner = target;
+            } else {
+                Sheriff.clearAndReload();
+                Sheriff.sheriff = target;
+            }
+            // clear and reload old role
         }
 
         // Role functionality
@@ -729,6 +751,7 @@ namespace TheOtherRoles
             if (player == Influencer.influencer) Influencer.clearAndReload();
             if (player == Amerikaner.amerikaner) Amerikaner.clearAndReload();
             if (player == Kommunist.kommunist) Kommunist.clearAndReload();
+            if (player == Waffenhaendler.waffenhaendler) Waffenhaendler.clearAndReload();
 
             // Crewmate roles
             if (player == Mayor.mayor) Mayor.clearAndReload();
@@ -1599,6 +1622,10 @@ namespace TheOtherRoles
                     byte roomPlayer = reader.ReadByte();
                     byte roomId = reader.ReadByte();
                     RPCProcedure.shareRoom(roomPlayer, roomId);
+                    break;
+
+                case (byte)CustomRPC.WaffeAbgeben:
+                    RPCProcedure.waffeAbgeben(reader.ReadByte());
                     break;
             }
         }
