@@ -311,7 +311,11 @@ namespace TheOtherRoles
 
             // Waffenhaendler
             waffenButton = new CustomButton(
-                () => { },
+                () => {
+                    MessageWriter writer = AmongUsClient.Instance.StartRpcImmediately(CachedPlayer.LocalPlayer.PlayerControl.NetId, (byte)CustomRPC.WaffeAbgeben, Hazel.SendOption.Reliable, -1);
+                    AmongUsClient.Instance.FinishRpcImmediately(writer);
+                    RPCProcedure.waffeAbgeben((byte)Waffenhaendler.target.NetId);
+                },
                 () => { return Waffenhaendler.waffenhaendler != null && Waffenhaendler.waffenhaendler == CachedPlayer.LocalPlayer.PlayerControl && CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive && Waffenhaendler.hasWeapon; },
                 () => { return CachedPlayer.LocalPlayer.PlayerControl.CanMove; },
                 () => { },

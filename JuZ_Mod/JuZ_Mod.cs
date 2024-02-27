@@ -92,6 +92,7 @@ namespace TheOtherRoles
         public static class Waffenhaendler
         {
             public static PlayerControl waffenhaendler;
+            public static PlayerControl target;
             public static Color color = new Color32(128, 64, 64, byte.MaxValue);
             public static Sprite giveWeapon;
 

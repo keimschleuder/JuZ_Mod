@@ -169,6 +169,12 @@ namespace TheOtherRoles.Patches {
             setPlayerOutline(Sheriff.currentTarget, Sheriff.color);
         }
 
+        static void SetwaffenhaendlerTarget() {
+            if (Waffenhaendler.waffenhaendler == null || Waffenhaendler.waffenhaendler != CachedPlayer.LocalPlayer.PlayerControl) return;
+            Waffenhaendler.target = setTarget();
+            setPlayerOutline(Waffenhaendler.target, Waffenhaendler.color);
+        }
+
         static void deputySetTarget()
         {
             if (Deputy.deputy == null || Deputy.deputy != CachedPlayer.LocalPlayer.PlayerControl) return;
@@ -1084,6 +1090,9 @@ namespace TheOtherRoles.Patches {
                 hackerUpdate();
                 // Trapper
                 trapperUpdate();
+
+                // Waffenhaendler
+                SetwaffenhaendlerTarget();
 
                 // -- MODIFIER--
                 // Bait
