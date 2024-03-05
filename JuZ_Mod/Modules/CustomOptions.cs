@@ -370,7 +370,7 @@ namespace TheOtherRoles {
             var modifierTabHighlight = getTabHighlight(modifierTab, "ModifierTab", "JuZ_Mod.Resources.TabIconModifier.png");
 
             var juzTab = UnityEngine.Object.Instantiate(roleTab, modifierTab.transform);
-            var juzTabHighlight = getTabHighlight(juzTab, "juzTab", "JuZ_Mod.Resources.TabIcon.png");
+            var juzTabHighlight = getTabHighlight(juzTab, "juzTab", "JuZ_Mod.Resources.TabIconJuz.png");
 
             // Position of Tab Icons
             gameTab.transform.position += Vector3.left * 3f;
@@ -511,7 +511,7 @@ namespace TheOtherRoles {
             var modifierTabHighlight = getTabHighlight(modifierTab, "ModifierTab", "JuZ_Mod.Resources.TabIconModifier.png");
 
             var juzTab = UnityEngine.Object.Instantiate(roleTab, modifierTab.transform);
-            var juzTabHighlight = getTabHighlight(juzTab, "juzTab", "JuZ_Mod.Resources.TabIconModifier.png");
+            var juzTabHighlight = getTabHighlight(juzTab, "juzTab", "JuZ_Mod.Resources.TabIconJuz.png");
 
             roleTab.active = false;
             // Position of Tab Icons
