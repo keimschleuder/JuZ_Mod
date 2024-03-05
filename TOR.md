@@ -27,15 +27,18 @@ Even more roles are coming soon. :)
 | [Trickster](#trickster) | [Medic](#medic) | [Pursuer](#pursuer) | [VIP](#vip) |
 | [Cleaner](#cleaner) | [Swapper](#swapper) | [Thief](#thief) | [Invert](#invert) |
 | [Warlock](#warlock) | [Seer](#seer) | [Kommunist](#kommunist) | [Chameleon](#chameleon) |
-| [Bounty Hunter](#bounty-hunter) | [Hacker](#hacker) |  | [Shifter](#shifter)
+| [Bounty Hunter](#bounty-hunter) | [Hacker](#hacker) | [Deutscher](#deutsche-rollen) | [Shifter](#shifter) |
 | [Witch](#witch) | [Tracker](#tracker) |  |  |
 | [Ninja](#ninja) | [Snitch](#snitch) |  |  |
 | [Bomber](#bomber) | [Spy](#spy) |  |  |
 | [Evil Guesser](#guesser) | [Portalmaker](#portalmaker) |  |  |
-|  | [Security Guard](#security-guard) |  |  |
-|  | [Medium](#medium) |  |  |
+| [Amerikaner](#amerikaner) | [Security Guard](#security-guard) |  |  |
+| [Alman](#deutsche-rollen) | [Medium](#medium) |  |  |
 |  | [Trapper](#trapper) |  |  |
 |  | [Nice Guesser](#guesser) |  |  |
+|  | [Crewmatratze](#crewmatratze) |  |  |
+|  | [Influencer](#influencer) |  |  |
+|  | [Waffenhändler](#waffenhändler)  |  |  |
 
 The [Role Assignment](#role-assignment) section explains how the roles are being distributed among the players.
 
@@ -1223,6 +1226,24 @@ The traps have a maximum of charges (uses) and a configurable amount of tasks ar
 |----------|:-------------:|
 | Influencer Spawn Rate | - |
 | Selfie Duration | - |
+
+-----------------------
+
+## Waffenhändler
+### **Team: Crewmates**
+
+  Der Waffenhändler hat eine Waffe. Diese kann er an einen ANDEREN Spieler abgeben. Er wird danach zum normalen Crewmate
+  
+  Es gibt, abhängig vom Team des anderen Spielers, zwei Möglichkeiten, was mit dem anderen Spieler passiert:
+
+- **Crewmate** Der Crewmate wird zum [Sheriff](#sheriff)
+- **Impostor oder Neutral** Der Spieler wird zum [Amerikaner](#amerikaner)
+
+### Game Options
+
+| Name | Description
+|----------|:-------------:|
+| Waffenhändler Spawn Rate | - |
 
 -----------------------
 

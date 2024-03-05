@@ -4,7 +4,7 @@
   
   Danke!
 
-  Wir baruchen noch [Snitch](#prosecutor---prosecutor--change).
+  Wir baruchen noch [Snitch](#snitch---snitch) und [Waffenhändler](#waffenhändler---waffenhändler).
 
   Impostor | Neutral | Crewmate
   ---------|---------|---------
@@ -30,6 +30,7 @@
   | | | [Zeo](#zeo---nice-guesser)
   | | | [Der dunkle Parabelritter](#der-dunkle-parabelritter---medium)
   | | | [Gotham Cess](#gotham-cess---trapper)
+  | | | [Waffenhändler](#waffenhändler---waffenhändler)
 
 ## Inpostor Rollen
 
@@ -333,3 +334,7 @@
   ![Gotham Chess](RoleImages/chess.jpg)
 
   [Gotham Chess](https://www.youtube.com/@GothamChess) ist amerikanischer Content-Creator, bekannt für seine Schach-Videos und Clips wie [diesen](https://www.youtube.com/watch?v=l6wL0lGtv-I).
+
+## Waffenhändler - [Waffenhändler](TOR.md/#waffenhändler)
+
+  Neuer Name Zwingend notwendig
