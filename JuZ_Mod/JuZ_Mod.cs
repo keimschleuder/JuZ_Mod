@@ -93,7 +93,7 @@ namespace TheOtherRoles
         {
             public static PlayerControl redepause;
             public static PlayerControl target;
-            public static Color color = new Color32();
+            public static Color color = new Color32(130, 69, 160, byte.MaxValue);
             public static Sprite mute;
 
             public static bool canMute;
