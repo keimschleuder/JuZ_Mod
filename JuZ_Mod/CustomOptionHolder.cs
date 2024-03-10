@@ -12,6 +12,8 @@ namespace TheOtherRoles {
         public static CustomOption influencerSpawnRate;
         public static CustomOption influencerSelfieDuration;
 
+        public static CustomOption redepauseSpawnRate;
+
         public static CustomOption waffenhaendlerSpawnRate;
 
         public static CustomOption amerikanerRangeBuff;
@@ -430,6 +432,8 @@ namespace TheOtherRoles {
             // My Options
             influencerSpawnRate = CustomOption.Create(1000101, Types.JuZ, cs(Influencer.color, "Influencer Spawn Rate"), rates, null, true);
             influencerSelfieDuration = CustomOption.Create(1000102, Types.JuZ, cs(Influencer.color, "Time the selfie takes"), 5f, 0f, 10f, 1f, influencerSpawnRate);
+
+            redepauseSpawnRate = CustomOption.Create(1000601, Types.JuZ, cs(Redepause.color, "Redepause Spawn Rate"), rates, null, true);
 
             waffenhaendlerSpawnRate = CustomOption.Create(1000501, Types.JuZ, cs(Waffenhaendler.color, "Waffenhändler Spawn Rate"), rates, null, true);
 

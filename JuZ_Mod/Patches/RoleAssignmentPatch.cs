@@ -161,6 +161,7 @@ namespace TheOtherRoles.Patches {
             crewSettings.Add((byte)RoleId.Influencer, CustomOptionHolder.influencerSpawnRate.getSelection());
             crewSettings.Add((byte)RoleId.Crewmatratze, CustomOptionHolder.crewmatratzeSpawnRate.getSelection());
             crewSettings.Add((byte)RoleId.Waffenhaendler, CustomOptionHolder.waffenhaendlerSpawnRate.getSelection());
+            crewSettings.Add((byte)RoleId.Redepause, CustomOptionHolder.redepauseSpawnRate.getSelection());
 
             return new RoleAssignmentData {
                 crewmates = crewmates,

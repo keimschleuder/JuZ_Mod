@@ -85,6 +85,7 @@ namespace TheOtherRoles
         Amerikaner,
         Kommunist,
         Waffenhaendler,
+        Redepause,
     }
 
     enum CustomRPC
@@ -403,6 +404,9 @@ namespace TheOtherRoles
                             break;
                         case RoleId.Waffenhaendler:
                             Waffenhaendler.waffenhaendler = player;
+                            break;
+                        case RoleId.Redepause:
+                            Redepause.redepause = player;
                             break;
                     }
                     

@@ -23,6 +23,7 @@ namespace TheOtherRoles
         private static CustomButton amerikanerFoundOil;
         private static CustomButton kommunistEqualityButton;
         private static CustomButton waffenButton;
+        private static CustomButton muteButton;
 
         private static CustomButton engineerRepairButton;
         private static CustomButton janitorCleanButton;
@@ -108,6 +109,7 @@ namespace TheOtherRoles
             amerikanerFoundOil.MaxTimer = 20f;
             kommunistEqualityButton.MaxTimer = Kommunist.cooldown;
             waffenButton.MaxTimer = 0f;
+            muteButton.MaxTimer = 0f;
 
             engineerRepairButton.MaxTimer = 0f;
             janitorCleanButton.MaxTimer = Janitor.cooldown;
@@ -309,6 +311,20 @@ namespace TheOtherRoles
             // get map id, or raise error to wait...
             var mapId = GameOptionsManager.Instance.currentNormalGameOptions.MapId;
 
+            // Redepause
+            muteButton = new CustomButton(
+                () => {
+                    // Set Target
+                },
+                () => { return Redepause.redepause != null && Redepause.redepause == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
+                () => { return Redepause.canMute && CachedPlayer.LocalPlayer.PlayerControl.CanMove; },
+                () => { Redepause.canMute = true; },
+                Redepause.getMuteSprite(),
+                CustomButton.ButtonPositions.upperRowLeft,
+                __instance,
+                KeyCode.F
+            );
+
             // Waffenhaendler
             waffenButton = new CustomButton(
                 () => {
@@ -316,7 +332,7 @@ namespace TheOtherRoles
                     AmongUsClient.Instance.FinishRpcImmediately(writer);
                     RPCProcedure.waffeAbgeben((byte)Waffenhaendler.target.NetId);
                 },
-                () => { return Waffenhaendler.waffenhaendler != null && Waffenhaendler.waffenhaendler == CachedPlayer.LocalPlayer.PlayerControl && CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive && Waffenhaendler.hasWeapon; },
+                () => { return Waffenhaendler.waffenhaendler != null && Waffenhaendler.waffenhaendler == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive && Waffenhaendler.hasWeapon; },
                 () => { return CachedPlayer.LocalPlayer.PlayerControl.CanMove; },
                 () => { },
                 Waffenhaendler.getWeaponSprite(),
