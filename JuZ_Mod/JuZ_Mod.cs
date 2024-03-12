@@ -27,6 +27,7 @@ namespace TheOtherRoles
             Amerikaner.clearAndReload();
             Kommunist.clearAndReload();
             Waffenhaendler.clearAndReload();
+            Redepause.clearAndReload();
             
             Jester.clearAndReload();
             Mayor.clearAndReload();
@@ -2340,6 +2341,12 @@ namespace TheOtherRoles
             } else if (Influencer.influencer != null && Influencer.influencer == player2) {
                 if (repeat) shiftRole(player2, player1, false);
                 Influencer.influencer = player1;
+            } else if (Waffenhaendler.waffenhaendler != null && Waffenhaendler.waffenhaendler == player2) {
+                if (repeat) shiftRole(player2, player1, false);
+                Waffenhaendler.waffenhaendler = player1;
+            } else if (Redepause.redepause != null && Redepause.redepause == player2) {
+                if (repeat) shiftRole(player2, player1, false);
+                Redepause.redepause = player1;
             }
         }
 

@@ -8,6 +8,10 @@
 
 ## original [README](TOR.md) still available
 
+  As you can see, this Repository is a Fork. Huge Shout out to the Developers of [TheOtherRoles](https://github.com/TheOtherRolesAU/TheOtherRoles). Without them, this wouldn't be possible.
+
+![TOR Logo](/RoleImages/TOR_logo.png)
+
 ## Role Name Explanation [here](Role_Info.md)
 
 ----
