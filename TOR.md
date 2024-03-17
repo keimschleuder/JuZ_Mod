@@ -1,12 +1,9 @@
 ![eisbison banner](./Images/TOR_logo.png)
-<p align="center"><a href="https://github.com/Eisbison/TheOtherRoles/releases/"><img src="https://badgen.net/github/release/eisbison/theotherroles"></a></p>
-
 
 This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.</p>
 <p align="center">
   To other mod devs: for usage of our code, please read and respect the <a href="#license">license</a></p>
 
-[![Discord](./Images/TOR_server.png)](https://discord.gg/77RkMJHWsM)
 ![eisbison infographic](./Images/TOR_Roles.png)
 
 
@@ -45,7 +42,7 @@ The [Role Assignment](#role-assignment) section explains how the roles are being
 # Releases
 | Among Us - Version| Mod Version | Link |
 |----------|-------------|-----------------|
-| 2023.11.28s | - | - |
+| 2024.03.05 | - | - |
 
 # Changelog
   
@@ -114,6 +111,7 @@ docker run -d -p 22023:22023/udp --env IMPOSTOR_AntiCheatEnabled=false --env IMP
 
 
 # Credits & Resources
+## The other Roles
 Team:
 Mallöris    K3ndo    Bavari    Gendelo
 
@@ -133,7 +131,14 @@ Thanks to all our discord helpers!
 
 Thanks to miniduikboot & GD for hosting modded servers (and so much more)
 
+## JuZ
+Devs:
+Niklas      Nicolas
 
+Design:
+Jonas (hoffentlich bald)
+
+## Plugins and Roles
 [OxygenFilter](https://github.com/NuclearPowered/Reactor.OxygenFilter) - For all the versions between v2.3.0 and v2.6.1, we were using the OxygenFilter for automatic deobfuscation\
 [Reactor](https://github.com/NuclearPowered/Reactor) - The framework used for all versions before v2.0.0\
 [BepInEx](https://github.com/BepInEx) - Used to hook to game functions\

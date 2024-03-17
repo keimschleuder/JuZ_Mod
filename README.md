@@ -4,9 +4,11 @@
 
 ## [Level Mod](https://levelimposter.net/)
 
-  available here, please download there
+  reqired and included in the Mod.
 
-## original [README](TOR.md) still available
+  The Mod also features a special JuZ-Map, which is included in the `.zip` download.
+
+## This is a Fork
 
   As you can see, this Repository is a Fork. Huge Shout out to the Developers of [TheOtherRoles](https://github.com/TheOtherRolesAU/TheOtherRoles). Without them, this wouldn't be possible.
 
