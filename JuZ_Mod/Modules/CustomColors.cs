@@ -126,14 +126,12 @@ namespace TheOtherRoles.Modules {
                                         shadow = new Color32(10, 10, 10, byte.MaxValue),
                                         isLighterColor = false
             });
-            colors.Add(new CustomColor {
-                longname = "Ocean", //40
+            colors.Add(new CustomColor { longname = "Ocean", //40
                 color = new Color32(55, 159, 218, byte.MaxValue),
                 shadow = new Color32(62, 92, 158, byte.MaxValue),
                 isLighterColor = false
             });
-            colors.Add(new CustomColor {
-                longname = "Sundown", // 41
+            colors.Add(new CustomColor { longname = "Sundown", // 41
                 color = new Color32(252, 194, 100, byte.MaxValue),
                 shadow = new Color32(197, 98, 54, byte.MaxValue),
                 isLighterColor = false

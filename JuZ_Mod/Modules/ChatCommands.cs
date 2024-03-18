@@ -4,6 +4,7 @@ using System.Linq;
 using TheOtherRoles.Players;
 using TheOtherRoles.Utilities;
 using Hazel;
+using static TheOtherRoles.TheOtherRoles;
 
 namespace TheOtherRoles.Modules {
     [HarmonyPatch]
@@ -123,6 +124,11 @@ namespace TheOtherRoles.Modules {
                 if (text.ToLower().Contains("trump"))
                 {
                     __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Make America Great Again!");
+                    handled = true;
+                }
+
+                if (CachedPlayer.LocalPlayer.PlayerControl == Redepause.target)
+                {
                     handled = true;
                 }
 
