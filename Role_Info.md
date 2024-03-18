@@ -4,7 +4,7 @@
   
   Danke!
 
-  Wir baruchen noch [Snitch](#snitch---snitch) und [Waffenhändler](#waffenhändler---waffenhändler).
+  Wir baruchen noch [Snitch](#snitch---snitch).
 
   Impostor | Neutral | Crewmate
   ---------|---------|---------
@@ -12,7 +12,7 @@
   [Eyub](#eyub---alman) | [Emo](#emo---jester) | [Charlie](#charlie---crewmatratze)
   [Donald Trump](#donald-trump---amerikaner) | [9/11, baby](#911-baby---jackal) | [David](#david---influencer)
   [Mann im Mond](#mann-im-mond---godfather) | [Michael Collins](#michael-collins---sidekick) | [Cheffi](#cheffi---mayor)
-  [Nino](#nino---mafioso) | [Uranforscher](#uranforscher---arsonist) | [Enderman](#enderman---portalmaker)
+  [Al Capone](#al-capone---mafioso) | [Uranforscher](#uranforscher---arsonist) | [Enderman](#enderman---portalmaker)
   [Nicolas](#nicolas---janitor) | [Hannibal Lecter](#hannibal-lecter---vulture) | [RealCivilEngineer](#realcivilengineer---engineer)
   [Desinee](#desinee---morphling) | [Herr Anwalt](#herr-anwalt---lawyer) | [Frank Drebin](#frank-drebin---sheriff--nancy-drebin---deputy)
   [Günter Guillaume](#günter-guillaume---comouflager) | [dasistjay](#dasistjay---pursuer) | [Nancy Drebin](#frank-drebin---sheriff--nancy-drebin---deputy)
@@ -30,7 +30,7 @@
   | | | [Zeo](#zeo---nice-guesser)
   | | | [Der dunkle Parabelritter](#der-dunkle-parabelritter---medium)
   | | | [Gotham Cess](#gotham-cess---trapper)
-  | | | [Waffenhändler](#waffenhändler---waffenhändler)
+  | | | [Nino](#nino---waffenhändler)
 
 ## Inpostor Rollen
 
@@ -58,13 +58,9 @@
   
   Der Mann im Mond ist der Bruder der vier Boten. Er ist der Hauptantagonist des Julien Bam Cinematic Universe. Er wurde von seinen Brüdern auf den Mond verbannt. Nach seiner Rückkehr strebt er danach, seine Trauer zu besiegen und Rache an seinen Brüdern auszuüben. Eigener Aussage zufolge ist er der mächtigste der Fünf Brüder.
 
-### Nino - [Mafioso](TOR.md/#mafia)
+### Al Capone - [Mafioso](TOR.md/#mafia)
 
-  Ganz normales Kind...
-
-  Spaß!
-
-  Al Capone?
+  Mafioso. TODO: Mehr Infos hinzufügen
 
 ### Nicolas - [Janitor](TOR.md/#mafia)
 
@@ -335,6 +331,6 @@
 
   [Gotham Chess](https://www.youtube.com/@GothamChess) ist amerikanischer Content-Creator, bekannt für seine Schach-Videos und Clips wie [diesen](https://www.youtube.com/watch?v=l6wL0lGtv-I).
 
-## Waffenhändler - [Waffenhändler](TOR.md/#waffenhändler)
+## Nino - [Waffenhändler](TOR.md/#waffenhändler)
 
-  Neuer Name Zwingend notwendig
+  Nino ist Jugendmoderator...

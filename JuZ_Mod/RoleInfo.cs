@@ -37,7 +37,7 @@ namespace TheOtherRoles
         public static RoleInfo crewmatratze = new RoleInfo("Charlie", Crewmatratze.color, "Stay with another one to not get voted out", "Stays with someone to not get voted out", RoleId.Crewmatratze);
         public static RoleInfo influencer = new RoleInfo("David", Influencer.color, "Make selfies with the dead", "Has to make a selfie before reporting", RoleId.Influencer);
         public static RoleInfo amerikaner = new RoleInfo("Donald Trump", Amerikaner.color, "You have a bigger Kill Radius", "Can Kill from farther away", RoleId.Amerikaner);
-        public static RoleInfo waffenhaendler = new RoleInfo("placeholder", Waffenhaendler.color, "Give away your weapon to a crewmate", "Can make a Sheriff or American", RoleId.Waffenhaendler);
+        public static RoleInfo waffenhaendler = new RoleInfo("Nino", Waffenhaendler.color, "Give away your weapon to a crewmate", "Can make a Sheriff or American", RoleId.Waffenhaendler);
         public static RoleInfo redepause = new RoleInfo("placeholder", Redepause.color, "Mute the Impostors", "Can Mute other players", RoleId.Redepause);
 
         public static RoleInfo jester = new RoleInfo("Emo", Jester.color, "Get voted out", "Get voted out", RoleId.Jester, true);
@@ -48,7 +48,7 @@ namespace TheOtherRoles
         public static RoleInfo deputy = new RoleInfo("Nancy Drebin", Sheriff.color, "Handcuff the <color=#FF1919FF>Impostors</color>", "Handcuff the Impostors", RoleId.Deputy);
         public static RoleInfo lighter = new RoleInfo("tomatolix", Lighter.color, "Your light never goes out", "Your light never goes out", RoleId.Lighter);
         public static RoleInfo godfather = new RoleInfo("Mann im Mond", Godfather.color, "Kill all Crewmates", "Kill all Crewmates", RoleId.Godfather);
-        public static RoleInfo mafioso = new RoleInfo("Nino", Mafioso.color, "Work with the <color=#FF1919FF>Mafia</color> to kill the Crewmates", "Kill all Crewmates", RoleId.Mafioso);
+        public static RoleInfo mafioso = new RoleInfo("Al Capone", Mafioso.color, "Work with the <color=#FF1919FF>Mafia</color> to kill the Crewmates", "Kill all Crewmates", RoleId.Mafioso);
         public static RoleInfo janitor = new RoleInfo("Nicolas", Janitor.color, "Work with the <color=#FF1919FF>Mafia</color> by hiding dead bodies", "Hide dead bodies", RoleId.Janitor);
         public static RoleInfo morphling = new RoleInfo("Desinee", Morphling.color, "Change your look to not get caught", "Change your look", RoleId.Morphling);
         public static RoleInfo camouflager = new RoleInfo("Günter Guillaume", Camouflager.color, "Camouflage and kill the Crewmates", "Hide among others", RoleId.Camouflager);                                      // Done
