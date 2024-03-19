@@ -1096,6 +1096,9 @@ namespace TheOtherRoles.Patches {
                 // Waffenhaendler
                 SetwaffenhaendlerTarget();
 
+                // Amerikaner
+                amerikanerSetTarget();
+
                 // -- MODIFIER--
                 // Bait
                 baitUpdate();
