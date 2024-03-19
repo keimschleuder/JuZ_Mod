@@ -177,6 +177,13 @@ namespace TheOtherRoles.Patches {
             setPlayerOutline(Deputy.currentTarget, Deputy.color);
         }
 
+        static void amerikanerSetTarget()
+        {
+            if (Amerikaner.amerikaner == null || Amerikaner.amerikaner != CachedPlayer.LocalPlayer.PlayerControl) return;
+            Amerikaner.currentTarget = setTarget();
+            setPlayerOutline(Amerikaner.currentTarget, Amerikaner.color);
+        }
+
         public static void deputyCheckPromotion(bool isMeeting=false)
         {
             // If LocalPlayer is Deputy, the Sheriff is disconnected and Deputy promotion is enabled, then trigger promotion
