@@ -19,8 +19,7 @@
 # Releases
 | Among Us - Version| Mod Version | Link |
 |----------|-------------|-----------------|
-| 2024.3.5s| v4.5.2| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.2/TheOtherRoles.zip)
-| 2023.11.28s| v4.5.1| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.1/TheOtherRoles.zip)
+| 2024.3.5s| v4.5.2| [Download]([https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.2/TheOtherRoles.zip](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.0))
 
   This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.</p>
   <p align="center">
