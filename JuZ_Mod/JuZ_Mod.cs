@@ -1523,14 +1523,14 @@ namespace TheOtherRoles
         private static Sprite douseSprite;
         public static Sprite getDouseSprite() {
             if (douseSprite) return douseSprite;
-            douseSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.DouseButton.png", 115f);
+            douseSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.GiveUranium.png", 115f);
             return douseSprite;
         }
 
         private static Sprite igniteSprite;
         public static Sprite getIgniteSprite() {
             if (igniteSprite) return igniteSprite;
-            igniteSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.IgniteButton.png", 115f);
+            igniteSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.Explosion.png", 115f);
             return igniteSprite;
         }
 
