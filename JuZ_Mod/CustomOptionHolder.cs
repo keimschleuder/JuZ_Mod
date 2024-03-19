@@ -24,6 +24,7 @@ namespace TheOtherRoles {
         public static CustomOption almanTowelCooldown;
         public static CustomOption almanTowelDuration;
         public static CustomOption almanSpawnRate;
+        public static CustomOption chanceIsDeutscher;
 
         public static CustomOption crewmatratzeSpawnRate;
 
@@ -447,7 +448,8 @@ namespace TheOtherRoles {
 
             crewmatratzeSpawnRate = CustomOption.Create(1000201, Types.JuZ, cs(Crewmatratze.color, "Crewmatratze Spawn Rate"), rates, null, true);
 
-            almanSpawnRate = CustomOption.Create(1000003, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Alman & Deutscher Spawn Rate"), rates, null, true);
+            almanSpawnRate = CustomOption.Create(1000003, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Alman Spawn Rate"), rates, null, true);
+            chanceIsDeutscher = CustomOption.Create(1000004, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Chance Alman is Deutscher"), rates, almanSpawnRate);
             almanTowelCooldown = CustomOption.Create(1000000, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Towel Cooldown"), 20f, 0f, 30f, 1f, almanSpawnRate);
             almanTowelDuration = CustomOption.Create(1000001, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Towel Duration"), 30f, 5f, 60f, 1f, almanSpawnRate);
 

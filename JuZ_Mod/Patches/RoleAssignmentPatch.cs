@@ -93,7 +93,7 @@ namespace TheOtherRoles.Patches {
                 crewmateMax = crewmates.Count - neutralMin;
                 crewmateMin = crewmates.Count - neutralMax;
             }
-           
+
             // Get the maximum allowed count of each role type based on the minimum and maximum option
             int crewCountSettings = rnd.Next(crewmateMin, crewmateMax + 1);
             int neutralCountSettings = rnd.Next(neutralMin, neutralMax + 1);
@@ -108,7 +108,7 @@ namespace TheOtherRoles.Patches {
             Dictionary<byte, int> impSettings = new Dictionary<byte, int>();
             Dictionary<byte, int> neutralSettings = new Dictionary<byte, int>();
             Dictionary<byte, int> crewSettings = new Dictionary<byte, int>();
-            
+
             impSettings.Add((byte)RoleId.Morphling, CustomOptionHolder.morphlingSpawnRate.getSelection());
             impSettings.Add((byte)RoleId.Camouflager, CustomOptionHolder.camouflagerSpawnRate.getSelection());
             impSettings.Add((byte)RoleId.Vampire, CustomOptionHolder.vampireSpawnRate.getSelection());
@@ -121,7 +121,6 @@ namespace TheOtherRoles.Patches {
             impSettings.Add((byte)RoleId.Ninja, CustomOptionHolder.ninjaSpawnRate.getSelection());
             impSettings.Add((byte)RoleId.Bomber, CustomOptionHolder.bomberSpawnRate.getSelection());
 
-            impSettings.Add((byte)RoleId.Alman, CustomOptionHolder.almanSpawnRate.getSelection());
             impSettings.Add((byte)RoleId.Amerikaner, CustomOptionHolder.amerikanerNaturalSpawnRate.getSelection());
 
             neutralSettings.Add((byte)RoleId.Jester, CustomOptionHolder.jesterSpawnRate.getSelection());
@@ -130,12 +129,18 @@ namespace TheOtherRoles.Patches {
             neutralSettings.Add((byte)RoleId.Vulture, CustomOptionHolder.vultureSpawnRate.getSelection());
             neutralSettings.Add((byte)RoleId.Thief, CustomOptionHolder.thiefSpawnRate.getSelection());
 
-            if ((rnd.Next(1, 101) <= CustomOptionHolder.lawyerIsProsecutorChance.getSelection() * 10)) // Lawyer or Prosecutor
+            if ((rnd.Next(1, 101) <= CustomOptionHolder.lawyerIsProsecutorChance.getSelection() * 10)) { // Lawyer or Prosecutor
                 neutralSettings.Add((byte)RoleId.Prosecutor, CustomOptionHolder.lawyerSpawnRate.getSelection());
-            else
+            } else {
                 neutralSettings.Add((byte)RoleId.Lawyer, CustomOptionHolder.lawyerSpawnRate.getSelection());
+            }
 
-            neutralSettings.Add((byte)RoleId.Deutscher, CustomOptionHolder.almanSpawnRate.getSelection());
+            if ((rnd.Next(1, 101) <= CustomOptionHolder.chanceIsDeutscher.getSelection() * 10)) { //Alman or Deutscher
+                impSettings.Add((byte)RoleId.Deutscher, CustomOptionHolder.almanSpawnRate.getSelection());
+            } else {
+                neutralSettings.Add((byte) RoleId.Alman, CustomOptionHolder.almanSpawnRate.getSelection());
+            }
+
             neutralSettings.Add((byte)RoleId.Kommunist, CustomOptionHolder.kommunistSpawnRate.getSelection());
 
             crewSettings.Add((byte)RoleId.Mayor, CustomOptionHolder.mayorSpawnRate.getSelection());
