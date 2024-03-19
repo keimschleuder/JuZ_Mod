@@ -18,6 +18,8 @@ namespace TheOtherRoles {
 
         public static CustomOption amerikanerRangeBuff;
         public static CustomOption amerikanerNaturalSpawnRate;
+        public static CustomOption amerikanerCanKillNeutrals;
+        public static CustomOption amerikanerCooldown;
 
         public static CustomOption almanTowelCooldown;
         public static CustomOption almanTowelDuration;
@@ -440,6 +442,8 @@ namespace TheOtherRoles {
 
             amerikanerNaturalSpawnRate = CustomOption.Create(1000301, Types.JuZ, cs(Amerikaner.color, "Amerikaner natürliche Spawn Rate\nOhne einfluss eines Waffenhändlers"), rates, null, true);
             amerikanerRangeBuff = CustomOption.Create(1000302, Types.JuZ, cs(Amerikaner.color, "Amerikaner Range Buff"), 5f, 1f, 10f, 1f, null, true);
+            amerikanerCanKillNeutrals = CustomOption.Create(10000303, Types.JuZ, cs(Amerikaner.color, "Amerikaner Can Kill Neutrals"), true, null, false);
+            amerikanerCooldown = CustomOption.Create(10000304, Types.JuZ, cs(Amerikaner.color, "Amerikaner Cooldown"), 30f, 20f, 40f, 1f, null, false);
 
             crewmatratzeSpawnRate = CustomOption.Create(1000201, Types.JuZ, cs(Crewmatratze.color, "Crewmatratze Spawn Rate"), rates, null, true);
 

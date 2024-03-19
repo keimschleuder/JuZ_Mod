@@ -41,6 +41,7 @@ namespace TheOtherRoles.Objects {
             public static readonly Vector3 lowerRowRight = new Vector3(-2f, -0.06f, 0);  // Not usable for imps beacuse of new button positions!
             public static readonly Vector3 lowerRowCenter = new Vector3(-3f, -0.06f, 0);
             public static readonly Vector3 lowerRowLeft = new Vector3(-4f, -0.06f, 0);
+            public static readonly Vector3 lowerRowFarLeft = new Vector3(-5f, -0.66f, 0); // Custom and untested
             public static readonly Vector3 upperRowRight = new Vector3(0f, 1f, 0f);  // Not usable for imps beacuse of new button positions!
             public static readonly Vector3 upperRowCenter = new Vector3(-1f, 1f, 0f);  // Not usable for imps beacuse of new button positions!
             public static readonly Vector3 upperRowLeft = new Vector3(-2f, 1f, 0f);

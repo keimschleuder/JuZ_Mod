@@ -269,9 +269,12 @@ namespace TheOtherRoles
         public static class Amerikaner
         {
             public static PlayerControl amerikaner;
+            public static PlayerControl currentTarget;
             public static Color color = Palette.ImpostorRed;
 
             public static float rangeBuff;
+            public static float cooldown;
+            public static bool canKillNeutrals;
 
             public static Sprite trinkDesinfektionsmittel;
             public static Sprite foundOil;
@@ -280,6 +283,8 @@ namespace TheOtherRoles
             {
                 amerikaner = null;
                 rangeBuff = CustomOptionHolder.amerikanerRangeBuff.getFloat();
+                canKillNeutrals = CustomOptionHolder.amerikanerCanKillNeutrals.getBool();
+                cooldown = CustomOptionHolder.amerikanerCooldown.getFloat();
             }
             
             public static Sprite getOilSprite()

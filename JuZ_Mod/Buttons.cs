@@ -24,6 +24,7 @@ namespace TheOtherRoles
         private static CustomButton kommunistEqualityButton;
         private static CustomButton waffenButton;
         private static CustomButton muteButton;
+        private static CustomButton amerikanerShootButton;
 
         private static CustomButton engineerRepairButton;
         private static CustomButton janitorCleanButton;
@@ -107,6 +108,7 @@ namespace TheOtherRoles
             almanTowelButton.MaxTimer = Alman.towelCooldown;
             amerikanerDesinfektionsmittelButton.MaxTimer = 0f;
             amerikanerFoundOil.MaxTimer = 20f;
+            amerikanerShootButton.MaxTimer = Amerikaner.cooldown;
             kommunistEqualityButton.MaxTimer = Kommunist.cooldown;
             waffenButton.MaxTimer = 0f;
             muteButton.MaxTimer = 0f;
@@ -165,6 +167,7 @@ namespace TheOtherRoles
             propHuntFindButton.MaxTimer = PropHunt.findCooldown;
 
             almanTowelButton.EffectDuration = Alman.towelDuration;
+            kommunistEqualityButton.EffectDuration = Kommunist.duration;
 
             timeMasterShieldButton.EffectDuration = TimeMaster.shieldDuration;
             hackerButton.EffectDuration = Hacker.duration;
@@ -360,6 +363,46 @@ namespace TheOtherRoles
                     Kommunist.isActive = false;
                     kommunistEqualityButton.Timer = kommunistEqualityButton.MaxTimer;
                 }
+            );
+
+            // Amerikaner Shoot
+            amerikanerShootButton = new CustomButton(
+                () => {
+                    MurderAttemptResult murderAttemptResult = Helpers.checkMuderAttempt(Amerikaner.amerikaner, Amerikaner.currentTarget);
+                    if (murderAttemptResult == MurderAttemptResult.SuppressKill) return;
+
+                    if (murderAttemptResult == MurderAttemptResult.PerformKill)
+                    {
+                        byte targetId = 0;
+                        if ((!Amerikaner.currentTarget.Data.Role.IsImpostor && (Amerikaner.currentTarget != Mini.mini || Mini.isGrownUp())) ||
+                            (Amerikaner.canKillNeutrals && Helpers.isNeutral(Sheriff.currentTarget)) ||
+                            (Jackal.jackal == Amerikaner.currentTarget || Sidekick.sidekick == Amerikaner.currentTarget))
+                        {
+                            targetId = Amerikaner.currentTarget.PlayerId;
+                        }
+                        else
+                        {
+                            targetId = CachedPlayer.LocalPlayer.PlayerId;
+                        }
+
+                        MessageWriter killWriter = AmongUsClient.Instance.StartRpcImmediately(CachedPlayer.LocalPlayer.PlayerControl.NetId, (byte)CustomRPC.UncheckedMurderPlayer, Hazel.SendOption.Reliable, -1);
+                        killWriter.Write(Amerikaner.amerikaner.Data.PlayerId);
+                        killWriter.Write(targetId);
+                        killWriter.Write(byte.MaxValue);
+                        AmongUsClient.Instance.FinishRpcImmediately(killWriter);
+                        RPCProcedure.uncheckedMurderPlayer(Amerikaner.amerikaner.Data.PlayerId, targetId, Byte.MaxValue);
+                    }
+
+                    amerikanerShootButton.Timer = amerikanerShootButton.MaxTimer;
+                    Amerikaner.currentTarget = null;
+                },
+                () => { return Amerikaner.amerikaner != null && Sheriff.sheriff == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
+                () => { return Amerikaner.currentTarget && CachedPlayer.LocalPlayer.PlayerControl.CanMove; },
+                () => { amerikanerShootButton.Timer = amerikanerShootButton.MaxTimer; },
+                __instance.KillButton.graphic.sprite,
+                CustomButton.ButtonPositions.lowerRowFarLeft,
+                __instance,
+                KeyCode.Q
             );
 
             // Amerikaner Found Oil
