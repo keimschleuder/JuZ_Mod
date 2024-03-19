@@ -93,7 +93,7 @@ namespace TheOtherRoles.Modules {
                     if (Lawyer.isProsecutor && Lawyer.lawyer != null) {
                         __instance.AddChat(Lawyer.lawyer, "Das ist respektlos einem <color=#E67E22>Jugendmoderator</color> gegenüber!");
                     } else {
-                        __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem ehemaligen <color=#E67E22>Jugendmoderator</color> gegenüber!");
+                        __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem <color=#E67E22>Jugendmoderator</color> gegenüber!");
                     }
                     handled = true;
                 }

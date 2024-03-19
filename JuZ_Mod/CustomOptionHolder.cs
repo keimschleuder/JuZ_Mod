@@ -441,15 +441,15 @@ namespace TheOtherRoles {
             waffenhaendlerSpawnRate = CustomOption.Create(1000501, Types.JuZ, cs(Waffenhaendler.color, "Waffenhändler Spawn Rate"), rates, null, true);
 
             amerikanerNaturalSpawnRate = CustomOption.Create(1000301, Types.JuZ, cs(Amerikaner.color, "Amerikaner natürliche Spawn Rate\nOhne einfluss eines Waffenhändlers"), rates, null, true);
-            amerikanerRangeBuff = CustomOption.Create(1000302, Types.JuZ, cs(Amerikaner.color, "Amerikaner Range Buff"), 5f, 1f, 10f, 1f, null, true);
+            amerikanerRangeBuff = CustomOption.Create(1000302, Types.JuZ, cs(Amerikaner.color, "Amerikaner Range Buff"), 5f, 1f, 10f, 1f, null, false);
             amerikanerCanKillNeutrals = CustomOption.Create(10000303, Types.JuZ, cs(Amerikaner.color, "Amerikaner Can Kill Neutrals"), true, null, false);
             amerikanerCooldown = CustomOption.Create(10000304, Types.JuZ, cs(Amerikaner.color, "Amerikaner Cooldown"), 30f, 20f, 40f, 1f, null, false);
 
             crewmatratzeSpawnRate = CustomOption.Create(1000201, Types.JuZ, cs(Crewmatratze.color, "Crewmatratze Spawn Rate"), rates, null, true);
 
             almanSpawnRate = CustomOption.Create(1000003, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Alman & Deutscher Spawn Rate"), rates, null, true);
-            almanTowelCooldown = CustomOption.Create(1000000, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Set Cooldown for Alman & Deutscher to place Towels"), 20f, 0f, 30f, 1f, almanSpawnRate);
-            almanTowelDuration = CustomOption.Create(1000001, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Set Towel Duration for Alman & Deutscher"), 30f, 5f, 60f, 1f, almanSpawnRate);
+            almanTowelCooldown = CustomOption.Create(1000000, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Towel Cooldown"), 20f, 0f, 30f, 1f, almanSpawnRate);
+            almanTowelDuration = CustomOption.Create(1000001, Types.JuZ, cs(new Color(204f / 255f, 204f / 255f, 0, 1f), "Towel Duration"), 30f, 5f, 60f, 1f, almanSpawnRate);
 
             kommunistSpawnRate = CustomOption.Create(1000401, Types.JuZ, cs(Kommunist.color, "Kommunist Spawn Rate"), rates, null, true);
             kommunistCooldown = CustomOption.Create(1000402, Types.JuZ, cs(Kommunist.color, "Kommunist Cooldown"), 60f, 30f, 90f, 5f, kommunistSpawnRate);
