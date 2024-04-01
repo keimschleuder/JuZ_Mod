@@ -25,6 +25,7 @@ namespace TheOtherRoles
         private static CustomButton waffenButton;
         private static CustomButton muteButton;
         private static CustomButton amerikanerShootButton;
+        private static CustomButton sleepWithButton;
 
         private static CustomButton engineerRepairButton;
         private static CustomButton janitorCleanButton;
@@ -314,6 +315,21 @@ namespace TheOtherRoles
             // get map id, or raise error to wait...
             var mapId = GameOptionsManager.Instance.currentNormalGameOptions.MapId;
 
+            // Crewmatratze
+            sleepWithButton = new CustomButton(
+                () =>{
+                    // Set Target
+                },
+                () => { return Crewmatratze.crewmatratze != null && Crewmatratze.crewmatratze == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
+                () => { return CachedPlayer.LocalPlayer.PlayerControl.CanMove; },
+                () => { },
+                Crewmatratze.getSleepWithSprite(),
+                CustomButton.ButtonPositions.upperRowRight,
+                __instance,
+                KeyCode.F
+
+            );
+
             // Redepause
             muteButton = new CustomButton(
                 () => {
@@ -334,6 +350,8 @@ namespace TheOtherRoles
                     MessageWriter writer = AmongUsClient.Instance.StartRpcImmediately(CachedPlayer.LocalPlayer.PlayerControl.NetId, (byte)CustomRPC.WaffeAbgeben, Hazel.SendOption.Reliable, -1);
                     AmongUsClient.Instance.FinishRpcImmediately(writer);
                     RPCProcedure.waffeAbgeben((byte)Waffenhaendler.target.NetId);
+                    
+                    Waffenhaendler.hasWeapon = false;
                 },
                 () => { return Waffenhaendler.waffenhaendler != null && Waffenhaendler.waffenhaendler == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive && Waffenhaendler.hasWeapon; },
                 () => { return CachedPlayer.LocalPlayer.PlayerControl.CanMove; },

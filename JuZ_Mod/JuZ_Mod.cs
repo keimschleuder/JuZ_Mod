@@ -358,6 +358,15 @@ namespace TheOtherRoles
             public static Color color = new Color32(255, 150, 200, byte.MaxValue);
 
             public static PlayerControl sleepsWith;
+            public static Sprite sleepWithSprite;
+
+            public static Sprite getSleepWithSprite()
+            {
+                if (sleepWithSprite) return sleepWithSprite;
+                sleepWithSprite = Helpers.loadSpriteFromResources("JuZ_Mod.Resources.sleepWith.png", 115f);
+                return sleepWithSprite;
+            }
+
 
             public static void clearAndReload()
             {
