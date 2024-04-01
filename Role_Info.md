@@ -4,8 +4,6 @@
   
   Danke!
 
-  Wir baruchen noch [Snitch](#snitch---snitch).
-
   Impostor | Neutral | Crewmate
   ---------|---------|---------
   [Julian](#julian---impostor) | [Jens](#jens---deutscher) | [Bundesregierung](#bundesregierung---crewmate)
@@ -24,7 +22,7 @@
   [Plankton](#plankton---evil-guesser) |  | [MrWissen2Go](#mrwissen2go---seer)
   [Bibi Blocksberg](#bibi-blocksberg---witch) |  | [Niklas](#niklas---hacker)
   [Pablo Escobar](#pablo-escobar---ninja) |  | [Helikoptermutter](#helikoptermutter---tracker)
-  [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Snitch](#snitch---snitch)
+  [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Omar Sharif](#snitch---snitch)
   | | | [Lovebot](#lovebot---spy)
   | | | [Rezo der Zerstörer](#rezo-der-zerstörer---security-guard)
   | | | [Zeo](#zeo---nice-guesser)
@@ -294,10 +292,11 @@
 
   Hat 50 Tracking-Apps auf dem Handy ihres Kindes installiert und nimmt dem Kind jegliche Privatsphäre.
 
-### Snitch - [Snitch](TOR.md/#snitch)
+### Omar Sharif - [Snitch](TOR.md/#snitch)
 
-  Neuer Name.
-  Rico?
+  Neuer Name von Nicolas, er muss die Rolle erklären.
+
+  @Nicolas: Bitte, wenn möglich, mit Foto und kurzer erklärung, was die Person getan/erreicht hat.
 
 ### Lovebot - [Spy](TOR.md/#spy)
 
