@@ -1,4 +1,4 @@
-# JuZ Mod for AmungUs
+# JuZ Mod for AmongUs
 
 ## Look at the [Padlet](https://padlet.com/niklaskeim/among-us-mod-v52klgwhl1whsjl1) for more info
 
