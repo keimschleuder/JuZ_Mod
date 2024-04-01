@@ -4,9 +4,9 @@
 
 ## [Level Mod](https://levelimposter.net/)
 
-  reqired and included in the Mod.
+  reqired and included in the `.zip` download.
 
-  The Mod also features a special JuZ-Map, which is included in the `.zip` download.
+  The Mod also features a special JuZ-Map, which is also included in the `.zip` download.
 
 ## This is a Fork
 
