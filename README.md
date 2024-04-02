@@ -19,6 +19,7 @@
 # Releases
 | Among Us - Version | Mod Version | Link |
 |----------|-------------|-----------------|
+| 2024.3.5s | v0.2.2 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.2) |
 | 2024.3.5s | v0.2.1 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.1) |
 | 2024.3.5s | v0.2.0 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.0) |
 | 2023.11.28s | v0.1.7.1 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.1.7.1) |
