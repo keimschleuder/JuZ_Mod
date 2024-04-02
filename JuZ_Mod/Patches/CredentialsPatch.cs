@@ -178,9 +178,11 @@ $@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy and Nicolas</color></siz
                 HttpClient client = new HttpClient();
                 HttpResponseMessage response = await client.GetAsync("https://raw.githubusercontent.com/TheOtherRolesAU/MOTD/main/motd.txt");
                 response.EnsureSuccessStatusCode();
-                string motds = await response.Content.ReadAsStringAsync();
+                // string motds = await response.Content.ReadAsStringAsync();
+                string motds = "Weil Marcel älter ist\nDas ist respektlos einem Jugendmoderator gegenüber\nThe Other Roles ist cool\nBitte nocht Virus.exe ausführen\nSeid schlau";
+
                 foreach(string line in motds.Split("\n", StringSplitOptions.RemoveEmptyEntries)) {
-                        MOTD.motds.Add(line);
+                    MOTD.motds.Add(line);
                 }
             }
         }        
