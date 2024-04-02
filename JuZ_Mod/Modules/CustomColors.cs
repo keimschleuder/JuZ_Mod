@@ -16,7 +16,7 @@ namespace TheOtherRoles.Modules {
                                                                     40, 31, 10, 34, 22, 28, 36,
                                                                     2, 11, 26, 29, 20, 19, 18,
                                                                     12, 9, 24, 16, 15, 6, 39,
-                                                                    };
+                                                                    42, 43, 44};
         public static void Load() {
             List<StringNames> longlist = Enumerable.ToList<StringNames>(Palette.ColorNames);
             List<Color32> colorlist = Enumerable.ToList<Color32>(Palette.PlayerColors);
@@ -128,6 +128,18 @@ namespace TheOtherRoles.Modules {
                                         isLighterColor = false });
 
             // Add colors here
+            colors.Add(new CustomColor { longname = "Jugendarbeit", //42
+                                        color = new Color32(172, 199, 48, byte.MaxValue), 
+                                        shadow = new Color32(14, 87, 116, byte.MaxValue),
+                                        isLighterColor = false });
+            colors.Add(new CustomColor { longname = "Feuerwehr", //43
+                                        color = new Color32(123, 23, 28, byte.MaxValue),
+                                        shadow = new Color32(142, 137, 9, byte.MaxValue),
+                                        isLighterColor = false });
+            colors.Add(new CustomColor { longname = "Black + White", //44
+                                        color = new Color32(0, 0, 0, byte.MaxValue),
+                                        shadow = new Color32(255, 255, 255, byte.MaxValue),
+                                        isLighterColor = false });
 
             pickableColors += (uint)colors.Count; // Colors to show in Tab
             /** Hidden Colors **/     
