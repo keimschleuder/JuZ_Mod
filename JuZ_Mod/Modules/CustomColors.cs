@@ -16,7 +16,7 @@ namespace TheOtherRoles.Modules {
                                                                     40, 31, 10, 34, 22, 28, 36,
                                                                     2, 11, 26, 29, 20, 19, 18,
                                                                     12, 9, 24, 16, 15, 6, 39,
-                                                                    42, 43, 44};
+                                                                    42, 43, 44, 45, 46, 47, 48};
         public static void Load() {
             List<StringNames> longlist = Enumerable.ToList<StringNames>(Palette.ColorNames);
             List<Color32> colorlist = Enumerable.ToList<Color32>(Palette.PlayerColors);
@@ -135,11 +135,28 @@ namespace TheOtherRoles.Modules {
             colors.Add(new CustomColor { longname = "Feuerwehr", //43
                                         color = new Color32(123, 23, 28, byte.MaxValue),
                                         shadow = new Color32(142, 137, 9, byte.MaxValue),
-                                        isLighterColor = false });
+                                        isLighterColor = true });
             colors.Add(new CustomColor { longname = "Black + White", //44
-                                        color = new Color32(0, 0, 0, byte.MaxValue),
-                                        shadow = new Color32(255, 255, 255, byte.MaxValue),
+                                        color = new Color32(255, 255, 255, byte.MaxValue),
+                                        shadow = new Color32(0, 0, 0, byte.MaxValue),
                                         isLighterColor = false });
+            // 45
+            colors.Add(new CustomColor { longname = "Minecraft", //45
+                                        color = new Color32(118, 83, 56, byte.MaxValue),
+                                        shadow = new Color32(98, 161, 56, byte.MaxValue),
+                                        isLighterColor = false });
+            colors.Add(new CustomColor { longname = "Discord", //46
+                                        color = new Color32(88, 100, 242, byte.MaxValue), 
+                                        shadow = new Color32(255, 255, 255, byte.MaxValue),
+                                        isLighterColor = true });
+            colors.Add(new CustomColor { longname = "Spotify", //47
+                                        color = new Color32(101, 211, 110, byte.MaxValue),
+                                        shadow = new Color32(20, 20, 20, byte.MaxValue),
+                                        isLighterColor = false });
+            colors.Add(new CustomColor { longname = "YouTube", //48
+                                        color = new Color32(255, 0, 0, byte.MaxValue),
+                                        shadow = new Color32(255, 255, 255, byte.MaxValue),
+                                        isLighterColor = true });
 
             pickableColors += (uint)colors.Count; // Colors to show in Tab
             /** Hidden Colors **/     
