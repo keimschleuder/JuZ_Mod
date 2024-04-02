@@ -1,12 +1,12 @@
-# JuZ Mod for AmungUs
+# JuZ Mod for AmongUs
 
 ## Look at the [Padlet](https://padlet.com/niklaskeim/among-us-mod-v52klgwhl1whsjl1) for more info
 
 ## [Level Mod](https://levelimposter.net/)
 
-  reqired and included in the Mod.
+  reqired and included in the `.zip` download.
 
-  The Mod also features a special JuZ-Map, which is included in the `.zip` download.
+  The Mod also features a special JuZ-Map, which is also included in the `.zip` download.
 
 ## This is a Fork
 
