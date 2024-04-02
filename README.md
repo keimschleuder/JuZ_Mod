@@ -17,10 +17,11 @@
 ## Role Name Explanation [here](Role_Info.md)
 
 # Releases
-| Among Us - Version| Mod Version | Link |
+| Among Us - Version | Mod Version | Link |
 |----------|-------------|-----------------|
-| 2024.3.5s | v0.2.1 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.1)
-| 2024.3.5s | v0.2.0 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.0)
+| 2024.3.5s | v0.2.1 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.1) |
+| 2024.3.5s | v0.2.0 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.0) |
+| 2023.11.28s | v0.1.7.1 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.1.7.1) |
 
   This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.</p>
   <p align="center">
