@@ -317,7 +317,7 @@ namespace TheOtherRoles
 
             // Crewmatratze
             sleepWithButton = new CustomButton(
-                () =>{
+                () => {
                     // Set Target
                 },
                 () => { return Crewmatratze.crewmatratze != null && Crewmatratze.crewmatratze == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },

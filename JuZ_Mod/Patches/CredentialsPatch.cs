@@ -179,7 +179,7 @@ $@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy and Nicolas</color></siz
                 HttpResponseMessage response = await client.GetAsync("https://raw.githubusercontent.com/TheOtherRolesAU/MOTD/main/motd.txt");
                 response.EnsureSuccessStatusCode();
                 // string motds = await response.Content.ReadAsStringAsync();
-                string motds = "Weil Marcel älter ist\nDas ist respektlos einem Jugendmoderator gegenüber\nThe Other Roles ist cool\nBitte nicht Virus.exe ausführen\nWann kommt r/place zurück?";
+                string motds = "Weil Marcel älter ist\nDas ist respektlos einem Jugendmoderator gegenüber\nTheOtherRoles ist cool\nBitte nicht Virus.exe ausführen\nWann kommt r/place zurück?";
 
                 foreach(string line in motds.Split("\n", StringSplitOptions.RemoveEmptyEntries)) {
                     MOTD.motds.Add(line);
