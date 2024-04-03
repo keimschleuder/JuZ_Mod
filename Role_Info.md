@@ -22,7 +22,7 @@
   [Plankton](#plankton---evil-guesser) |  | [MrWissen2Go](#mrwissen2go---seer)
   [Bibi Blocksberg](#bibi-blocksberg---witch) |  | [Niklas](#niklas---hacker)
   [Pablo Escobar](#pablo-escobar---ninja) |  | [Helikoptermutter](#helikoptermutter---tracker)
-  [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Omar Sharif](#snitch---snitch)
+  [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Omar Sharif](#omar-sharif---snitch)
   | | | [Lovebot](#lovebot---spy)
   | | | [Rezo der Zerstörer](#rezo-der-zerstörer---security-guard)
   | | | [Zeo](#zeo---nice-guesser)
