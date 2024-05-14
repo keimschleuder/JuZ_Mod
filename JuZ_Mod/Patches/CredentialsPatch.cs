@@ -179,7 +179,7 @@ $@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy and Nicolas</color></siz
                 HttpResponseMessage response = await client.GetAsync("https://raw.githubusercontent.com/TheOtherRolesAU/MOTD/main/motd.txt");
                 response.EnsureSuccessStatusCode();
                 // string motds = await response.Content.ReadAsStringAsync();
-                string motds = "Das ist respektlos einem Jugendmoderator gegenüber\nGriechischer Wein\nIst so wie das Blut der Erde\nKomm schenk mir ein!!!\nUnd wenn ich dann Traurig werde liegt es daran\nDass ich immer träume von daheim\nDu musst verzeihn";
+                string motds = "Griechischer Wein\nIst so wie das Blut der Erde\nKomm schenk mir ein!!!\nUnd wenn ich dann Traurig werde liegt es daran\nDass ich immer träume von daheim\nDu musst verzeihn";
 
                 foreach(string line in motds.Split("\n", StringSplitOptions.RemoveEmptyEntries)) {
                     MOTD.motds.Add(line);
