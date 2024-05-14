@@ -128,6 +128,10 @@ namespace TheOtherRoles
                 target = null;
                 hasWeapon = true;
             }
+            public static void clearTarget()
+            {
+                target = null;
+            }
             public static Sprite getWeaponSprite()
             {
                 if (giveWeapon) return giveWeapon;
@@ -358,6 +362,7 @@ namespace TheOtherRoles
             public static Color color = new Color32(255, 150, 200, byte.MaxValue);
 
             public static PlayerControl sleepsWith;
+            public static PlayerControl target;
             public static Sprite sleepWithSprite;
 
             public static Sprite getSleepWithSprite()

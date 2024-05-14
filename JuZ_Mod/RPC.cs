@@ -174,6 +174,7 @@ namespace TheOtherRoles
 
         // My functionality
         WaffeAbgeben,
+        NachtVerbringen,
     }
 
     public static class RPCProcedure {
@@ -187,6 +188,8 @@ namespace TheOtherRoles
             Portal.clearPortals();
             Bloodytrail.resetSprites();
             Trap.clearTraps();
+            Crewmatratze.clearBed();
+            Waffenhaendler.clearTarget();
             clearAndReloadMapOptions();
             clearAndReloadRoles();
             clearGameHistory();
@@ -518,6 +521,12 @@ namespace TheOtherRoles
         }
 
         // My functionality
+
+        public static void schlafeMit(byte targetID)
+        {
+            PlayerControl target = Helpers.playerById(targetID);
+            Crewmatratze.sleepsWith = target;
+        }
 
         public static void waffeAbgeben(byte targetID)
         {
@@ -1648,6 +1657,9 @@ namespace TheOtherRoles
 
                 case (byte)CustomRPC.WaffeAbgeben:
                     RPCProcedure.waffeAbgeben(reader.ReadByte());
+                    break;
+                case (byte)CustomRPC.NachtVerbringen:
+                    RPCProcedure.schlafeMit(reader.ReadByte());
                     break;
             }
         }

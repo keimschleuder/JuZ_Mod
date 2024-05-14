@@ -318,7 +318,12 @@ namespace TheOtherRoles
             // Crewmatratze
             sleepWithButton = new CustomButton(
                 () => {
-                    // Set Target
+                    MessageWriter writer = AmongUsClient.Instance.StartRpcImmediately(CachedPlayer.LocalPlayer.PlayerControl.NetId, (byte)CustomRPC.NachtVerbringen, Hazel.SendOption.Reliable, -1);
+                    writer.Write(Crewmatratze.target.PlayerId);
+                    AmongUsClient.Instance.FinishRpcImmediately(writer);
+                    RPCProcedure.schlafeMit(Crewmatratze.target.PlayerId);
+                    Crewmatratze.target = null;
+                    sleepWithButton.Timer = sleepWithButton.MaxTimer;
                 },
                 () => { return Crewmatratze.crewmatratze != null && Crewmatratze.crewmatratze == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
                 () => { return CachedPlayer.LocalPlayer.PlayerControl.CanMove; },

@@ -131,11 +131,11 @@ ugackMiner53 - Idea and core code for the Prop Hunt game mode</size>";
                 creditsString += "</align>";
 
                 Assets.InnerNet.Announcement creditsAnnouncement = new() {
-                    Id = "torCredits",
+                    Id = "JuZ Mod Credits",
                     Language = 0,
                     Number = 500,
-                    Title = "The Other Roles\nCredits & Resources",
-                    ShortTitle = "TOR Credits",
+                    Title = "JuZ Mod\nCredits & Resources",
+                    ShortTitle = "Mod Credits",
                     SubTitle = "",
                     PinState = false,
                     Date = "01.07.2021",

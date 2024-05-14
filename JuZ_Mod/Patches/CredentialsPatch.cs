@@ -54,7 +54,7 @@ $@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy and Nicolas</color></siz
                     else if (HandleGuesser.isGuesserGm) gameModeText = $"Guesser";
                     else if (PropHunt.isPropHuntGM) gameModeText = "Prop Hunt";
                     if (gameModeText != "") gameModeText = Helpers.cs(Color.yellow, gameModeText) + "\n";
-                    __instance.text.text = $"<size=130%><color=#ff351f>TheOtherRoles</color></size> v{TheOtherRolesPlugin.Version.ToString() + (TheOtherRolesPlugin.betaDays > 0 ? "-BETA" : "")}\n{gameModeText}" + __instance.text.text;
+                    __instance.text.text = $"<size=130%><color=#ff351f>The JuZ Mod</color></size> v{TheOtherRolesPlugin.Version.ToString() + (TheOtherRolesPlugin.betaDays > 0 ? "-BETA" : "")}\n{gameModeText}" + __instance.text.text;
                     if (CachedPlayer.LocalPlayer.Data.IsDead || (!(CachedPlayer.LocalPlayer.PlayerControl == null) && (CachedPlayer.LocalPlayer.PlayerControl == Lovers.lover1 || CachedPlayer.LocalPlayer.PlayerControl == Lovers.lover2))) {
                         __instance.transform.localPosition = new Vector3(3.45f, __instance.transform.localPosition.y, __instance.transform.localPosition.z);
                     } else {
@@ -179,7 +179,7 @@ $@"<size=60%> <color=#FCCE03FF>Special thanks to Smeggy and Nicolas</color></siz
                 HttpResponseMessage response = await client.GetAsync("https://raw.githubusercontent.com/TheOtherRolesAU/MOTD/main/motd.txt");
                 response.EnsureSuccessStatusCode();
                 // string motds = await response.Content.ReadAsStringAsync();
-                string motds = "Weil Marcel älter ist\nDas ist respektlos einem Jugendmoderator gegenüber\nTheOtherRoles ist cool\nBitte nicht Virus.exe ausführen\nWann kommt r/place zurück?";
+                string motds = "Das ist respektlos einem Jugendmoderator gegenüber\nGriechischer Wein\nIst so wie das Blut der Erde\nKomm schenk mir ein!!!\nUnd wenn ich dann Traurig werde liegt es daran\nDass ich immer träume von daheim\nDu musst verzeihn";
 
                 foreach(string line in motds.Split("\n", StringSplitOptions.RemoveEmptyEntries)) {
                     MOTD.motds.Add(line);
