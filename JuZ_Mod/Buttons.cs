@@ -333,7 +333,7 @@ namespace TheOtherRoles
                 },
                 () => { return Crewmatratze.crewmatratze != null && Crewmatratze.crewmatratze == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
                 () => { return CachedPlayer.LocalPlayer.PlayerControl.CanMove; },
-                () => { },
+                () => { Crewmatratze.target = null; },
                 Crewmatratze.getSleepWithSprite(),
                 CustomButton.ButtonPositions.upperRowRight,
                 __instance,
