@@ -22,7 +22,9 @@
 | 2024.3.5s | v0.2.1 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.1) |
 | 2024.3.5s | v0.2.0 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.2.0) |
 | 2023.11.28s | v0.1.7.1 | [Download](https://github.com/keimschleuder/JuZ_Mod/releases/tag/0.1.7.1) |
+Older Releases for Among Us Version 2023.11.28s available on [GitHub](https://github.com/keimschleuder/JuZ_Mod/releases/)
 
+## Important
   This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.</p>
   <p align="center">
     To other mod devs: for usage of our code, please read and respect the <a href="#License">license</a></p>
