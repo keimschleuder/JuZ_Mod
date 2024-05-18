@@ -1,0 +1,7 @@
+[Error  :   BepInEx] Error loading [Reactor 2.2.0-ci.235]: System.IO.FileLoadException: Assembly with same name is already loaded
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromPath(IntPtr ptrNativeAssemblyLoadContext, String ilPath, String niPath, ObjectHandleOnStack retAssembly)
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at BepInEx.Bootstrap.BaseChainloader`1.LoadPlugins(IList`1 plugins) in /home/runner/work/BepInEx/BepInEx/BepInEx.Core/Bootstrap/BaseChainloader.cs:line 336
+
+[Error  :     Unity] Coroutine couldn't be started because the the game object 'Cosmetics' is inactive!
