@@ -5,6 +5,7 @@
   Danke!
 
   Wir brauchen noch Chris!
+  Und jemanden für den YoYo Impostor
 
   Impostor | Neutral | Crewmate
   ---------|---------|---------
@@ -25,7 +26,7 @@
   [Bibi Blocksberg](#bibi-blocksberg---witch) |  | [Niklas](#niklas---hacker)
   [Pablo Escobar](#pablo-escobar---ninja) |  | [Helikoptermutter](#helikoptermutter---tracker)
   [Osama Bin Laden](#osama-bin-laden---bomber) |  | [Omar Sharif](#omar-sharif---snitch)
-  | | | [Lovebot](#lovebot---spy)
+  [Yo-Yo](#yo-yo---yo-yo) | | [Lovebot](#lovebot---spy)
   | | | [Rezo der Zerstörer](#rezo-der-zerstörer---security-guard)
   | | | [Zeo](#zeo---nice-guesser)
   | | | [Der dunkle Parabelritter](#der-dunkle-parabelritter---medium)
@@ -133,6 +134,8 @@
   [Osama Bin Laden](https://de.wikipedia.org/wiki/Osama_bin_Laden) war maßgeblich für die [Anschläge von 11. September](https://de.wikipedia.org/wiki/Terroranschl%C3%A4ge_am_11._September_2001) verantwortich.
   
   Er wurde 2011 von der US-Armee getötet.
+
+### Yo-Yo - [Yo-Yo](TOR.md/#yoyo)
 
 ## Neutrale Rollen
 
