@@ -4,6 +4,8 @@
   
   Danke!
 
+  Wir brauchen noch Chris!
+
   Impostor | Neutral | Crewmate
   ---------|---------|---------
   [Julian](#julian---impostor) | [Jens](#jens---deutscher) | [Bundesregierung](#bundesregierung---crewmate)
@@ -38,7 +40,7 @@
 
 ### Eyub - [Alman](TOR.md/#deutsche-rollen)
 
-  ![Eyub](RoleImages/Eyub.jpg)
+  ![Eyub](https://roedermark.de/fileadmin/_processed_/6/5/csm_Eyub-Edit-4_42885a6537.jpg)
 
   Eyub arbeitet bei der Stadt und er muss hier drin sein, wer ihn kennt, weiß warum.
 
@@ -66,7 +68,7 @@
 
 ### Desinee - [Morphling](TOR.md/#morphling)
 
-  ![Desinee](RoleImages/Desinee.jpg)
+  ![Desinee](https://roedermark.de/fileadmin/_processed_/8/d/csm_Desiree-Edit-2_7f147be617.jpg)
 
   Desinee heißt eigentlich Desiree und hat [TikTok](https://www.tiktok.com/@kleene_punk)
 
@@ -96,7 +98,7 @@
 
 ### Nils - [Warlock](TOR.md/#warlock)
 
-  ![Nils](RoleImages/Nils.jpg)
+  ![Nils](https://roedermark.de/fileadmin/_processed_/a/f/csm_Nils_7aee39e5a4.jpg)
 
   Nils spielt gerne D&D, deshalb ist er Warlock geworden
 
@@ -136,7 +138,7 @@
 
 ### Jens - [Deutscher](TOR.md/#deutsche-rollen)
 
-  ![Jens](RoleImages/Jens.jpg)
+  ![Jens](https://roedermark.de/fileadmin/_processed_/f/d/csm_Jens-Edit_e777bb4ddc.jpg)
 
   Jens arbeitet auch bei der Stadt und er muss hier drin sein, wer ihn kennt, weiß warum.
 
@@ -218,13 +220,13 @@
 
 ### David - [Influencer](TOR.md/#influencer)
 
-  ![David](RoleImages/David.jpg)
+  ![David](https://roedermark.de/fileadmin/_processed_/1/7/csm_David-2_d5d9a9f548.jpg)
 
   Kümmert sich um den Medienauftritt der Stadt
 
 ### Cheffi - [Mayor](TOR.md/#mayor)
 
-  ![Cheffi](RoleImages/Cheffi.jpg)
+  ![Cheffi](https://roedermark.de/fileadmin/_processed_/d/a/csm_Stephie_96524f0140.jpg)
 
   Chef
 
