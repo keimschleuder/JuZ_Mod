@@ -341,6 +341,8 @@ namespace TheOtherRoles
 
             );
 
+            // Selfie-Knopf
+
             // Redepause
             muteButton = new CustomButton(
                 () => {
@@ -354,7 +356,7 @@ namespace TheOtherRoles
                 __instance,
                 KeyCode.F
             );
-
+            
             // Waffenhaendler
             waffenButton = new CustomButton(
                 () => {
@@ -446,6 +448,7 @@ namespace TheOtherRoles
                 KeyCode.R
             );
 
+            // Not really dead
             // Amerikaner Desinfektionsmittel
             amerikanerDesinfektionsmittelButton = new CustomButton(
                 () => {
@@ -473,7 +476,7 @@ namespace TheOtherRoles
                 () => {
                     // Task sperren
                 },
-                () => { return Alman.alman != null && Alman.alman == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive; },
+                () => { return (Alman.alman != null && Alman.alman == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive) || (Deutscher.deutscher != null && Deutscher.deutscher == CachedPlayer.LocalPlayer.PlayerControl && !CachedPlayer.LocalPlayer.Data.IsDead && !Kommunist.isActive); },
                 () => { return __instance.UseButton.graphic.color == Palette.EnabledColor && CachedPlayer.LocalPlayer.PlayerControl.CanMove; },
                 () => { almanTowelButton.Timer = almanTowelButton.MaxTimer; },
                 Alman.getPlaceTowelSprite(),

@@ -95,19 +95,19 @@ namespace TheOtherRoles.Modules {
                     } else {
                         __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Das ist respektlos einem <color=#E67E22>Jugendmoderator</color> gegenüber!");
                     }
-                    handled = true;
+                    handled = false;
                 }
 
                 if (text.ToLower().StartsWith("/adhs"))
                 {
                     __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Nicolas");
-                    handled = true;
+                    handled = false;
                 }
 
                 if (text.ToLower().StartsWith("/älter"))
                 {
                     __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Weil Marcel älter ist.");
-                    handled = true;
+                    handled = false;
                 }
 
                 if (text.ToLower().Contains("desiree"))
@@ -118,19 +118,21 @@ namespace TheOtherRoles.Modules {
                     text = text.Insert(index + 4, "n");
 
                     __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, text);
-                    handled = true;
+                    handled = false;
                 }
 
                 if (text.ToLower().Contains("trump"))
                 {
                     __instance.AddChat(CachedPlayer.LocalPlayer.PlayerControl, "Make America Great Again!");
-                    handled = true;
+                    handled = false;
                 }
 
                 if (CachedPlayer.LocalPlayer.PlayerControl == Redepause.target)
                 {
                     handled = true;
                 }
+
+                // Why are only the people themselves seeing the chat commands?
 
 /*                if (text.ToLower().StartsWith("/role")) {
                     RoleInfo localRole = RoleInfo.getRoleInfoForPlayer(CachedPlayer.LocalPlayer.PlayerControl, false).FirstOrDefault();

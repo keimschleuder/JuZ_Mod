@@ -157,6 +157,12 @@ namespace TheOtherRoles.Modules {
                                         color = new Color32(255, 0, 0, byte.MaxValue),
                                         shadow = new Color32(255, 255, 255, byte.MaxValue),
                                         isLighterColor = true });
+            colors.Add(new CustomColor { longname = "Ananas", //49 for pineapple hat
+                color = new Color32(255, 241, 15, byte.MaxValue),
+                shadow = new Color32(235, 223, 0, byte.MaxValue),
+                isLighterColor = true
+            });
+            // 50
 
             pickableColors += (uint)colors.Count; // Colors to show in Tab
             /** Hidden Colors **/     
