@@ -423,6 +423,7 @@ namespace TheOtherRoles {
                 relevantOptions.AddRange(options.Where(x => x.type == CustomOptionType.Neutral && x.isHeader));
                 relevantOptions.AddRange(options.Where(x => x.type == CustomOptionType.Crewmate && x.isHeader));
                 relevantOptions.AddRange(options.Where(x => x.type == CustomOptionType.Modifier && x.isHeader));
+                relevantOptions.AddRange(options.Where(x => x.type == CustomOptionType.JuZ && x.isHeader));
                 foreach (var option in options) {
                     if (option.parent != null && option.parent.getSelection() > 0) {
                         if (option.id == 103) //Deputy
@@ -461,7 +462,7 @@ namespace TheOtherRoles {
                     categoryHeaderMasked.Title.text = option.heading != "" ? option.heading : option.name;
                     if ((int)optionType == 99)
                         categoryHeaderMasked.Title.text = new Dictionary<CustomOptionType, string>() { { CustomOptionType.Impostor, "Impostor Roles" }, { CustomOptionType.Neutral, "Neutral Roles" },
-                            { CustomOptionType.Crewmate, "Crewmate Roles" }, { CustomOptionType.Modifier, "Modifiers" } }[curType];
+                            { CustomOptionType.Crewmate, "Crewmate Roles" }, { CustomOptionType.Modifier, "Modifiers" }, { CustomOptionType.JuZ, "JuZ" } } [curType];
                     categoryHeaderMasked.Title.outlineColor = Color.white;
                     categoryHeaderMasked.Title.outlineWidth = 0.2f;
                     categoryHeaderMasked.transform.SetParent(__instance.settingsContainer);
@@ -489,7 +490,7 @@ namespace TheOtherRoles {
                 int value = option.getSelection();
                 viewSettingsInfoPanel.SetInfo(StringNames.ImpostorsCategory, option.selections[value].ToString(), 61);
                 viewSettingsInfoPanel.titleText.text = option.name;
-                if (option.isHeader && (int)optionType != 99 && option.heading == "" && (option.type == CustomOptionType.Neutral || option.type == CustomOptionType.Crewmate || option.type == CustomOptionType.Impostor || option.type == CustomOptionType.Modifier)) {
+                if (option.isHeader && (int)optionType != 99 && option.heading == "" && (option.type == CustomOptionType.Neutral || option.type == CustomOptionType.Crewmate || option.type == CustomOptionType.Impostor || option.type == CustomOptionType.Modifier ||option.type == CustomOptionType.JuZ)) {
                     viewSettingsInfoPanel.titleText.text = "Spawn Chance";
                 }
                 if ((int)optionType == 99) {
@@ -525,6 +526,9 @@ namespace TheOtherRoles {
                 createCustomButton(__instance, next++, "CrewmateSettings", "Crewmate Roles", CustomOptionType.Crewmate);
                 // Modifier
                 createCustomButton(__instance, next++, "ModifierSettings", "Modifiers", CustomOptionType.Modifier);
+
+                // our settings
+                createCustomButton(__instance, next++, "JuZ Settings", "JuZ", CustomOptionType.JuZ);
 
             } else if (TORMapOptions.gameMode == CustomGamemodes.HideNSeek) {
                 // create Main HNS settings
@@ -659,7 +663,7 @@ namespace TheOtherRoles {
                 var stringOption = optionBehaviour as StringOption;
                 stringOption.OnValueChanged = new Action<OptionBehaviour>((o) => { });
                 stringOption.TitleText.text = option.name;
-                if (option.isHeader && option.heading == "" && (option.type == CustomOptionType.Neutral || option.type == CustomOptionType.Crewmate || option.type == CustomOptionType.Impostor || option.type == CustomOptionType.Modifier)) {
+                if (option.isHeader && option.heading == "" && (option.type == CustomOptionType.Neutral || option.type == CustomOptionType.Crewmate || option.type == CustomOptionType.Impostor || option.type == CustomOptionType.Modifier || option.type == CustomOptionType.JuZ)) {
                     stringOption.TitleText.text = "Spawn Chance";
                 }
                 if (stringOption.TitleText.text.Length > 25)
@@ -763,6 +767,10 @@ namespace TheOtherRoles {
                 // Modifier
                 createCustomButton(__instance, next++, "ModifierSettings", "Modifiers");
                 createGameOptionsMenu(__instance, CustomOptionType.Modifier, "ModifierSettings");
+
+                // our settings
+                createCustomButton(__instance, next++, "JuZ Settings", "JuZ");
+                createGameOptionsMenu(__instance, CustomOptionType.JuZ, "juzSettings");
 
             } else if (TORMapOptions.gameMode == CustomGamemodes.HideNSeek) {
                 // create Main HNS settings
