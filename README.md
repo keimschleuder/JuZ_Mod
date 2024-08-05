@@ -1,57 +1,30 @@
-![eisbison banner](./Images/TOR_logo.png)
-<p align="center"><a href="https://github.com/Eisbison/TheOtherRoles/releases/"><img src="https://badgen.net/github/release/eisbison/theotherroles"></a></p>
+# JuZ Mod for AmongUs
 
+## Look at the [Padlet](https://padlet.com/niklaskeim/among-us-mod-v52klgwhl1whsjl1) for more info
 
-This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC. © Innersloth LLC.</p>
-<p align="center">
-  To other mod devs: for usage of our code, please read and respect the <a href="#license">license</a></p>
+## [Level Mod](https://levelimposter.net/)
+  Sadly this mod is not up-to-date with among us due to the fact that it is developed by a single person. Huge Shout out!
 
-[![Discord](./Images/TOR_server.png)](https://discord.gg/77RkMJHWsM)
-![eisbison infographic](./Images/TOR_Roles.png)
+## This is a Fork
 
+  As you can see, this Repository is a Fork. Huge Shout out to the Developers of [TheOtherRoles](https://github.com/TheOtherRolesAU/TheOtherRoles). Without them, this wouldn't be possible.
 
-# The Other Roles
+![TOR Logo](/RoleImages/TOR_logo.png)
 
-The **The Other Roles** is a mod for [Among Us](https://store.steampowered.com/app/945360/Among_Us) which adds many new roles, new [Settings](#settings) and new [Custom Hats](#custom-hats) to the game.
-Even more roles are coming soon. :)
-
-| Impostor | Crewmate | Neutral | Modifier | Gamemode |
-|----------|-------------|-----------------|----------------|----------------|
-| [Godfather (Mafia)](#mafia) | [Mayor](#mayor) | [Jester](#jester) | [Bloody](#bloody) | [Classic](#roles) |
-| [Mafioso (Mafia)](#mafia) | [Engineer](#engineer) | [Arsonist](#arsonist) | [Anti Teleport](#anti-teleport) | [Guesser Modifier](#guesser-modifier) |
-| [Janitor (Mafia)](#mafia) | [Sheriff](#sheriff) | [Jackal](#jackal) | [Tie Breaker](#tie-breaker) | [Hide 'n' Seek](#hide-n-seek) |
-| [Morphling](#morphling) | [Deputy](#deputy) | [Sidekick](#sidekick) | [Bait](#bait) | [Vanilla Hide 'n' Seek](https://www.innersloth.com/new-game-mode-hide-n-seek-is-here-emergency-meeting-35/) |
-| [Camouflager](#camouflager) | [Lighter](#lighter) | [Vulture](#vulture) | [Lovers](#lovers) | [PropHunt](#prophunt)|
-| [Vampire](#vampire) | [Detective](#detective) | [Lawyer](#lawyer) | [Sunglasses](#sunglasses) |
-| [Eraser](#eraser) | [Time Master](#time-master) | [Prosecutor](#prosecutor) | [Mini](#mini) |
-| [Trickster](#trickster) | [Medic](#medic) | [Pursuer](#pursuer) | [VIP](#vip) |
-| [Cleaner](#cleaner) | [Swapper](#swapper) | [Thief](#thief) | [Invert](#invert) |
-| [Warlock](#warlock) | [Seer](#seer) |  | [Chameleon](#chameleon) |
-| [Bounty Hunter](#bounty-hunter) | [Hacker](#hacker) |  | [Shifter](#shifter)
-| [Witch](#witch) | [Tracker](#tracker) |  |  |
-| [Ninja](#ninja) | [Snitch](#snitch) |  |  |
-| [Bomber](#bomber) | [Spy](#spy) |  |  |
-| [Yo-Yo](#yoyo) | [Portalmaker](#portalmaker) |  |  |
-| [Evil Guesser](#guesser) | [Security Guard](#security-guard) |  |  |
-|  | [Medium](#medium) |  |  |
-|  | [Trapper](#trapper) |  |  |
-|  | [Nice Guesser](#guesser) |  |  |
-
-The [Role Assignment](#role-assignment) section explains how the roles are being distributed among the players.
+## Role Name Explanation [here](Role_Info.md)
 
 # Releases
-| Among Us - Version| Mod Version | Link |
+| Among Us - Version | Mod Version | Link |
 |----------|-------------|-----------------|
-| 2024.6.18s| v4.6.0| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.6.0/TheOtherRoles.zip)
 | 2024.3.5s| v4.5.3| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.3/TheOtherRoles.zip)
+| 2024.3.5s| v4.5.2| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.2/TheOtherRoles.zip)
+| 2023.11.28s| v4.5.1| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.1/TheOtherRoles.zip)
 
 <details>
   <summary>Click to show older versions</summary>
   
 | Among Us - Version| Mod Version | Link |
 |----------|-------------|-----------------|
-| 2024.3.5s| v4.5.2| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.2/TheOtherRoles.zip)
-| 2023.11.28s| v4.5.1| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.1/TheOtherRoles.zip)
 | 2023.11.28s| v4.5.0| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.5.0/TheOtherRoles.zip)
 | 2023.07.12s| v4.4.2| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.4.2/TheOtherRoles.zip)
 | 2023.07.12s| v4.4.1| [Download](https://github.com/TheOtherRolesAU/TheOtherRoles/releases/download/v4.4.1/TheOtherRoles.zip)
@@ -133,20 +106,6 @@ The [Role Assignment](#role-assignment) section explains how the roles are being
 # Changelog
 <details>
   <summary>Click to show the Changelog</summary>
-  
-  
-** Version 4.6.0**
-- Updated to Among Us version 2024.6.18 (Vanilla Update with new UI elements and many Server Side Changes)
-- Added a completely new UI for the Mod's Options, using the new Vanilla Design.
-- Added a button to switch gamemodes in the lobby
-- Added an option to enable the Chat-Notification in game (in Mod Options)
-- Fixed a bug where the shielding the bomber would show a murder attempt on the bomber, when they plant a bomb (sorry Vlesk)
-- Fixed a bug in PropHunt, where the background of the Prop-Display was visible in the cameras
-- Fixed a bug where guessing a player would sometimes not return the votes to the voters
-- Fixed a bug where the Lawyer would not properly die when guessing the client
-- Removed: Disabled Vanilla Servers for now, as the mod is incompatible with them in its / their current state. Thanks to Miniduikboat for making custom servers great again!
-- Experimental: Advanded users can try to install the mod on the Windows Store Version of Among Us. No Support Provided!
-
   
 **Version 4.5.3**
 - Added a new role: Yo-Yo (Impostor) - Mark and blink to a position, then blink back to the start of the blink!
@@ -2262,12 +2221,6 @@ In order to do this, create a file called `noupdater.txt` in your modded Among U
 # License
 TheOtherRolesAU/TheOtherRoles is licensed under the
 
-[GNU General Public License v3.0](https://github.com/TheOtherRolesAU/TheOtherRoles/blob/main/LICENSE)
+  [GNU General Public License v3.0](https://github.com/TheOtherRolesAU/TheOtherRoles/blob/main/LICENSE)
 
-Permissions of this strong copyleft license are conditioned on making available **complete source code of licensed works and modifications**, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
-
-# Bugs, suggestions and requests
-If you found any bugs, have an idea for a new role or any other request, join our [Discord server](https://discord.gg/77RkMJHWsM).
-
-# Copyedit
-Thanks for fixing our typos [jacktose](https://github.com/jacktose) ✌️
+  Permissions of this strong copyleft license are conditioned on making available **complete source code of licensed works and modifications**, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
